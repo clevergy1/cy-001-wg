@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LonInterface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProgramId="90:00:70:05:01:06:04:01" XifName="Albino_E02" SelfDocumentationComment="Add your comment here" NeuronFirmwareVersion="19" XifSavePath="C:\Users\andrea\Documents\CoDeSys\Albino_E02\LON_Template" ModuleNumber="10">
+  <LonMarkObjects>
+    <LonMarkObject>
+      <TemplateIdentifier>
+        <ProgId>00 00 00 00 00 00 00 00</ProgId>
+        <Scope>0</Scope>
+        <Key>0</Key>
+        <Index>1</Index>
+      </TemplateIdentifier>
+      <TemplateName>SFPTnodeObject</TemplateName>
+      <Name>SFPTnodeObject</Name>
+      <OriginalName>SFPTnodeObject</OriginalName>
+      <IsLocked>true</IsLocked>
+      <IsMandatory>true</IsMandatory>
+      <IsOptional>false</IsOptional>
+      <MemberNumber>0</MemberNumber>
+      <ElementCount xsi:nil="true" />
+      <NetworkVariables>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>92</Key>
+            <Index>92</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_obj_request</TemplateName>
+          <Name>nviRequest</Name>
+          <OriginalName>nviRequest</OriginalName>
+          <IsLocked>true</IsLocked>
+          <IsMandatory>true</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>1</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>true</IsDirectionLocked>
+          <ByteSize>3</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>93</Key>
+            <Index>93</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_obj_status</TemplateName>
+          <Name>nvoStatus</Name>
+          <OriginalName>nvoStatus</OriginalName>
+          <IsLocked>true</IsLocked>
+          <IsMandatory>true</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>2</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>true</IsDirectionLocked>
+          <ByteSize>6</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>73</Key>
+            <Index>73</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_file_req</TemplateName>
+          <Name>nviFileReq</Name>
+          <OriginalName>nviFileReq</OriginalName>
+          <IsLocked>true</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>true</IsOptional>
+          <MemberNumber>5</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>true</IsDirectionLocked>
+          <ByteSize>12</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>74</Key>
+            <Index>74</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_file_status</TemplateName>
+          <Name>nvoFileStat</Name>
+          <OriginalName>nvoFileStat</OriginalName>
+          <IsLocked>true</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>true</IsOptional>
+          <MemberNumber>6</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>true</IsDirectionLocked>
+          <ByteSize>27</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>90</Key>
+            <Index>90</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_file_pos</TemplateName>
+          <Name>nviFilePos</Name>
+          <OriginalName>nviFilePos</OriginalName>
+          <IsLocked>true</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>true</IsOptional>
+          <MemberNumber>7</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>true</IsDirectionLocked>
+          <ByteSize>6</ByteSize>
+        </NetworkVariable>
+      </NetworkVariables>
+      <ConfigurationProperties />
+    </LonMarkObject>
+    <LonMarkObject>
+      <TemplateIdentifier>
+        <Scope>0</Scope>
+        <Key>-1</Key>
+        <Index>-1</Index>
+      </TemplateIdentifier>
+      <Name>Virtual functional block</Name>
+      <IsLocked>true</IsLocked>
+      <IsMandatory>false</IsMandatory>
+      <IsOptional>false</IsOptional>
+      <MemberNumber>0</MemberNumber>
+      <ElementCount xsi:nil="true" />
+      <NetworkVariables>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>92</Key>
+            <Index>92</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_obj_request</TemplateName>
+          <Name>VT_Request</Name>
+          <OriginalName>SNVT_obj_request</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>3</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>93</Key>
+            <Index>93</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_obj_status</TemplateName>
+          <Name>VT_Status</Name>
+          <OriginalName>SNVT_obj_status</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>6</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>84</Key>
+            <Index>84</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_time_stamp</TemplateName>
+          <Name>VT_TimeSet</Name>
+          <OriginalName>SNVT_time_stamp</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>7</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>88</Key>
+            <Index>88</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_alarm</TemplateName>
+          <Name>VT_Alarm</Name>
+          <OriginalName>SNVT_alarm</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>29</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>88</Key>
+            <Index>88</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_alarm</TemplateName>
+          <Name>VT_AlarmSet</Name>
+          <OriginalName>SNVT_alarm</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>29</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>83</Key>
+            <Index>83</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_state</TemplateName>
+          <Name>VT_RlyState</Name>
+          <OriginalName>SNVT_state</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>108</Key>
+            <Index>108</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_hvac_mode</TemplateName>
+          <Name>VT_DHW_ModeSet</Name>
+          <OriginalName>SNVT_hvac_mode</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>1</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_DHW_ActTemp</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_DHW_SetPoint</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_DHW_SetTemp</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>95</Key>
+            <Index>95</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_switch</TemplateName>
+          <Name>VT_CFD_SetEnable</Name>
+          <OriginalName>SNVT_switch</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>95</Key>
+            <Index>95</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_switch</TemplateName>
+          <Name>VT_CFD_GetEnable</Name>
+          <OriginalName>SNVT_switch</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>108</Key>
+            <Index>108</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_hvac_mode</TemplateName>
+          <Name>VT_CFD_SetMode</Name>
+          <OriginalName>SNVT_hvac_mode</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>1</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_CFD_Temp</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_CFD_SetPoint</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Output</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+        <NetworkVariable>
+          <TemplateIdentifier>
+            <ProgId>00 00 00 00 00 00 00 00</ProgId>
+            <Scope>0</Scope>
+            <Key>105</Key>
+            <Index>105</Index>
+          </TemplateIdentifier>
+          <TemplateName>SNVT_temp_p</TemplateName>
+          <Name>VT_CFD_SetTemp</Name>
+          <OriginalName>SNVT_temp_p</OriginalName>
+          <IsLocked>false</IsLocked>
+          <IsMandatory>false</IsMandatory>
+          <IsOptional>false</IsOptional>
+          <MemberNumber>0</MemberNumber>
+          <ElementCount xsi:nil="true" />
+          <MinSendTime>0</MinSendTime>
+          <MaxSendTime>0</MaxSendTime>
+          <MaxReceiveTime>0</MaxReceiveTime>
+          <IsPriority>false</IsPriority>
+          <ServiceType>Acknowledged</ServiceType>
+          <Direction>Input</Direction>
+          <Modificator>None</Modificator>
+          <ConfigurationProperties />
+          <IsDirectionLocked>false</IsDirectionLocked>
+          <ByteSize>2</ByteSize>
+        </NetworkVariable>
+      </NetworkVariables>
+      <ConfigurationProperties />
+    </LonMarkObject>
+  </LonMarkObjects><![CDATA[<?xml version="1.0" encoding="utf-16"?><Catalog><File IsFiltered="1" DataVersion="14.0" FileType="Type" FormatVersion="6.0" MajorVersion="14" Path="C:\LonWorks\Types\STANDARD.TYP" ProgId="00 00 00 00 00 00 00 00" ReferenceId="00 00 00 00 00 00 00 00" TimeStamp="12/13/2012 18:20:12"><NetworkVariableTypes><NetworkVariableType BaseType="Struct[6]" Count="6" Index="73" Name="File request" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_file_req" Size="12" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Enum file_request_t" Maximum="6" Minimum="-1" Name="Request" NvtType="NVT_TYPE_ENUM" ProgrammaticName="request" Signed="1" Size="1" Unit="file request names" EnumerationIndex="5" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Index" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="1" ProgrammaticName="index" ScaleA="1" Size="2" Unit="file index" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Receive timeout" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="3" ProgrammaticName="receive_timeout" ScaleA="1" Size="2" Unit="milliseconds" /><NetworkVariableType BaseType="Union[3]" Count="3" Name="Destination address" NvtType="NVT_TYPE_UNION" Offset="5" ProgrammaticName="dest_address" Size="5" Unit="LonWorks address"><NetworkVariableType BaseType="Struct[2]" Count="2" Name="Address table entry" NvtType="NVT_TYPE_STRUCT" Offset="5" ProgrammaticName="addrt" Size="3" Unit="Address table entry"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="33" Minimum="33" Name="Address type" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="5" ProgrammaticName="type" ScaleA="1" Size="1" Unit="8-bit unsigned value" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Address table index" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="6" ProgrammaticName="index" ScaleA="1" Size="2" Unit="16-bit unsigned value" /></NetworkVariableType><NetworkVariableType BaseType="Struct[6]" Count="6" Name="Subnet-node address" NvtType="NVT_TYPE_STRUCT" Offset="5" ProgrammaticName="sn" Size="5" Unit="LonWorks subnet-node address"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="1" Minimum="1" Name="Address type" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="5" ProgrammaticName="type" ScaleA="1" Size="1" Unit="8-bit unsigned value" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Domain" NvtType="NVT_TYPE_BITF" Offset="6" ProgrammaticName="domain" ScaleA="1" Size="1" Unit="LonWorks domain index" /><NetworkVariableType BaseType="Unsigned 7 Bit" BitOffset="1" Count="7" Maximum="127" Name="Node" NvtType="NVT_TYPE_BITF" Offset="6" ProgrammaticName="node" ScaleA="1" Size="1" Unit="node number" /><NetworkVariableType BaseType="Unsigned 4 Bit" BitOffset="4" Count="4" Maximum="15" Name="Retry count" NvtType="NVT_TYPE_BITF" Offset="7" ProgrammaticName="retry" ScaleA="1" Size="1" Unit="number of retries" /><NetworkVariableType BaseType="Unsigned 4 Bit" BitOffset="4" Count="4" Maximum="15" Name="Transaction timer" NvtType="NVT_TYPE_BITF" Offset="8" ProgrammaticName="tx_timer" ScaleA="1" Size="1" Unit="timer code value" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Subnet" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="9" ProgrammaticName="subnet" ScaleA="1" Size="1" Unit="subnet number" /></NetworkVariableType><NetworkVariableType BaseType="Struct[7]" Count="7" Name="Group address" NvtType="NVT_TYPE_STRUCT" Offset="5" ProgrammaticName="gp" Size="5" Unit="LonWorks group address"><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Address type" NvtType="NVT_TYPE_BITF" Offset="5" ProgrammaticName="type" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Unsigned 7 Bit" BitOffset="1" Count="7" Maximum="65" Name="Size" NvtType="NVT_TYPE_BITF" Offset="5" ProgrammaticName="size" ScaleA="1" Size="1" Unit="LonWorks group size" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Domain" NvtType="NVT_TYPE_BITF" Offset="6" ProgrammaticName="domain" ScaleA="1" Size="1" Unit="LonWorks domain index" /><NetworkVariableType BaseType="Unsigned 7 Bit" BitOffset="1" Count="7" Name="Unused field" NvtType="NVT_TYPE_BITF" Offset="6" ProgrammaticName="unused" ScaleA="1" Size="1" Unit="&lt;Invalid string resource&gt;" /><NetworkVariableType BaseType="Unsigned 4 Bit" BitOffset="4" Count="4" Maximum="15" Name="Retry count" NvtType="NVT_TYPE_BITF" Offset="7" ProgrammaticName="retry" ScaleA="1" Size="1" Unit="number of retries" /><NetworkVariableType BaseType="Unsigned 4 Bit" BitOffset="4" Count="4" Maximum="15" Name="Transaction timer" NvtType="NVT_TYPE_BITF" Offset="8" ProgrammaticName="tx_timer" ScaleA="1" Size="1" Unit="timer code value" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Group" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="9" ProgrammaticName="group" ScaleA="1" Size="1" Unit="&lt;Invalid string resource&gt;" /></NetworkVariableType></NetworkVariableType><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="1" Name="Authentication on" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="10" ProgrammaticName="auth_on" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="1" Name="Priority on" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="11" ProgrammaticName="prio_on" ScaleA="1" Size="1" Unit="boolean" /></NetworkVariableType><NetworkVariableType BaseType="Struct[4]" Count="4" Index="74" Name="File status" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_file_status" Size="27" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Enum file_status_t" Maximum="11" Minimum="-1" Name="Status" NvtType="NVT_TYPE_ENUM" ProgrammaticName="status" Signed="1" Size="1" Unit="file status names" EnumerationIndex="6" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Number of files" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="1" ProgrammaticName="number_of_files" ScaleA="1" Size="2" Unit="count" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Selected file" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="3" ProgrammaticName="selected_file" ScaleA="1" Size="2" Unit="file index" /><NetworkVariableType BaseType="Union[2]" Count="2" Name="Address" NvtType="NVT_TYPE_UNION" Offset="5" ProgrammaticName="adr" Size="22" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Struct[3]" Count="3" Name="Descriptor" NvtType="NVT_TYPE_STRUCT" Offset="5" ProgrammaticName="descriptor" Size="22" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Array[16] of File info array element" Count="16" IsArray="1" Name="File info" NvtType="NVT_TYPE_ARRAY" Offset="5" ProgrammaticName="file_info" Size="16" Unit="array of 16 characters"><NetworkVariableType BaseType="SignedChar" IsInteger="1" IsScalar="1" Maximum="127" Minimum="-128" Name="File info array element" NvtType="NVT_TYPE_SIGNED_CHAR" Offset="20" ProgrammaticName="file_info[15]" ScaleA="1" Signed="1" Size="1" Unit="8-bit ASCII character" /></NetworkVariableType><NetworkVariableType BaseType="SignedQuad" IsInteger="1" IsScalar="1" Maximum="2147483647" Name="Size" NvtType="NVT_TYPE_SIGNED_QUAD" Offset="21" ProgrammaticName="size" ScaleA="1" Signed="1" Size="4" Unit="bytes" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Type" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="25" ProgrammaticName="type" ScaleA="1" Size="2" Unit="&lt;Invalid string resource&gt;" /></NetworkVariableType><NetworkVariableType BaseType="Struct[4]" Count="4" Name="Address" NvtType="NVT_TYPE_STRUCT" Offset="5" ProgrammaticName="address" Size="9" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Array[6] of Domain ID array element" Count="6" IsArray="1" Name="Domain ID" NvtType="NVT_TYPE_ARRAY" Offset="5" ProgrammaticName="domain_id" Size="6" Unit="array of 6 bytes"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Domain ID array element" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="10" ProgrammaticName="domain_id[5]" ScaleA="1" Size="1" Unit="8-bit unsigned value" /></NetworkVariableType><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="6" Name="Domain length" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="11" ProgrammaticName="domain_length" ScaleA="1" Size="1" Unit="EN 14908-1 domain length" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Subnet" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="12" ProgrammaticName="subnet" ScaleA="1" Size="1" Unit="subnet number" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="127" Name="Node" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="13" ProgrammaticName="node" ScaleA="1" Size="1" Unit="node number" /></NetworkVariableType></NetworkVariableType></NetworkVariableType><NetworkVariableType BaseType="Struct[16]" Count="16" Index="83" Name="State vector" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_state" Size="2" Unit="16 individual bit values"><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="State bit 0" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit0" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="1" Count="1" Maximum="1" Name="State bit 1" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit1" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="2" Count="1" Maximum="1" Name="State bit 2" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit2" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="3" Count="1" Maximum="1" Name="State bit 3" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit3" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="4" Count="1" Maximum="1" Name="State bit 4" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit4" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="5" Count="1" Maximum="1" Name="State bit 5" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit5" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="6" Count="1" Maximum="1" Name="State bit 6" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit6" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="7" Count="1" Maximum="1" Name="State bit 7" NvtType="NVT_TYPE_BITF" ProgrammaticName="bit7" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="State bit 8" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit8" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="1" Count="1" Maximum="1" Name="State bit 9" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit9" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="2" Count="1" Maximum="1" Name="State bit 10" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit10" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="3" Count="1" Maximum="1" Name="State bit 11" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit11" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="4" Count="1" Maximum="1" Name="State bit 12" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit12" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="5" Count="1" Maximum="1" Name="State bit 13" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit13" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="6" Count="1" Maximum="1" Name="State bit 14" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit14" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="7" Count="1" Maximum="1" Name="State bit 15" NvtType="NVT_TYPE_BITF" Offset="1" ProgrammaticName="bit15" ScaleA="1" Size="1" Unit="boolean" /></NetworkVariableType><NetworkVariableType BaseType="Struct[6]" Count="6" Index="84" Name="Time stamp" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_time_stamp" Size="7" Unit="year, month, day, hour, minute, second"><NetworkVariableType BaseType="SignedLong" IsInteger="1" IsScalar="1" Maximum="3000" Minimum="-1" Name="Year" NvtType="NVT_TYPE_SIGNED_LONG" ProgrammaticName="year" ScaleA="1" Signed="1" Size="2" Unit="years" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="12" Name="Month" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="2" ProgrammaticName="month" ScaleA="1" Size="1" Unit="months" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="31" Name="Day" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="3" ProgrammaticName="day" ScaleA="1" Size="1" Unit="days" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="23" Name="Hour" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="4" ProgrammaticName="hour" ScaleA="1" Size="1" Unit="hours" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="59" Name="Minute" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="5" ProgrammaticName="minute" ScaleA="1" Size="1" Unit="minutes" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="59" Name="Second" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="6" ProgrammaticName="second" ScaleA="1" Size="1" Unit="seconds" /></NetworkVariableType><NetworkVariableType BaseType="Struct[14]" Count="14" Index="88" Name="Alarm status" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_alarm" Size="29" Unit="&lt;Invalid string resource&gt;"><NetworkVariableType BaseType="Array[6] of Location array element" Count="6" IsArray="1" Name="Location" NvtType="NVT_TYPE_ARRAY" ProgrammaticName="location" Size="6" Unit="array of 6 bytes"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Location array element" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="5" ProgrammaticName="location[5]" ScaleA="1" Size="1" Unit="8-bit unsigned byte" /></NetworkVariableType><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Object ID" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="6" ProgrammaticName="object_id" ScaleA="1" Size="2" Unit="object index" /><NetworkVariableType BaseType="Enum alarm_type_t" Maximum="32" Minimum="-13" Name="Alarm type" NvtType="NVT_TYPE_ENUM" Offset="8" ProgrammaticName="alarm_type" Signed="1" Size="1" Unit="alarm type names" EnumerationIndex="7" /><NetworkVariableType BaseType="Enum priority_level_t" Maximum="11" Minimum="-1" Name="Priority level" NvtType="NVT_TYPE_ENUM" Offset="9" ProgrammaticName="priority_level" Signed="1" Size="1" Unit="priority level names" EnumerationIndex="8" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Index of NV" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="10" ProgrammaticName="index_to_SNVT" ScaleA="1" Size="2" Unit="index of NV causing alarm" /><NetworkVariableType BaseType="Array[4] of Value array element" Count="4" IsArray="1" Name="Value" NvtType="NVT_TYPE_ARRAY" Offset="12" ProgrammaticName="value" Size="4" Unit="array of 4 bytes"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Value array element" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="15" ProgrammaticName="value[3]" ScaleA="1" Size="1" Unit="byte" /></NetworkVariableType><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="3000" Name="Year" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="16" ProgrammaticName="year" ScaleA="1" Size="2" Unit="years" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="12" Name="Month" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="18" ProgrammaticName="month" ScaleA="1" Size="1" Unit="months" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="31" Name="Day" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="19" ProgrammaticName="day" ScaleA="1" Size="1" Unit="days" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="23" Name="Hour" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="20" ProgrammaticName="hour" ScaleA="1" Size="1" Unit="hours" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="59" Name="Minute" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="21" ProgrammaticName="minute" ScaleA="1" Size="1" Unit="minutes" /><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="59" Name="Second" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="22" ProgrammaticName="second" ScaleA="1" Size="1" Unit="seconds" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="999" Name="Millisecond" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="23" ProgrammaticName="millisecond" ScaleA="1" Size="2" Unit="milliseconds" /><NetworkVariableType BaseType="Array[4] of Alarm limit array element" Count="4" IsArray="1" Name="Alarm limit" NvtType="NVT_TYPE_ARRAY" Offset="25" ProgrammaticName="alarm_limit" Size="4" Unit="array of 4 bytes"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="255" Name="Alarm limit array element" NvtType="NVT_TYPE_UNSIGNED_SHORT" Offset="28" ProgrammaticName="alarm_limit[3]" ScaleA="1" Size="1" Unit="byte" /></NetworkVariableType></NetworkVariableType><NetworkVariableType BaseType="Struct[2]" Count="2" Index="90" Name="File position" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_file_pos" Size="6" Unit="pointer, length"><NetworkVariableType BaseType="SignedQuad" IsInteger="1" IsScalar="1" Maximum="2147483647" Name="Read/Write pointer" NvtType="NVT_TYPE_SIGNED_QUAD" ProgrammaticName="rw_ptr" ScaleA="1" Signed="1" Size="4" Unit="file byte address" /><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Read/Write length" NvtType="NVT_TYPE_UNSIGNED_LONG" Offset="4" ProgrammaticName="rw_length" ScaleA="1" Size="2" Unit="number of bytes" /></NetworkVariableType><NetworkVariableType BaseType="Struct[2]" Count="2" Index="92" Name="Object request" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_obj_request" Size="3" Unit="ID, request"><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Object ID" NvtType="NVT_TYPE_UNSIGNED_LONG" ProgrammaticName="object_id" ScaleA="1" Size="2" Unit="object index" /><NetworkVariableType BaseType="Enum object_request_t" Maximum="24" Minimum="-1" Name="Object request" NvtType="NVT_TYPE_ENUM" Offset="2" ProgrammaticName="object_request" Signed="1" Size="1" Unit="object request names" EnumerationIndex="10" /></NetworkVariableType><NetworkVariableType BaseType="Struct[26]" Count="26" Index="93" Name="Object status" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_obj_status" Size="6" Unit="ID, status flags"><NetworkVariableType BaseType="UnsignedLong" IsInteger="1" IsScalar="1" Maximum="65535" Name="Object ID" NvtType="NVT_TYPE_UNSIGNED_LONG" ProgrammaticName="object_id" ScaleA="1" Size="2" Unit="object index" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Invalid-ID flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="invalid_id" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="1" Count="1" Maximum="1" Name="Invalid-request flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="invalid_request" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="2" Count="1" Maximum="1" Name="Disabled flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="disabled" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="3" Count="1" Maximum="1" Name="Out-of-limits flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="out_of_limits" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="4" Count="1" Maximum="1" Name="Open-circuit flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="open_circuit" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="5" Count="1" Maximum="1" Name="Out-of-service flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="out_of_service" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="6" Count="1" Maximum="1" Name="Mechanical-fault flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="mechanical_fault" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="7" Count="1" Maximum="1" Name="Feedback-failure flag" NvtType="NVT_TYPE_BITF" Offset="2" ProgrammaticName="feedback_failure" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Over-range flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="over_range" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="1" Count="1" Maximum="1" Name="Under-range flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="under_range" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="2" Count="1" Maximum="1" Name="Electrical-fault flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="electrical_fault" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="3" Count="1" Maximum="1" Name="Unable-to-measure flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="unable_to_measure" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="4" Count="1" Maximum="1" Name="Communications-failure flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="comm_failure" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="5" Count="1" Maximum="1" Name="Failed-self-test flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="fail_self_test" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="6" Count="1" Maximum="1" Name="Self-test-in-progress flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="self_test_in_progress" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="7" Count="1" Maximum="1" Name="Locked-out flag" NvtType="NVT_TYPE_BITF" Offset="3" ProgrammaticName="locked_out" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" Count="1" Maximum="1" Name="Manual-control flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="manual_control" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="1" Count="1" Maximum="1" Name="Input-alarm flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="in_alarm" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="2" Count="1" Maximum="1" Name="Input-override flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="in_override" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="3" Count="1" Maximum="1" Name="Report-mask flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="report_mask" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="4" Count="1" Maximum="1" Name="Programming-mode flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="programming_mode" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="5" Count="1" Maximum="1" Name="Programming-fail flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="programming_fail" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="6" Count="1" Maximum="1" Name="Alarm-notify-disabled flag" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="alarm_notify_disabled" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Bit" BitOffset="7" Count="1" Maximum="1" Name="Reset" NvtType="NVT_TYPE_BITF" Offset="4" ProgrammaticName="reset_complete" ScaleA="1" Size="1" Unit="boolean" /><NetworkVariableType BaseType="Unsigned 8 Bit" Count="8" Name="reserved2" NvtType="NVT_TYPE_BITF" Offset="5" ProgrammaticName="reserved2" ScaleA="1" Size="1" Unit="&lt;Invalid string resource&gt;" /></NetworkVariableType><NetworkVariableType BaseType="Struct[2]" Count="2" Index="95" Name="Switch" NvtType="NVT_TYPE_STRUCT" ProgrammaticName="SNVT_switch" Size="2" Unit="value, state"><NetworkVariableType BaseType="UnsignedShort" IsInteger="1" IsScalar="1" Maximum="200" Name="Value" NvtType="NVT_TYPE_UNSIGNED_SHORT" ProgrammaticName="value" ScaleA="5" ScaleB="-1" Size="1" Unit="% of full level" /><NetworkVariableType BaseType="SignedShort" IsInteger="1" IsScalar="1" Maximum="1" Minimum="-1" Name="State" NvtType="NVT_TYPE_SIGNED_SHORT" Offset="1" ProgrammaticName="state" ScaleA="1" Signed="1" Size="1" Unit="state code" /></NetworkVariableType><NetworkVariableType BaseType="SignedLong" Index="105" IsInteger="1" IsScalar="1" Maximum="32767" Minimum="-27317" Name="Temperature" NvtType="NVT_TYPE_SIGNED_LONG" ProgrammaticName="SNVT_temp_p" ScaleA="1" ScaleB="-2" Signed="1" Size="2" Unit="degrees Celsius" /><NetworkVariableType BaseType="Enum hvac_t" Index="108" Maximum="20" Minimum="-1" Name="HVAC mode" NvtType="NVT_TYPE_ENUM" ProgrammaticName="SNVT_hvac_mode" Signed="1" Size="1" Unit="HVAC mode names" EnumerationIndex="14" /></NetworkVariableTypes><Enumerations><Enumeration Index="5" Tag="file_request_t"><Value Name="Invalid Value" ProgrammaticName="FR_NUL" RawValue="-1" /><Value Name="Sequential access read" ProgrammaticName="FR_OPEN_TO_SEND" /><Value Name="Sequential access write" ProgrammaticName="FR_OPEN_TO_RECEIVE" RawValue="1" /><Value Name="Close and save file" ProgrammaticName="FR_CLOSE_FILE" RawValue="2" /><Value Name="Close and delete file" ProgrammaticName="FR_CLOSE_DELETE_FILE" RawValue="3" /><Value Name="Retrieve directory entry" ProgrammaticName="FR_DIRECTORY_LOOKUP" RawValue="4" /><Value Name="Random access read" ProgrammaticName="FR_OPEN_TO_SEND_RA" RawValue="5" /><Value Name="Random access write" ProgrammaticName="FR_OPEN_TO_RECEIVE_RA" RawValue="6" /></Enumeration><Enumeration Index="6" Tag="file_status_t"><Value Name="Invalid Value" ProgrammaticName="FS_NUL" RawValue="-1" /><Value Name="File transfer successful" ProgrammaticName="FS_XFER_OK" /><Value Name="Directory lookup successful" ProgrammaticName="FS_LOOKUP_OK" RawValue="1" /><Value Name="Error on opening file" ProgrammaticName="FS_OPEN_FAIL" RawValue="2" /><Value Name="Error on directory lookup" ProgrammaticName="FS_LOOKUP_ERR" RawValue="3" /><Value Name="File transfer in progress" ProgrammaticName="FS_XFER_UNDERWAY" RawValue="4" /><Value Name="Error on reading/writing file" ProgrammaticName="FS_IO_ERR" RawValue="5" /><Value Name="File transfer timed out" ProgrammaticName="FS_TIMEOUT_ERR" RawValue="6" /><Value Name="Window sequence error" ProgrammaticName="FS_WINDOW_ERR" RawValue="7" /><Value Name="Authentication failure" ProgrammaticName="FS_AUTH_ERR" RawValue="8" /><Value Name="Access mode not supported" ProgrammaticName="FS_ACCESS_UNAVAIL" RawValue="9" /><Value Name="Random access beyond EOF" ProgrammaticName="FS_SEEK_INVALID" RawValue="10" /><Value Name="FS_SEEK_WAIT" ProgrammaticName="FS_SEEK_WAIT" RawValue="11" /></Enumeration><Enumeration Index="7" Tag="alarm_type_t"><Value Name="Update sequence header" ProgrammaticName="AL_HEADER" RawValue="-13" /><Value Name="Update sequence footer" ProgrammaticName="AL_FOOTER" RawValue="-12" /><Value Name="Debug information (not an alarm)" ProgrammaticName="AL_DEBUG" RawValue="-11" /><Value Name="Information update (not an alarm)" ProgrammaticName="AL_INFO" RawValue="-10" /><Value Name="System information (not an alarm)" ProgrammaticName="AL_SYSTEM_INFO" RawValue="-6" /><Value Name="The value is invalid" ProgrammaticName="AL_VALUE_INVALID" RawValue="-5" /><Value Name="The value is a constant value (not an alarm)" ProgrammaticName="AL_CONSTANT" RawValue="-4" /><Value Name="The device is offline" ProgrammaticName="AL_OFFLINE" RawValue="-3" /><Value Name="Alarm condition unknown (may be due to a communication failure or hardware failure)" ProgrammaticName="AL_UNKNOWN" RawValue="-2" /><Value Name="Invalid alarm type value (alarm condition not specified)" ProgrammaticName="AL_NUL" RawValue="-1" /><Value Name="No alarm condition present" ProgrammaticName="AL_NO_CONDITION" /><Value Name="Unspecified alarm condition present" ProgrammaticName="AL_ALM_CONDITION" RawValue="1" /><Value Name="Total/service interval alarm 1 (component requires service or maintenance)" ProgrammaticName="AL_TOT_SVC_ALM_1" RawValue="2" /><Value Name="Total/service interval alarm 2" ProgrammaticName="AL_TOT_SVC_ALM_2" RawValue="3" /><Value Name="Total/service interval alarm 3" ProgrammaticName="AL_TOT_SVC_ALM_3" RawValue="4" /><Value Name="Alarm low limit alarm clear 1" ProgrammaticName="AL_LOW_LMT_CLR_1" RawValue="5" /><Value Name="Alarm low limit alarm clear 2" ProgrammaticName="AL_LOW_LMT_CLR_2" RawValue="6" /><Value Name="Alarm high limit alarm clear 1" ProgrammaticName="AL_HIGH_LMT_CLR_1" RawValue="7" /><Value Name="Alarm high limit alarm clear 2" ProgrammaticName="AL_HIGH_LMT_CLR_2" RawValue="8" /><Value Name="Alarm low limit alarm 1" ProgrammaticName="AL_LOW_LMT_ALM_1" RawValue="9" /><Value Name="Alarm low limit alarm 2" ProgrammaticName="AL_LOW_LMT_ALM_2" RawValue="10" /><Value Name="Alarm high limit alarm 1" ProgrammaticName="AL_HIGH_LMT_ALM_1" RawValue="11" /><Value Name="Alarm high limit alarm 2" ProgrammaticName="AL_HIGH_LMT_ALM_2" RawValue="12" /><Value Name="Fire alarm condition" ProgrammaticName="AL_FIR_ALM" RawValue="13" /><Value Name="Fire pre-alarm condition" ProgrammaticName="AL_FIR_PRE_ALM" RawValue="14" /><Value Name="Fire-related trouble (fault) condition" ProgrammaticName="AL_FIR_TRBL" RawValue="15" /><Value Name="Fire-related supervisory condition (e.g., sprinkler pressure)" ProgrammaticName="AL_FIR_SUPV" RawValue="16" /><Value Name="Fire-related test-mode alarm condition" ProgrammaticName="AL_FIR_TEST_ALM" RawValue="17" /><Value Name="Fire-related test-mode pre-alarm condition" ProgrammaticName="AL_FIR_TEST_PRE_ALM" RawValue="18" /><Value Name="Fire-related maximum environmental compensation level reached" ProgrammaticName="AL_FIR_ENVCOMP_MAX" RawValue="19" /><Value Name="Fire-related abnormal input condition" ProgrammaticName="AL_FIR_MONITOR_COND" RawValue="20" /><Value Name="Fire-related maintenance alert" ProgrammaticName="AL_FIR_MAINT_ALERT" RawValue="21" /><Value Name="Fatal application error" ProgrammaticName="AL_FATAL_ERROR" RawValue="30" /><Value Name="Other error condition" ProgrammaticName="AL_ERROR" RawValue="31" /><Value Name="Other warning condition" ProgrammaticName="AL_WARNING" RawValue="32" /></Enumeration><Enumeration Index="8" Tag="priority_level_t"><Value Name="Invalid Value" ProgrammaticName="PR_NUL" RawValue="-1" /><Value Name="Lowest alarm priority level" ProgrammaticName="PR_LEVEL_0" /><Value Name="PR_LEVEL_1" ProgrammaticName="PR_LEVEL_1" RawValue="1" /><Value Name="PR_LEVEL_2" ProgrammaticName="PR_LEVEL_2" RawValue="2" /><Value Name="Highest alarm priority level" ProgrammaticName="PR_LEVEL_3" RawValue="3" /><Value Name="Life Safety Fire Alarms (BACnet Priority 2)" ProgrammaticName="PR_1" RawValue="4" /><Value Name="Property Safety Fire Alarms (BACnet Priority 3)" ProgrammaticName="PR_2" RawValue="5" /><Value Name="Fire Supervisory Alarm (BACnet Priority 4)" ProgrammaticName="PR_3" RawValue="6" /><Value Name="Fire Trouble/Fault (Display) (BACnet Priority 5)" ProgrammaticName="PR_4" RawValue="7" /><Value Name="Fire Pre-Alarm, HVAC Critical Equipment Alarm (BACnet Priority 6)" ProgrammaticName="PR_6" RawValue="8" /><Value Name="HVAC Alarms (BACnet Priority 8)" ProgrammaticName="PR_8" RawValue="9" /><Value Name="HVAC Critical Equipment RTN, Fire RTN (Display) (BACnet Priority 10)" ProgrammaticName="PR_10" RawValue="10" /><Value Name="HVAC RTN (lowest priority) (BACnet Priority 16)" ProgrammaticName="PR_16" RawValue="11" /></Enumeration><Enumeration Index="10" Tag="object_request_t"><Value Name="Invalid Value" ProgrammaticName="RQ_NUL" RawValue="-1" /><Value Name="Enable object and remove override" ProgrammaticName="RQ_NORMAL" /><Value Name="Disable object" ProgrammaticName="RQ_DISABLED" RawValue="1" /><Value Name="Report object status" ProgrammaticName="RQ_UPDATE_STATUS" RawValue="2" /><Value Name="Perform object self-test" ProgrammaticName="RQ_SELF_TEST" RawValue="3" /><Value Name="Update alarm status" ProgrammaticName="RQ_UPDATE_ALARM" RawValue="4" /><Value Name="Report status bit mask" ProgrammaticName="RQ_REPORT_MASK" RawValue="5" /><Value Name="Override object" ProgrammaticName="RQ_OVERRIDE" RawValue="6" /><Value Name="Enable object" ProgrammaticName="RQ_ENABLE" RawValue="7" /><Value Name="Remove object override" ProgrammaticName="RQ_RMV_OVERRIDE" RawValue="8" /><Value Name="Clear object status" ProgrammaticName="RQ_CLEAR_STATUS" RawValue="9" /><Value Name="Clear object alarm" ProgrammaticName="RQ_CLEAR_ALARM" RawValue="10" /><Value Name="Enable alarm notification" ProgrammaticName="RQ_ALARM_NOTIFY_ENABLED" RawValue="11" /><Value Name="Disable alarm notification" ProgrammaticName="RQ_ALARM_NOTIFY_DISABLED" RawValue="12" /><Value Name="Enable object for manual control" ProgrammaticName="RQ_MANUAL_CTRL" RawValue="13" /><Value Name="Enable object for remote control" ProgrammaticName="RQ_REMOTE_CTRL" RawValue="14" /><Value Name="Enable programming of special configuration properties" ProgrammaticName="RQ_PROGRAM" RawValue="15" /><Value Name="Clear reset-complete flag (reset_complete)" ProgrammaticName="RQ_CLEAR_RESET" RawValue="16" /><Value Name="Execute reset-sequence of object" ProgrammaticName="RQ_RESET" RawValue="17" /><Value Name="Clear data log" ProgrammaticName="RQ_CLEAR_LOG" RawValue="18" /><Value Name="Load the program specified in SCPTprogSelect" ProgrammaticName="RQ_LOAD_PROGRAM" RawValue="19" /><Value Name="Run the currently loaded program. If the program was halted manually, this will resume running from the point is was halted." ProgrammaticName="RQ_RUN_PROGRAM" RawValue="20" /><Value Name="Halt the currently loaded program. This will preserve the program state and a subsequent Run command will resume the program from where it was halted." ProgrammaticName="RQ_HALT_PROGRAM" RawValue="21" /><Value Name="Restart the currently loaded program from the beginning." ProgrammaticName="RQ_RESTART_PROGRAM" RawValue="22" /><Value Name="Unload the currently loaded program" ProgrammaticName="RQ_UNLOAD_PROGRAM" RawValue="23" /><Value Name="Executes the next logical operation (line, statement, instruction, logic block, etc.) of the currently loaded program. The program state must be &quot;idle&quot; or &quot;halted&quot; to accept this command, otherwise it will be ignored. The program returns to &quot;halted&quot; state after execution of this command" ProgrammaticName="RQ_STEP_PROGRAM" RawValue="24" /></Enumeration><Enumeration Index="14" Tag="hvac_t"><Value Name="Invalid value" ProgrammaticName="HVAC_NUL" RawValue="-1" /><Value Name="Controller automatically changes between application modes" ProgrammaticName="HVAC_AUTO" /><Value Name="Heating only" ProgrammaticName="HVAC_HEAT" RawValue="1" /><Value Name="Application-specific morning warm-up" ProgrammaticName="HVAC_MRNG_WRMUP" RawValue="2" /><Value Name="Cooling only" ProgrammaticName="HVAC_COOL" RawValue="3" /><Value Name="Application-specific night purge" ProgrammaticName="HVAC_NIGHT_PURGE" RawValue="4" /><Value Name="Application-specific pre-cool" ProgrammaticName="HVAC_PRE_COOL" RawValue="5" /><Value Name="Controller not controlling outputs" ProgrammaticName="HVAC_OFF" RawValue="6" /><Value Name="Equipment being tested" ProgrammaticName="HVAC_TEST" RawValue="7" /><Value Name="Emergency heat mode (heat pump)" ProgrammaticName="HVAC_EMERG_HEAT" RawValue="8" /><Value Name="Air not conditioned, fan turned on" ProgrammaticName="HVAC_FAN_ONLY" RawValue="9" /><Value Name="Cooling with compressor not running" ProgrammaticName="HVAC_FREE_COOL" RawValue="10" /><Value Name="Ice-making mode" ProgrammaticName="HVAC_ICE" RawValue="11" /><Value Name="Maximum heating mode" ProgrammaticName="HVAC_MAX_HEAT" RawValue="12" /><Value Name="Economic Heat/Cool mode" ProgrammaticName="HVAC_ECONOMY" RawValue="13" /><Value Name="Dehumidification mode" ProgrammaticName="HVAC_DEHUMID" RawValue="14" /><Value Name="Calibration mode" ProgrammaticName="HVAC_CALIBRATE" RawValue="15" /><Value Name="Emergency cool mode" ProgrammaticName="HVAC_EMERG_COOL" RawValue="16" /><Value Name="Emergency steam mode" ProgrammaticName="HVAC_EMERG_STEAM" RawValue="17" /><Value Name="HVAC_MAX_COOL" ProgrammaticName="HVAC_MAX_COOL" RawValue="18" /><Value Name="HVAC_HVC_LOAD" ProgrammaticName="HVAC_HVC_LOAD" RawValue="19" /><Value Name="HVAC_NO_LOAD" ProgrammaticName="HVAC_NO_LOAD" RawValue="20" /></Enumeration></Enumerations></File><File IsFiltered="1" DataVersion="14.0" FileType="Fpt" FormatVersion="5.0" MajorVersion="14" Path="C:\LonWorks\Types\STANDARD.FPT" ProgId="00 00 00 00 00 00 00 00" ReferenceId="00 00 00 00 00 00 00 00" TimeStamp="12/13/2012 18:20:12"><FunctionalProfiles><FunctionalProfile Index="1" Name="Node Object" Principal="2" ProgrammaticName="SFPTnodeObject"><NetworkVariable IsMandatory="1" MemberNumber="1" Name="Object request" ProgrammaticName="nviRequest" TypeIndex="92" /><NetworkVariable IsMandatory="1" MemberNumber="2" Name="Object status" ProgrammaticName="nvoStatus" TypeIndex="93" /><NetworkVariable MemberNumber="5" Name="File request" ProgrammaticName="nviFileReq" TypeIndex="73" /><NetworkVariable MemberNumber="6" Name="File status" ProgrammaticName="nvoFileStat" TypeIndex="74" /><NetworkVariable MemberNumber="7" Name="File position" ProgrammaticName="nviFilePos" TypeIndex="90" /></FunctionalProfile></FunctionalProfiles></File></Catalog>]]></LonInterface>
