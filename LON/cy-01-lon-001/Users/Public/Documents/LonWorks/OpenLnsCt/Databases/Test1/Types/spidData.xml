@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (C) 2003-2012 LonMark International -->
+<?xml-stylesheet type="text/xsl" href="http://types.lonmark.org/spid/spidData.xsl"?>
+<SPIDData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:types-lonmark-org:spid http://types.lonmark.org/spid/spidData.xsd">
+	<Contents MajorVersion="1" MinorVersion="0" CreationDate="1352937044" Format="4" Content="87">
+		<FileDescription>Standard Program ID Data</FileDescription>
+		<Changes>
+			<Change ChangeDate="20121114T215044Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="87">Renamed Partner: “Viconics Electronics Inc.” to “Schneider Electric (Viconics Electronics Inc.)”</Change>
+			<Change ChangeDate="20121114T213102Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="87">Allocated MID: 242 for “Simon, S.A.”</Change>
+			<Change ChangeDate="20121114T212213Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="87">Allocated MID: 241 for “Honeywell International, Inc. (E-Mon)”</Change>
+			<Change ChangeDate="20120614T172109Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="86">Allocated MID: 240 for “Hoshizaki America”</Change>
+			<Change ChangeDate="20120402T181132Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="85">Allocated MID: 239 for “Theben HTS AG”</Change>
+			<Change ChangeDate="20120221T200406Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="84">Updated version number of 8500-series profiles in Device Classes to 8500_20</Change>
+			<Change ChangeDate="20120221T200312Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="84">Allocated MID: 238 for “Blue Earth, Inc.”</Change>
+			<Change ChangeDate="20111022T184132Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="83">Renamed Partner: “Midea Heating &amp; Ventilation Equipment Ltd.” to “GD Midea Heating&amp;Ventilating Equipment Co.,Ltd.”</Change>
+			<Change ChangeDate="20111012T215224Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="82">Allocated MID: 237 for “Veris Industries”</Change>
+			<Change ChangeDate="20111012T215113Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="82">Added Partner: “Veris Industries”</Change>
+			<Change ChangeDate="20111011T212154Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="81">Allocated MID: 236 for “Vossloh-Schwabe Deutschland GmbH”</Change>
+			<Change ChangeDate="20111011T212104Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="81">Added Partner: “Vossloh-Schwabe Deutschland GmbH”</Change>
+			<Change ChangeDate="20111011T211842Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="81">Allocated MID: 235 for “Midea Heating &amp; Ventilation Equipment Ltd.”</Change>
+			<Change ChangeDate="20111011T211812Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="81">Added Partner: “Midea Heating &amp; Ventilation Equipment Ltd.”</Change>
+			<Change ChangeDate="20110927T165437Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="80">Allocated MID: 234 for “Samsung SDS”</Change>
+			<Change ChangeDate="20110927T165412Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="80">Added Partner: “Samsung SDS”</Change>
+			<Change ChangeDate="20110406T140634Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="79">Allocated Temporary MID: 1047948 = “LonMark - AFS1”</Change>
+			<Change ChangeDate="20110325T201914Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="78">Reserved MID: 234</Change>
+			<Change ChangeDate="20110325T201151Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="78">Allocated Reserved MID: 195 = “Quark Communications Inc.”</Change>
+			<Change ChangeDate="20110304T205821Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="77">Added MID: “Citylone”</Change>
+			<Change ChangeDate="20110120T161148Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="76">Added MID: “Honeywell International, Inc. (12) - Field Programmed”</Change>
+			<Change ChangeDate="20110120T161103Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="76">Added Usage Field: “Programmable” to support Static Programmable Device profile</Change>
+			<Change ChangeDate="20101123T154713Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="75">Added Partner: “Lennox Industries”</Change>
+			<Change ChangeDate="20101104T135907Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="75">Added Device Classes: “Global Solar Radiation Sensor” as 10.15 under “Sensors”</Change>
+			<Change ChangeDate="20100618T185052Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Consolidated: “Distech Controls” URLs to single database listing under 1016</Change>
+			<Change ChangeDate="20100618T184821Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “Acelia - Comtec Technologie” to “Distech Controls SAS”</Change>
+			<Change ChangeDate="20100618T184513Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Consolidated: “Schneider Electric” URLs to single database listing under 211</Change>
+			<Change ChangeDate="20100618T184304Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “TAC, LLC” to “Schneider Electric (TAC LLC)”</Change>
+			<Change ChangeDate="20100618T184107Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “Tour Andover Controls (TAC Americas / CSI)” to “Schneider Electric (CSI)”</Change>
+			<Change ChangeDate="20100618T183942Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “Tour Andover Controls TAC AB (TAC AB)” to “Schneider Electric (TAC AB)”</Change>
+			<Change ChangeDate="20100618T183716Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “Tour Andover Controls TAC AB (Andover Controls)” to “Schneider Electric (Andover)”</Change>
+			<Change ChangeDate="20100618T182654Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “CIRCON Systems Corp.” to “Efficient Building Automation Corp. (Circon)”</Change>
+			<Change ChangeDate="20100618T181401Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="74">Renamed Partner: “TLON GmbH” to “iPLON GmbH”</Change>
+			<Change ChangeDate="20100610T230719Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="73">Added Partner: “Hunter Douglas”</Change>
+			<Change ChangeDate="20100402T140901Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Added Device Classes: “Electric Vehicles” as 95.00 with subclasses under “Transportation”</Change>
+			<Change ChangeDate="20100402T135721Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Added Device Classes: “Programer”, “Static Programmable”, and “Dynamic Programmable” under new 04.00 “Programmables”</Change>
+			<Change ChangeDate="20100402T134503Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Added Device Classes: “Outdoor Luminair Controller” as 35.12 under new 35.00 “Outdoor Lighting”</Change>
+			<Change ChangeDate="20100402T125853Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Modified Naming: “ANSI/CEA-709.1” router reference to “ISO/IEC 14908.1” reference</Change>
+			<Change ChangeDate="20100402T125234Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Added Channel: “ANSI/CEA-852.1” channel reference as “IP-852.1” unapproved without a number</Change>
+			<Change ChangeDate="20100402T124613Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="72">Modified Naming: “ANSI/CEA” channel references to “ISO/IEC” channel references</Change>
+			<Change ChangeDate="20081003T210152Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="71">Renamed Partner: “Matsushita Electric Works, Ltd.” to “Panasonic Electric Works Co., Ltd.”</Change>
+			<Change ChangeDate="20080818T203812Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="70">Added Partner: “SPEGA - Spelsberg Gebaudeautomation GmbH + Co. KG”</Change>
+			<Change ChangeDate="20080423T155021Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="69">Added Partner: “AirTest Technologies, Inc.”</Change>
+			<Change ChangeDate="20080423T154833Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="69">Added Partner: “PIC Electronics”</Change>
+			<Change ChangeDate="20071230T210818Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Removed: “EIA” part of ANSI/CEA-709.x channel references</Change>
+			<Change ChangeDate="20071230T210502Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Consolidated: “Schneider Electric SA” multi-company MIDs</Change>
+			<Change ChangeDate="20071230T205243Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Added MID: “Merten/SVEA” for “Schneider Electric SA”</Change>
+			<Change ChangeDate="20071230T204732Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Added Partner: “Paragon Controls”</Change>
+			<Change ChangeDate="20071230T204429Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Added Partner: “ISDE”</Change>
+			<Change ChangeDate="20071230T203843Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Added Partner: “M-SYSTEM CO., LTD.”</Change>
+			<Change ChangeDate="20071230T203512Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="68">Added Partner: “ELKA-Elektronik GmbH”</Change>
+			<Change ChangeDate="20070831T215107Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="67">Added Partner: “Siteco Control GmbH”</Change>
+			<Change ChangeDate="20070831T214142Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="67">Added Partner: “Schneider Electric”</Change>
+			<Change ChangeDate="20070831T213619Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="67">Renamed Partner: “Lexel Group” to “Schneider Electric (Lexel Group)”</Change>
+			<Change ChangeDate="20070125T170113Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="66">Changed links for Manufacturers and Member Area for new LonMark Web site structure</Change>
+			<Change ChangeDate="20070125T164927Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="66">Corrected TP/RS485 channels’ standard references</Change>
+			<Change ChangeDate="20070109T203014Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="65">Added Partner: “Voyant Solutions, LLC”</Change>
+			<Change ChangeDate="20070109T203009Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="65">Directed recently approved profiles 0132, 0136, and 0137 to the main Profiles page because they are not published but they are no longer in development</Change>
+			<Change ChangeDate="20070109T191521Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="64">Renamed Partner: “Invensys Building Systems Inc.” to “TAC, LLC”</Change>
+			<Change ChangeDate="20061102T182307Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="63">Renamed Partner: “Comtec Technologie” to “Acelia - Comtec Technologie”</Change>
+			<Change ChangeDate="20061025T184434Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="62">Added Partner: “Nanjing Lianhong Automation Co. Ltd.”</Change>
+			<Change ChangeDate="20061013T203414Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="61">Added Partner: “Quantum Automation Pte Ltd.”</Change>
+			<Change ChangeDate="20060804T182552Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="60">Reserved MID 217 for Partner: “Quantum Automation Pte Ltd.”</Change>
+			<Change ChangeDate="20060804T150943Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="59">Added Partner: “LS Industrial Systems Co., Ltd.”</Change>
+			<Change ChangeDate="20060621T191228Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="58">Added manufacturer-specific (non LonMark) “Pyxos-FT” channel for “Echelon Corporation”</Change>
+			<Change ChangeDate="20060620T205412Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="57">Added Partner: “SPI Systems Ltd.”</Change>
+			<Change ChangeDate="20060505T020903Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="56">Added the missing 9111 and 9112 profiles to the Device Classes but linked them to the general Profiles page due to their PDFs not being available at the time.  The PDFs are to be created from the new format of the XML-based Types site (date: TBD)</Change>
+			<Change ChangeDate="20060328T161534Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="55">Changed the draft “Bus Loop Monitor” profile name to “Channel Continuity Monitor” as defined by the Connectivity Task Group</Change>
+			<Change ChangeDate="20060328T161347Z" ChangeAuthor="Jeremy J. Roberts" MajorVersion="1" MinorVersion="0" Format="4" Content="55">Added this new “Changes” element to the format of this spidData.xml file to allow for tracking changes, and incremented the Format attribute of the Contents element to 4</Change>
+		</Changes>
+	</Contents>
+	<ManufacturerIDs>
+		<ManufacturerID Name="ABB Gebäudetechnik AG" Number="104" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=717"/>
+		<ManufacturerID Name="ABB Oy" Number="32" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=250"/>
+		<ManufacturerID Name="ABB Metering SVM" Number="39" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=30"/>
+		<ManufacturerID Name="Acutherm" Number="91" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=239"/>
+		<ManufacturerID Name="Adic Co., Ltd." Number="161" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1523"/>
+		<ManufacturerID Name="Agtatec AG" Number="171" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1567"/>
+		<ManufacturerID Name="AirTest Technologies, Inc." Number="229" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3137"/>
+		<ManufacturerID Name="Alco Controls (Copeland Corp.)" Number="83" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=72"/>
+		<ManufacturerID Name="Alstom Transport SA" Number="137" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=380"/>
+		<ManufacturerID Name="ALYA International Inc." Number="65" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Aquametro AG" Number="168" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1783"/>
+		<ManufacturerID Name="ATMI GmbH (MST Technology GmbH)" Number="63" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=168"/>
+		<ManufacturerID Name="Auslon" Number="51" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Axsys Automation" Number="160" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=608"/>
+		<ManufacturerID Name="BadgerMeter Inc. (Data Industrial Corporation)" Number="202" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1562"/>
+		<ManufacturerID Name="BELIMO Automation AG" Number="97" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=50"/>
+		<ManufacturerID Name="Building Automation Products, Inc." Number="214" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2388"/>
+		<ManufacturerID Name="Blue Earth, Inc." Number="238" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3201"/>
+		<ManufacturerID Name="C&amp;K Systems, Inc." Number="93" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=57"/>
+		<ManufacturerID Name="Camille Bauer AG" Number="54" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=22"/>
+		<ManufacturerID Name="Capelon AB" Number="185" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1080"/>
+		<ManufacturerID Name="Capelon AB (CeTeLaB)" Number="144" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1080"/>
+		<ManufacturerID Name="CAREL S.p.A." Number="148" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1151"/>
+		<ManufacturerID Name="Carrier Corporation" Number="178" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=59"/>
+		<ManufacturerID Name="CIAC" Number="145" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=631"/>
+		<ManufacturerID Name="Citylone" Number="233" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3179"/>
+		<ManufacturerID Name="CNA Engineers Pte Ltd. (Hygreen Systems Pte. Ltd.)" Number="99" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=718"/>
+		<ManufacturerID Name="Coactive Networks, Inc." Number="89" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Comelta" Number="27" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=6"/>
+		<ManufacturerID Name="Computer Process Controls" Number="81" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=67"/>
+		<ManufacturerID Name="Continental Control Sys" Number="34" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=12"/>
+		<ManufacturerID Name="Control Solutions, Inc." Number="23" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=71"/>
+		<ManufacturerID Name="Control Techniques" Number="211" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2661"/>
+		<ManufacturerID Name="Cristal Controls Ltd." Number="66" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=73"/>
+		<ManufacturerID Name="CTI Products, Inc." Number="96" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=7"/>
+		<ManufacturerID Name="Cummins Engine Co." Number="74" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=75"/>
+		<ManufacturerID Name="Cypress Semiconductor" Number="175" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=570"/>
+		<ManufacturerID Name="D&amp;H Elektronik Anlagenbau" Number="64" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="DAIKIN Industries, Ltd." Number="135" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=77"/>
+		<ManufacturerID Name="Danfoss" Number="8" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=10"/>
+		<ManufacturerID Name="DCI Co., Ltd." Number="118" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1093"/>
+		<ManufacturerID Name="Delmatic Ltd." Number="45" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=82"/>
+		<ManufacturerID Name="Develco Elektronik ApS" Number="69" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=85"/>
+		<ManufacturerID Name="Distech Controls Inc." Number="131" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1016"/>
+		<ManufacturerID Name="Distech Controls SAS" Number="103" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1016"/>
+		<ManufacturerID Name="Douglas Lighting Controls" Number="68" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=87"/>
+		<ManufacturerID Name="Draeger Safety AG &amp; Co. KGaA" Number="203" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2514"/>
+		<ManufacturerID Name="Drucegrove Ltd." Number="192" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=574"/>
+		<ManufacturerID Name="Eaton Electrical Inc. (MEM 250)" Number="26" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=129"/>
+		<ManufacturerID Name="Eaton-Williams Group Ltd. (Vapac Humidity Control)" Number="117" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1047"/>
+		<ManufacturerID Name="Echelon Corporation" Number="1" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=25"/>
+		<ManufacturerID Name="Efficient Building Automation Corp. (Circon)" Number="24" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=62"/>
+		<ManufacturerID Name="Electronic Theatre Controls, Inc." Number="209" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1434"/>
+		<ManufacturerID Name="ELKA-Elektronik GmbH" Number="222" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3034"/>
+		<ManufacturerID Name="ELM Ltd." Number="46" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Enel.it S.p.A." Number="116" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=913"/>
+		<ManufacturerID Name="Energy Controls International" Number="100" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=458"/>
+		<ManufacturerID Name="Enermet Oy" Number="61" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=102"/>
+		<ManufacturerID Name="ERCO Leuchten GmbH" Number="143" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1505"/>
+		<ManufacturerID Name="EWE TEL GmbH (Nodus GmbH)" Number="90" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=373"/>
+		<ManufacturerID Name="Examples" Number="1048575" Info=""/>
+		<ManufacturerID Name="Faiveley S.A." Number="151" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1125"/>
+		<ManufacturerID Name="FieldServer Technologies" Number="149" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1609"/>
+		<ManufacturerID Name="Firecom, Inc." Number="124" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=260"/>
+		<ManufacturerID Name="Fr. Sauter AG" Number="101" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=188"/>
+		<ManufacturerID Name="Fuji Electric FA Components &amp; Systems Co., Ltd." Number="80" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2362"/>
+		<ManufacturerID Name="Fuji Electric Systems, Co., Ltd." Number="198" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=107"/>
+		<ManufacturerID Name="Functional Devices, Inc." Number="207" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2566"/>
+		<ManufacturerID Name="GD Midea Heating&amp;Ventilating Equipment Co.,Ltd." Number="235" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3180"/>
+		<ManufacturerID Name="GE Water Technologies (Osmonics/Lakewood)" Number="44" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=173"/>
+		<ManufacturerID Name="Gebrüder Trox GmbH" Number="70" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=109"/>
+		<ManufacturerID Name="Gentec Inc." Number="174" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1330"/>
+		<ManufacturerID Name="Gesytec GmbH" Number="73" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=111"/>
+		<ManufacturerID Name="Gorenje d.d." Number="206" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2417"/>
+		<ManufacturerID Name="Grayhill Inc." Number="14" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=113"/>
+		<ManufacturerID Name="Grundfos Management A/S" Number="85" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=115"/>
+		<ManufacturerID Name="Gulf Security Technology Co. Ltd." Number="210" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2641"/>
+		<ManufacturerID Name="Hach Company" Number="41" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="HalenSmart Company Limited" Number="150" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1560"/>
+		<ManufacturerID Name="Heat-Timer Corporation" Number="18" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=119"/>
+		<ManufacturerID Name="Helvar" Number="5" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="HERMOS Informatik GmbH" Number="163" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=125"/>
+		<ManufacturerID Name="Hitachi Ltd." Number="205" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=127"/>
+		<ManufacturerID Name="Honeywell International, Inc. (12)" Number="12" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=130"/>
+		<ManufacturerID Name="Honeywell International, Inc. (12) - Field Programmed" Number="131084" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=130"/>
+		<ManufacturerID Name="Honeywell International, Inc. (55)" Number="55" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=130"/>
+		<ManufacturerID Name="Honeywell International, Inc. (E-Mon)" Number="241" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=130"/>
+		<ManufacturerID Name="Hoshizaki America" Number="240" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3209"/>
+		<ManufacturerID Name="Hubbell Building Automation, Inc." Number="199" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1887"/>
+		<ManufacturerID Name="Hubbell Incorporated (Delaware) Wiring Device-Kellems" Number="36" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=8"/>
+		<ManufacturerID Name="Hüppelux (Hüppe Form)" Number="108" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=244"/>
+		<ManufacturerID Name="Hunter Douglas" Number="231" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3169"/>
+		<ManufacturerID Name="HyCal" Number="28" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Hyundai Autonet Co., Ltd." Number="139" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="IBM" Number="3" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="IDEC Corporation" Number="132" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=135"/>
+		<ManufacturerID Name="IEC Intelligent Technologies" Number="9" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=136"/>
+		<ManufacturerID Name="Infranet Partners Limited" Number="169" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1788"/>
+		<ManufacturerID Name="Intellicom Innovation AB" Number="176" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=241"/>
+		<ManufacturerID Name="Intermoco Ltd. (Australon Enterprises)" Number="125" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=916"/>
+		<ManufacturerID Name="iPLON GmbH" Number="60" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=220"/>
+		<ManufacturerID Name="ISDE" Number="225" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3132"/>
+		<ManufacturerID Name="ISH" Number="11" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Janitza electronic GmbH" Number="193" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2235"/>
+		<ManufacturerID Name="Johnson Controls, Inc." Number="17" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=29"/>
+		<ManufacturerID Name="Johnson Controls/ESUSA" Number="33" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=29"/>
+		<ManufacturerID Name="Kaba Benzing GmbH (10)" Number="10" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=141"/>
+		<ManufacturerID Name="Kaba Benzing GmbH (52)" Number="52" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=141"/>
+		<ManufacturerID Name="Kaifa Technology Co. Ltd." Number="184" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Kamstrup A/S" Number="173" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1311"/>
+		<ManufacturerID Name="Kele &amp; Associates" Number="84" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=143"/>
+		<ManufacturerID Name="Kieback &amp; Peter GmbH &amp; Co KG" Number="164" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=253"/>
+		<ManufacturerID Name="KITZ Corporation" Number="111" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=862"/>
+		<ManufacturerID Name="Knorr Brake Corp." Number="127" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1052"/>
+		<ManufacturerID Name="Kongsberg anaLogic AS" Number="130" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1164"/>
+		<ManufacturerID Name="Landert-Motoren AG (Tormax)" Number="75" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=149"/>
+		<ManufacturerID Name="Legrand" Number="120" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=151"/>
+		<ManufacturerID Name="Lennox Industries" Number="232" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3167"/>
+		<ManufacturerID Name="Levec, Inc." Number="77" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Leviton Manufacturing Co." Number="13" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3"/>
+		<ManufacturerID Name="LG Electronics" Number="204" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=825"/>
+		<ManufacturerID Name="Lighthouse Industries Ltd." Number="50" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=154"/>
+		<ManufacturerID Name="Linton Systems" Number="43" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Lochinvar Corporation" Number="182" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=721"/>
+		<ManufacturerID Name="LonMark Technical Staff" Number="159" Info="http://www.lonmark.org/technical_resources/"/>
+		<ManufacturerID Name="LonMark - AFS1" Number="1047948" Info="http://www.lonmark.org/membership/task_groups/afs"/>
+		<ManufacturerID Name="LOYTEC electronics GmbH" Number="215" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2098"/>
+		<ManufacturerID Name="LS Industrial Systems Co., Ltd." Number="218" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2980"/>
+		<ManufacturerID Name="Luminator" Number="138" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=448"/>
+		<ManufacturerID Name="LUXMATE Controls GmbH" Number="106" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=342"/>
+		<ManufacturerID Name="M+W Zander Facility Engineering GmbH" Number="200" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1076"/>
+		<ManufacturerID Name="Matrix Controls Pte. Ltd." Number="107" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=901"/>
+		<ManufacturerID Name="McQuay International" Number="37" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=161"/>
+		<ManufacturerID Name="MEIKOSHA Co., Ltd." Number="126" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1277"/>
+		<ManufacturerID Name="Mentzel &amp; Krutmann GmbH" Number="58" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Microlab Sistemi S.r.l." Number="166" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1743"/>
+		<ManufacturerID Name="MicroTask" Number="187" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=623"/>
+		<ManufacturerID Name="Mitsubishi Electric Corp." Number="162" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=166"/>
+		<ManufacturerID Name="Motorola, Inc." Number="2" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=26"/>
+		<ManufacturerID Name="MSR-Electronic-GmbH" Number="35" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=11"/>
+		<ManufacturerID Name="M-SYSTEM CO., LTD." Number="223" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3127"/>
+		<ManufacturerID Name="Nanjing Lianhong Automation Co. Ltd." Number="219" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3017"/>
+		<ManufacturerID Name="Network-Controls Pte. Ltd." Number="146" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=894"/>
+		<ManufacturerID Name="NeuroLogic Research Corporation" Number="98" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=627"/>
+		<ManufacturerID Name="NICO Technology, Inc." Number="181" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1891"/>
+		<ManufacturerID Name="OAS, Inc." Number="186" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1917"/>
+		<ManufacturerID Name="Oiles Corporation" Number="194" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1617"/>
+		<ManufacturerID Name="Onicon Incorporated" Number="208" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1736"/>
+		<ManufacturerID Name="ORAS Oy" Number="62" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=172"/>
+		<ManufacturerID Name="Orion C&amp;I Corporation" Number="190" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2116"/>
+		<ManufacturerID Name="Osaki Electric Co., Ltd." Number="196" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2253"/>
+		<ManufacturerID Name="Panasonic Electric Works Co., Ltd." Number="113" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=160"/>
+		<ManufacturerID Name="Paragon Controls" Number="226" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3136"/>
+		<ManufacturerID Name="PentaControl AG (Bircher Gebäudetechnik AG)" Number="40" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=51"/>
+		<ManufacturerID Name="PDL Industries Ltd." Number="140" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1351"/>
+		<ManufacturerID Name="Philips Lighting B.V." Number="47" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=177"/>
+		<ManufacturerID Name="Phoenix Controls Corporation" Number="212" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1043"/>
+		<ManufacturerID Name="PIC Electronics" Number="228" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3142"/>
+		<ManufacturerID Name="Plexus Technology Limited" Number="141" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1101"/>
+		<ManufacturerID Name="Power Measurement Ltd." Number="30" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=178"/>
+		<ManufacturerID Name="Programmed Water Technologies" Number="56" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=179"/>
+		<ManufacturerID Name="Programmed Water Technologies / Sloan Valve" Number="183" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=179"/>
+		<ManufacturerID Name="PureChoice, Inc." Number="188" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1713"/>
+		<ManufacturerID Name="Quantum Automation Pte Ltd." Number="217" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1938"/>
+		<ManufacturerID Name="Quark Communications Inc." Number="195" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3089"/>
+		<ManufacturerID Name="Raypak, Inc. (Rheem)" Number="180" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1952"/>
+		<ManufacturerID Name="Regin AB" Number="122" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1077"/>
+		<ManufacturerID Name="Richards-Zeta Building Intelligence" Number="53" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=20"/>
+		<ManufacturerID Name="Riken Keiki Co., Ltd." Number="72" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=185"/>
+		<ManufacturerID Name="Rockwell Automation" Number="136" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1484"/>
+		<ManufacturerID Name="Safegard Systems Ltd. (NT Software Ltd)" Number="48" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=15"/>
+		<ManufacturerID Name="Samson AG" Number="115" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=479"/>
+		<ManufacturerID Name="Samsung Electronics Co., Ltd." Number="191" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1244"/>
+		<ManufacturerID Name="Samsung Heavy Industries Co., Ltd." Number="110" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=899"/>
+		<ManufacturerID Name="Samsung SDS" Number="234" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3193"/>
+		<ManufacturerID Name="Schlumberger (SILD)" Number="4" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=5"/>
+		<ManufacturerID Name="Schneider Electric (Andover)" Number="16" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (CSI)" Number="31" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Lexel Group)" Number="6" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Lexel/Merten)" Number="224" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Moeller/SVEA)" Number="21" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Merten/SVEA)" Number="227" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Square D)" Number="20" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (TAC AB)" Number="19" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (TAC LLC)" Number="22" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Schneider Electric (Viconics Electronics Inc.)" Number="197" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=211"/>
+		<ManufacturerID Name="Seaboard Process Controls, Inc." Number="49" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=192"/>
+		<ManufacturerID Name="Shanghai ChangXiang Computer Co., Ltd" Number="179" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1104"/>
+		<ManufacturerID Name="Shikoku Instrumentation Co., Ltd." Number="177" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1749"/>
+		<ManufacturerID Name="Siemens BT" Number="25" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=150"/>
+		<ManufacturerID Name="Siemens BT (Korea)" Number="114" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=150"/>
+		<ManufacturerID Name="Siemens BT (North America and Asia-Pacific)" Number="129" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=150"/>
+		<ManufacturerID Name="Siemens BT (Staefa Controls USA)" Number="105" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=150"/>
+		<ManufacturerID Name="Simon, S.A." Number="242" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3213"/>
+		<ManufacturerID Name="Siteco Control GmbH" Number="220" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2991"/>
+		<ManufacturerID Name="Smart Controls" Number="15" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1135"/>
+		<ManufacturerID Name="Solidyne Corp." Number="201" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2512"/>
+		<ManufacturerID Name="Somfy" Number="82" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=200"/>
+		<ManufacturerID Name="Sontay Open Systems, Ltd." Number="92" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="SPI Systems Ltd." Number="216" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2968"/>
+		<ManufacturerID Name="SPEGA - Spelsberg Gebaudeautomation GmbH + Co. KG" Number="230" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3138"/>
+		<ManufacturerID Name="Stifab Farex AB" Number="170" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=774"/>
+		<ManufacturerID Name="Surf Networks, Inc." Number="172" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=256"/>
+		<ManufacturerID Name="SysMik GmbH Dresden" Number="94" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=207"/>
+		<ManufacturerID Name="Telda Electronics" Number="102" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=636"/>
+		<ManufacturerID Name="Terasaki Electric Co., Ltd." Number="165" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1483"/>
+		<ManufacturerID Name="The Watt Stopper" Number="167" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1474"/>
+		<ManufacturerID Name="Theben HTS AG" Number="239" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3204"/>
+		<ManufacturerID Name="TMI" Number="7" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Toshiba Corporation" Number="76" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=221"/>
+		<ManufacturerID Name="Toshiba Info Systems (Japan)" Number="78" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=222"/>
+		<ManufacturerID Name="Toshiba Lighting &amp; Technology Corporation" Number="133" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1488"/>
+		<ManufacturerID Name="Trane" Number="42" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=223"/>
+		<ManufacturerID Name="Trend Control Systems Ltd (Novar Trend)" Number="29" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=58"/>
+		<ManufacturerID Name="Tridium, Inc." Number="142" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=431"/>
+		<ManufacturerID Name="TSI Incorporated" Number="71" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=13"/>
+		<ManufacturerID Name="VaCom Technologies" Number="213" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=620"/>
+		<ManufacturerID Name="Vacon Plc" Number="189" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1948"/>
+		<ManufacturerID Name="Vaisala Oy" Number="38" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="Valvcon Corporation" Number="147" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1521"/>
+		<ManufacturerID Name="Veris Industries" Number="237" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3163"/>
+		<ManufacturerID Name="Viessmann Werke GmbH u. Co." Number="128" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1106"/>
+		<ManufacturerID Name="Vossloh-Schwabe Deutschland GmbH" Number="236" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=3197"/>
+		<ManufacturerID Name="Voyant Solutions, LLC" Number="221" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=2942"/>
+		<ManufacturerID Name="Wabtec Corporation" Number="121" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=864"/>
+		<ManufacturerID Name="WAGO" Number="112" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=320"/>
+		<ManufacturerID Name="WAREMA electronic GmbH" Number="87" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=184"/>
+		<ManufacturerID Name="Watanabe Electric Industry Co., Ltd." Number="123" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=1148"/>
+		<ManufacturerID Name="Yamatake Corporation" Number="95" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=248"/>
+		<ManufacturerID Name="Yaskawa Electric America" Number="57" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=158"/>
+		<ManufacturerID Name="Yokogawa Electric Corporation" Number="67" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=233"/>
+		<ManufacturerID Name="York International" Number="119" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=234"/>
+		<ManufacturerID Name="Zellweger Analytics, Inc." Number="59" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=235"/>
+		<ManufacturerID Name="Zone Controls" Number="86" Info="http://www.lonmark.org/membership/directory/member_info?CompanyID=0"/>
+		<ManufacturerID Name="zzz - reserved-0004F" Number="79" Info=""/>
+		<ManufacturerID Name="zzz - reserved-00058" Number="88" Info=""/>
+		<ManufacturerID Name="zzz - reserved-0006D" Number="109" Info=""/>
+		<ManufacturerID Name="zzz - reserved-00086" Number="134" Info=""/>
+		<ManufacturerID Name="zzz - reserved-0FF00" Number="65280" Info=""/>
+	</ManufacturerIDs>
+	<DeviceClasses>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Access/Intrusion/Monitoring" Number="50.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Intercom" Number="50.10" Profile="" FBlockReference="5010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Alphanumeric LCD/Led Display" Number="50.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="PS/2 Interface" Number="50.12" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Motorized Strike Plate" Number="50.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Reader" Number="50.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Legic Reader" Number="50.31" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Barcode Reader" Number="50.32" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Magcard Reader" Number="50.33" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Inductive Reader" Number="50.34" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Identifier Sensor" Number="50.35" Profile="http://www.lonmark.org/profiles/5035_10.pdf" FBlockReference="5035" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Logic Cylinder" Number="50.40" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Remote Door Manager" Number="50.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Entry/Exit" Number="50.51" Profile="http://www.lonmark.org/profiles/5051_10.pdf" FBlockReference="5051" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Event Memory" Number="50.60" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Elevator Access Controller" Number="50.70" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Arming Station" Number="50.80" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Telephone Controls" Number="50.90" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Modem Controller" Number="50.91" Profile="http://www.lonmark.org/profiles/5091_10.pdf" FBlockReference="5091" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Access/Intrusion/Monitoring" Name="Telephone Directory" Number="50.92" Profile="http://www.lonmark.org/profiles/5092_10.pdf" FBlockReference="5092" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Automated Food Service / Catering" Name="Automated Food Service" Number="170.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Automated Food Service / Catering" Name="Beverage Control and Monitoring" Number="172.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Automated Food Service / Catering" Name="Heated-Beverage Control and Monitoring" Number="172.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Automated Food Service / Catering" Name="Coffee-Making Control and Monitoring" Number="172.11" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="17211" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Automated Food Service / Catering" Name="Cooled-Beverage Control and Monitoring" Number="172.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Energy Management" Number="20.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Energy Management" Name="Load-Shed Module (LSM)" Number="20.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="Load-Shed Module with power sensor" Number="20.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Load-Shed Module with energy monitoring" Number="20.12" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Circuit Breaker" Number="20.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="Scheduler with Presets" Number="20.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Energy Meter" Number="21.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Demand Power Meter" Number="21.01" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Demand Ammeter" Number="21.02" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Power Meter" Number="21.03" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Ammeter" Number="21.04" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="3-Phase Voltmeter" Number="21.05" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Utility Data Logger Register" Number="21.10" Profile="http://www.lonmark.org/profiles/2110_10.pdf" FBlockReference="2110" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Energy Meter" Number="21.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Demand Power Meter" Number="21.51" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Demand Ammeter" Number="21.52" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Power Meter" Number="21.53" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Ammeter" Number="21.54" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Multi-Phase Voltmeter" Number="21.55" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Energy Management" Name="Automated Meter Reader (AMR)" Number="22.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Energy Management" Name="Utility Meter" Number="22.01" Profile="http://www.lonmark.org/profiles/2201_10.pdf" FBlockReference="2201" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Fire &amp; Smoke Devices" Number="110.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Fire Smoke Damper Actuator" Number="110.01" Profile="http://www.lonmark.org/profiles/11001_10.pdf" FBlockReference="11001" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Smoke (Intelligent) Fire Initiator" Number="110.02" Profile="http://www.lonmark.org/profiles/11002_01.pdf" FBlockReference="11002" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Smoke (Conventional) Fire Initiator" Number="110.03" Profile="http://www.lonmark.org/profiles/11003_01.pdf" FBlockReference="11003" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Thermal Fire Initiator" Number="110.04" Profile="http://www.lonmark.org/profiles/11004_01.pdf" FBlockReference="11004" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Pull-Station Fire Initiator" Number="110.05" Profile="http://www.lonmark.org/profiles/11005_01.pdf" FBlockReference="11005" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Audible Fire Indicator" Number="110.06" Profile="http://www.lonmark.org/profiles/11006_01.pdf" FBlockReference="11006" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Visible Fire Indicator" Number="110.07" Profile="http://www.lonmark.org/profiles/11007_01.pdf" FBlockReference="11007" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Manual Call Point" Number="110.08" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Fireman Call Point" Number="110.09" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Universal Fire Initiator" Number="110.10" Profile="http://www.lonmark.org/profiles/11010_01.pdf" FBlockReference="11010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Fire &amp; Smoke Devices" Name="Universal Fire Indicator" Number="110.11" Profile="http://www.lonmark.org/profiles/11011_01.pdf" FBlockReference="11011" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Gateways" Number="70.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Gateways" Name="Telephone Gateway" Number="70.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Alphanumeric Notifier" Number="70.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Gateways" Name="Internet Gateway" Number="70.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Internet Web Server" Number="70.21" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Gateways" Name="Internet Information Server" Number="70.22" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Gateways" Name="PLC Interface" Number="70.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="BMS Gateway" Number="71.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Fire &amp; Smoke Gateways" Number="71.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Industrial Gateways" Number="71.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Refrigeration Gateways" Number="72.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Energy Management Gateways" Number="72.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Lighting Gateways" Number="72.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Vertical/Conveyor Transportation Gateways" Number="72.40" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Access/Intrusion/Monitoring Gateways" Number="72.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="HVAC Gateways" Number="72.80" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Transportation Gateways" Number="72.90" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Gateways" Name="Signage/Enunciation/Display Systems" Number="72.91" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Generic Actuator" Name="Generic Actuators" Number="7.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Generic Controller" Name="Generic Controllers" Number="6.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="Generic Human-Machine Interfaces (HMIs)" Number="8.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="Remote Control" Number="8.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="IR Remote Control" Number="8.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="RF Remote Control" Number="8.12" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="Panel Interface" Number="8.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="Touch-Screen Panel" Number="8.21" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Generic Human-Machine Interfaces (HMIs)" Name="LCD/LED Panel HMI" Number="8.22" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="HVAC" Number="80.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="HVAC" Name="VAV Controller" Number="80.10" Profile="http://www.lonmark.org/profiles/8010_11.pdf" FBlockReference="8010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Dual-Duct VAV Controller" Number="80.11" Profile="http://www.lonmark.org/profiles/8010_11.pdf" FBlockReference="8010" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Fan Coil Unit Controller" Number="80.20" Profile="http://www.lonmark.org/profiles/8020_11.pdf" FBlockReference="8020" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Roof Top Unit Controller" Number="80.30" Profile="http://www.lonmark.org/profiles/8030_11.pdf" FBlockReference="8030" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Chiller" Number="80.40" Profile="http://www.lonmark.org/profiles/8040_10.pdf" FBlockReference="8040" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Heat Pump" Number="80.50" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Heat Pump with Temperature Control" Number="80.51" Profile="http://www.lonmark.org/profiles/8051_10.pdf" FBlockReference="8051" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Thermostat" Number="80.60" Profile="http://www.lonmark.org/profiles/8060_10.pdf" FBlockReference="8060" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Chilled Ceiling Controller" Number="80.70" Profile="http://www.lonmark.org/profiles/8070_10.pdf" FBlockReference="8070" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Unit Ventilator Controller" Number="80.80" Profile="http://www.lonmark.org/profiles/8080_10.pdf" FBlockReference="8080" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Space Comfort Control Command Module" Number="80.90" Profile="http://www.lonmark.org/profiles/8090_10.pdf" FBlockReference="8090" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="SCC - Template for Controller-based nodes" Number="81.00" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Damper Actuator" Number="81.10" Profile="http://www.lonmark.org/profiles/8110_10.pdf" FBlockReference="8110" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Modulating Damper Actuator" Number="81.11" Profile="http://www.lonmark.org/profiles/8110_10.pdf" FBlockReference="8110" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Pump Controller" Number="81.20" Profile="http://www.lonmark.org/profiles/8120_10.pdf" FBlockReference="8120" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Valve Controls" Number="81.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Valve Positioner (HVAC)" Number="81.31" Profile="http://www.lonmark.org/profiles/8131_10.pdf" FBlockReference="8131" Obsolete="FALSE" SubCategory="2">
+			<ProfileSubClass Number="00">Programmed Actuator Characteristic</ProfileSubClass>
+			<ProfileSubClass Number="01">Programmed Actuator Characteristic with Emergency Mode function</ProfileSubClass>
+			<ProfileSubClass Number="20">Calculated Actuator Characteristic</ProfileSubClass>
+			<ProfileSubClass Number="21">Calculated Actuator Characteristic with Emergency Mode function</ProfileSubClass>
+		</DeviceClass>
+		<DeviceClass Category="HVAC" Name="Linear Valve Actuator" Number="81.35" Profile="http://www.lonmark.org/profiles/8110_10.pdf" FBlockReference="8110" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Plant Controller" Number="82.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Burner and Boiler Controllers" Number="83.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Boiler Controller" Number="83.01" Profile="http://www.lonmark.org/profiles/8301_10.pdf" FBlockReference="8301" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Product Controllers" Number="84.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="SCC - Generic" Number="85.00" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8500" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="SCC - Fan Coil" Number="85.01" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8501" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Variable Air Volume" Number="85.02" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8502" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Heat Pump" Number="85.03" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8503" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Rooftop Unit" Number="85.04" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8504" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Unit Ventilator" Number="85.05" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8505" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Chilled Ceiling" Number="85.06" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8506" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Radiator" Number="85.07" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8507" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Air-Handling Unit" Number="85.08" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8508" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - Self-Contained Unit" Number="85.09" Profile="http://www.lonmark.org/profiles/8500_20.pdf" FBlockReference="8509" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - (reserved, 85.10)" Number="85.10" Profile="http://www.lonmark.org/profiles/8500_20.pdf" InDevelopment="TRUE" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="SCC - (reserved, 85.29)" Number="85.29" Profile="http://www.lonmark.org/profiles/8500_20.pdf" InDevelopment="TRUE" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Air Handling" Number="86.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="HVAC" Name="Discharge-Air Controller" Number="86.10" Profile="http://www.lonmark.org/profiles/8610_10.pdf" FBlockReference="8610" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Air Handling Critical-Safety Devices" Number="86.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="HVAC" Name="Fume Hood Face-Velocity Controller" Number="86.21" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="8621" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="HVAC" Name="Room Direct-Pressure Controller" Number="86.22" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="8622" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="I/O" Name="I/O" Number="5.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="I/O" Name="Multi-I/O module" Number="5.01" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="I/O" Name="Multi-Output Module" Number="5.03" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel configurable I/O" Number="5.10" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel voltage input" Number="5.11" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel current input" Number="5.12" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel digital input" Number="5.13" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4 Digital input, 4 digital output" Number="5.14" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel Digital Output" Number="5.15" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="8-Channel switch input" Number="5.16" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Analog Input" Number="5.20" Profile="http://www.lonmark.org/profiles/0520_10.pdf" FBlockReference="520" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Analog Output" Number="5.21" Profile="http://www.lonmark.org/profiles/0521_10.pdf" FBlockReference="521" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Extended Analog Input" Number="5.22" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Extended Analog Output" Number="5.23" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Generic Analog Input" Number="5.24" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Generic Analog Output" Number="5.25" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="6-Channel configurable I/O" Number="5.30" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4 Digital input, 2 digital output" Number="5.31" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="6 Analog outputs U/I" Number="5.32" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Digital I/O" Number="5.40" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="7 Digital input, 4 digital output" Number="5.41" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Digital Input" Number="5.42" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Digital output" Number="5.43" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Digital Input Node" Number="5.48" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2-Channel configurable I/O" Number="5.50" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2-Channel digital input" Number="5.51" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2-Channel digital output" Number="5.52" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2 Digital input, 2 digital output" Number="5.53" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2 Analog input" Number="5.54" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="2 Analog output" Number="5.55" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4-Channel configurable I/O" Number="5.60" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4-Channel digital input" Number="5.61" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4-Channel digital output" Number="5.62" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4 Analog input" Number="5.63" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="4 Analog output" Number="5.64" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12-Channel configurable I/O" Number="5.70" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12 Digital inputs Vdc" Number="5.71" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12 Digital outputs Vdc" Number="5.72" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12 Digital inputs 100-250 Vac" Number="5.73" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12 Digital input 12-48 Vac/dc opto iso" Number="5.74" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="12 Analog inputs U/I/Pt100" Number="5.75" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Multi-Channel I/O" Number="5.80" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="I/O" Name="Multiple Digital Inputs 100-250 Vac" Number="5.83" Profile="" FBlockReference="" Obsolete="FALSE"/>
+		<DeviceClass Category="Industrial" Name="Industrial" Number="130.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Industrial" Name="Generator Set" Number="131.10" Profile="http://www.lonmark.org/profiles/13110_11.pdf" FBlockReference="13110" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Automatic Transfer Switch" Number="131.20" Profile="http://www.lonmark.org/profiles/13120_10.pdf" FBlockReference="13120" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Programmable Controller" Number="132.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Filtration Systems" Number="135.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Gas Filtration" Number="135.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Fan-Filter Unit" Number="135.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Industrial" Name="Liquid Filtration" Number="135.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Solid Filtration" Number="135.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Remote Miniature Circuit Breaker" Number="138.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Circuit Breaker - Other" Number="138.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="PLC Gateway for specific device" Number="138.20" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Power Supplies" Number="138.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 5V)" Number="138.31" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 15V)" Number="138.32" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 50V)" Number="138.33" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 100V)" Number="138.34" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 200V)" Number="138.35" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 500V)" Number="138.36" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Industrial" Name="Power Supply (less than 1000V)" Number="138.37" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Lighting" Number="30.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Lighting" Name="Dimmer 1-10V" Number="30.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="8-Channel dimmer 1-10V" Number="30.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="3-Channel dimmer 1-10V" Number="30.12" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Transistor Dimmer" Number="30.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Thyristor Dimmer" Number="30.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Lamp Actuator" Number="30.40" Profile="http://www.lonmark.org/profiles/3040_10.pdf" FBlockReference="3040" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="ISI Lamp Actuator" Number="30.41" Profile="http://www.lonmark.org/profiles/3041_10.pdf" FBlockReference="3041" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Constant Light Controller" Number="30.50" Profile="http://www.lonmark.org/profiles/3050_10.pdf" FBlockReference="3050" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Occupancy controller" Number="30.71" Profile="http://www.lonmark.org/profiles/3071_10.pdf" FBlockReference="3071" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Switch" Number="32.00" Profile="http://www.lonmark.org/profiles/3200_10.pdf" FBlockReference="3200" Obsolete="FALSE" SubCategory="1">
+			<ProfileSubClass Number="00">Discrete Output (ON/OFF)</ProfileSubClass>
+			<ProfileSubClass Number="01">Discrete Output (ON/OFF) with Feedback Input</ProfileSubClass>
+			<ProfileSubClass Number="02">Discrete Output (ON/OFF) with Setting Control</ProfileSubClass>
+			<ProfileSubClass Number="03">Discrete Output (ON/OFF) with Feedback Input and Setting Control</ProfileSubClass>
+			<ProfileSubClass Number="20">Variable Output</ProfileSubClass>
+			<ProfileSubClass Number="21">Variable Output with Feedback Input</ProfileSubClass>
+			<ProfileSubClass Number="22">Variable Output with Setting Control</ProfileSubClass>
+			<ProfileSubClass Number="23">Variable Output with Feedback Input and Setting Control</ProfileSubClass>
+		</DeviceClass>
+		<DeviceClass Category="Lighting" Name="4-Switch relay" Number="32.01" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Multi-switch/multi-sensor" Number="32.02" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Switch/sensor" Number="32.03" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Scene Panel" Number="32.50" Profile="http://www.lonmark.org/profiles/3250_10.pdf" FBlockReference="3250" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Scene Controller" Number="32.51" Profile="http://www.lonmark.org/profiles/3251_10.pdf" FBlockReference="3251" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Partition Wall Controller" Number="32.52" Profile="http://www.lonmark.org/profiles/3252_10.pdf" FBlockReference="3252" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="ISI Keypad" Number="32.53" Profile="http://www.lonmark.org/profiles/3253_10.pdf" FBlockReference="3253" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Real-Time Keeper" Number="33.00" Profile="http://www.lonmark.org/profiles/3300_10.pdf" FBlockReference="3300" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Real-Time-Based Scheduler" Number="33.01" Profile="http://www.lonmark.org/profiles/3301_10.pdf" FBlockReference="3301" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Lighting Controller" Number="34.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Lighting Panel Controller" Number="34.01" Profile="http://www.lonmark.org/profiles/3401_10.pdf" FBlockReference="3401" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Lighting" Name="Outdoor Lighting" Number="35.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Lighting" Name="Outdoor Luminair Controller" Number="35.12" Profile="http://www.lonmark.org/profiles/3512_10.pdf" FBlockReference="3512" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Motor Controls" Name="Motor Controls" Number="60.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Motor Controls" Name="Variable-Speed Motor Drive" Number="60.10" Profile="http://www.lonmark.org/profiles/6010_11.pdf" FBlockReference="6010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Motor Controls" Name="Sunblind Motor" Number="61.00" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="1"/>
+		<DeviceClass Category="Motor Controls" Name="Sunblind Motor Controller" Number="61.01" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="2"/>
+		<DeviceClass Category="Motor Controls" Name="Sunblind Actuator" Number="61.10" Profile="http://www.lonmark.org/profiles/6110_10.pdf" FBlockReference="6110" Obsolete="FALSE" SubCategory="1">
+			<ProfileSubClass Number="00">Feedback Output</ProfileSubClass>
+			<ProfileSubClass Number="01">Control (daisy chain) Output</ProfileSubClass>
+			<ProfileSubClass Number="02">Feedback Output and Control (daisy chain) Output</ProfileSubClass>
+		</DeviceClass>
+		<DeviceClass Category="Motor Controls" Name="Sunblind Controller" Number="61.11" Profile="http://www.lonmark.org/profiles/6111_10.pdf" FBlockReference="6111" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Motor Controls" Name="ISI Sunblind Actuator" Number="61.12" Profile="http://www.lonmark.org/profiles/6112_10.pdf" FBlockReference="6112" Obsolete="FALSE" SubCategory="1">
+			<ProfileSubClass Number="00">Feedback Output</ProfileSubClass>
+			<ProfileSubClass Number="01">Control (daisy chain) Output</ProfileSubClass>
+			<ProfileSubClass Number="02">Feedback Output and Control (daisy chain) Output</ProfileSubClass>
+		</DeviceClass>
+		<DeviceClass Category="Motor Controls" Name="AC Drive (v3.0 Products Only)" Number="54.10" Profile="" FBlockReference="" Obsolete="TRUE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Network Infrastructure" Number="1.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Network Infrastructure" Name="ISO/IEC 14908-1 Router" Number="1.01" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Network Interfaces" Number="1.02" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Network Managers" Number="1.03" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Data Logger" Number="1.04" Profile="http://www.lonmark.org/profiles/0104_10.pdf" FBlockReference="104" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Microprocessor Interfaces" Number="1.05" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Foreign System Connection Sensor" Number="1.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Scheduler" Number="1.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Diagnostic Tools" Number="1.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Channel Diagnostics" Number="1.31" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Network Infrastructure" Name="Channel Monitor" Number="1.32" Profile="http://www.lonmark.org/profiles/0132_10.pdf" InDevelopment="FALSE" FBlockReference="132" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Network Infrastructure" Name="Device Monitor" Number="1.36" Profile="http://www.lonmark.org/profiles/0136_10.pdf" InDevelopment="FALSE" FBlockReference="136" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Network Infrastructure" Name="Channel Continuity Monitor" Number="1.37" Profile="http://www.lonmark.org/profiles/0137_10.pdf" InDevelopment="FALSE" FBlockReference="137" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Network Infrastructure" Name="Generic Controller" Number="1.40" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Network Infrastructure" Name="Device Manager" Number="1.60" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Programmables" Name="Programmables" Number="04.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Programmables" Name="Programer" Number="04.01" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="401" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Programmables" Name="Static Programmable" Number="04.10" Profile="http://www.lonmark.org/profiles/0410_10.pdf" InDevelopment="TRUE" FBlockReference="410" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Programmables" Name="Dynamic Programmable" Number="04.50" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="450" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Refrigeration" Name="Refrigeration" Number="100.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Refrigeration" Name="Defrost Controller" Number="100.10" Profile="http://www.lonmark.org/profiles/10010_10.pdf" FBlockReference="10010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Refrigeration" Name="Evaporator Controller" Number="100.11" Profile="http://www.lonmark.org/profiles/10011_10.pdf" FBlockReference="10011" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Refrigeration" Name="Refrigeration Thermostat Controller" Number="100.12" Profile="http://www.lonmark.org/profiles/10012_10.pdf" FBlockReference="10012" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Refrigeration" Name="Railheat Controller" Number="100.13" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Fabrication" Number="180.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensors" Number="180.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI" Number="180.11" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18011" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-AT" Number="180.12" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18012" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-MF" Number="180.13" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18013" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-Aux" Number="180.14" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18014" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-Counter" Number="180.15" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18015" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-LCS" Number="180.16" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18016" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-AI-SLS" Number="180.17" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18017" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-BI" Number="180.18" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18018" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-BI-TH" Number="180.19" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18019" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Sensor-BI-TH-EP" Number="180.20" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18020" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Actuators" Number="180.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Actuator-AO" Number="180.31" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18031" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Actuator-AO-MF" Number="180.32" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18032" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Actuator-BO" Number="180.33" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18033" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Actuator-EO" Number="180.34" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18034" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Controllers" Number="180.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Controller" Number="180.51" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18051" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor I/O" Number="180.70" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Single-Input Single-Output" Number="180.71" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18071" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Single-Input Single-Output Setpoint" Number="180.72" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18072" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assemblies" Number="180.80" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly" Number="180.81" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18081" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-MFM" Number="180.82" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18082" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-MFC" Number="180.83" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18083" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM1" Number="180.84" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18084" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM2" Number="180.85" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18085" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM3" Number="180.86" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18086" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM4" Number="180.87" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18087" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM5" Number="180.88" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18088" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM6" Number="180.89" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18089" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM7" Number="180.90" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18090" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM8" Number="180.91" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18091" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM9" Number="180.92" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18092" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-ISPM48" Number="180.93" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18093" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-EP1" Number="180.94" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18094" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-EP2" Number="180.95" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18095" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-EP3" Number="180.96" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18096" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Semiconductor Fabrication" Name="Semiconductor Assembly-EP4" Number="180.97" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="18097" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Sensors" Name="Sensors" Number="10.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Sensors" Name="Light Sensor" Number="10.10" Profile="http://www.lonmark.org/profiles/1010_10.pdf" FBlockReference="1010" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Global Solar Radiation Sensor" Number="10.15" Profile="http://www.lonmark.org/profiles/1015_10.pdf" FBlockReference="1015" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Time Sensor" Number="10.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Pressure Sensor" Number="10.30" Profile="http://www.lonmark.org/profiles/1030_10.pdf" FBlockReference="1030" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Temperature Sensor" Number="10.40" Profile="http://www.lonmark.org/profiles/1040_10.pdf" FBlockReference="1040" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Temperature &amp; Humidity" Number="10.41" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Sensors" Name="Frost Sensor" Number="10.42" Profile="http://www.lonmark.org/profiles/1042_10.pdf" FBlockReference="1041" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Relative Humidity" Number="10.50" Profile="http://www.lonmark.org/profiles/1050_10.pdf" FBlockReference="1050" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Rain Sensor" Number="10.51" Profile="http://www.lonmark.org/profiles/1051_10.pdf" FBlockReference="1051" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Occupancy Sensor" Number="10.60" Profile="http://www.lonmark.org/profiles/1060_10.pdf" FBlockReference="1060" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="ISI Occupancy Sensor" Number="10.61" Profile="http://www.lonmark.org/profiles/1061_10.pdf" FBlockReference="1061" Obsolete="FALSE" SubCategory="1"/>
+		<!--  DeviceClass Category="Sensors" Name="Security Sensor" Number="10.65" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="1065" Obsolete="FALSE" SubCategory="1"  -->
+		<DeviceClass Category="Sensors" Name="CO2 Sensor" Number="10.70" Profile="http://www.lonmark.org/profiles/1070_10.pdf" FBlockReference="1070" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Gas Concentration Sensor" Number="10.80" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="PH Sensor" Number="10.81" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Conductivity Sensor" Number="10.82" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Air-Velocity Sensor" Number="10.83" Profile="http://www.lonmark.org/profiles/1083_10.pdf" FBlockReference="1083" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Sensors" Name="Multi-Function Sensor" Number="10.90" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Transportation" Name="Transportation" Number="90.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Transportation" Name="Door Controls" Number="90.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Transportation" Name="Audio Systems" Number="91.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Transportation" Name="Railway Audio Systems" Number="91.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Transportation" Name="Railcar Audio Controller" Number="91.11" Profile="http://www.lonmark.org/profiles" FBlockReference="9111" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Transportation" Name="Railcar Audio Sensor" Number="91.12" Profile="http://www.lonmark.org/profiles" FBlockReference="9112" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Transportation" Name="Electric Vehicles" Number="95.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Transportation" Name="Billing Systems" Number="95.10" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Transportation" Name="Electric Vehicle Supply Equipment" Number="95.20" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Transportation" Name="EVSE Single, Domestic" Number="95.21" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="9521" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Transportation" Name="EVSE Multiple, Domestic" Number="95.22" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="9522" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Transportation" Name="EVSE, Commercial" Number="95.25" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="9525" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Transportation" Name="EVSE, Retail" Number="95.30" Profile="http://www.lonmark.org/members/" InDevelopment="TRUE" FBlockReference="9530" Obsolete="FALSE" SubCategory="3"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Vertical/Conveyer Transportation (Elevator)" Number="140.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Indicators" Number="140.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Position Indicator and Message Display" Number="140.11" Profile="http://www.lonmark.org/profiles/14011_10.pdf" FBlockReference="14011" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Hall Lantern" Number="140.12" Profile="http://www.lonmark.org/profiles/14012_10.pdf" FBlockReference="14012" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Arrival Gong" Number="140.13" Profile="http://www.lonmark.org/profiles/14013_10.pdf" FBlockReference="14013" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Car-Direction Lantern" Number="140.14" Profile="http://www.lonmark.org/profiles/14014_10.pdf" FBlockReference="14014" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Vertical/Conveyer Transportation System Interfaces" Number="140.40" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Fire-Systems Port" Number="140.41" Profile="http://www.lonmark.org/profiles/14041_10.pdf" FBlockReference="14041" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Vertical/Conveyer-Transportation Communication Devices" Number="140.60" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Vertical/Conveyer Transportation" Name="Elevator/Lift Voice Announcer" Number="140.61" Profile="http://www.lonmark.org/profiles/14061_10.pdf" FBlockReference="14061" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Whitegoods" Number="150.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes" Number="150.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes Washer, Domestic" Number="150.11" Profile="http://www.lonmark.org/profiles/15011_10.pdf" FBlockReference="15011" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes Dryer, Domestic" Number="150.12" Profile="" FBlockReference="15012" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes Iron, Domestic" Number="150.13" Profile="" FBlockReference="15013" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes Press, Domestic" Number="150.14" Profile="" FBlockReference="15014" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Clothes Steamer, Domestic" Number="150.15" Profile="" FBlockReference="15015" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Cooking" Number="150.30" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="Oven, Domestic" Number="150.31" Profile="" FBlockReference="15031" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Specialty Oven, Domestic" Number="150.32" Profile="" FBlockReference="15032" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Microwave or IR Oven, Domestic" Number="150.33" Profile="" FBlockReference="15033" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Electric or Inductive Range, Domestic" Number="150.34" Profile="" FBlockReference="15034" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Gas Range, Domestic" Number="150.35" Profile="" FBlockReference="15035" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Storage" Number="150.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="Refrigerator, Domestic" Number="150.51" Profile="" FBlockReference="15051" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Deep Freezer, Domestic" Number="150.52" Profile="" FBlockReference="15052" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Beverage Cabinet, Domestic" Number="150.53" Profile="" FBlockReference="15053" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Dry Cabinet, Domestic" Number="150.54" Profile="" FBlockReference="15054" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Miscellaneous" Number="150.70" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="Dishwasher, Domestic" Number="150.71" Profile="" FBlockReference="15071" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="In-Sink Disposal, Domestic" Number="150.72" Profile="" FBlockReference="15072" Obsolete="FALSE" SubCategory="2"/>
+		<DeviceClass Category="Whitegoods" Name="Trash Compactor, Domestic" Number="150.73" Profile="" FBlockReference="15073" Obsolete="FALSE" SubCategory="2"/>
+		<!-- 
+		<DeviceClass Category="Whitegoods" Name="CECED Washing" Number="151.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="CECED Cooking" Number="152.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="CECED Refrigerating" Number="153.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="CECED Air-Conditioning" Number="154.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="CECED Heating" Number="155.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Whitegoods" Name="CECED Additional Appliances" Number="156.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/> 
+		-->
+		<DeviceClass Category="Wiring Devices" Name="Wiring Devices" Number="40.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="0"/>
+		<DeviceClass Category="Wiring Devices" Name="1-Pushbutton" Number="40.10" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="2-Pushbutton" Number="40.11" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="3-Pushbutton" Number="40.12" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="4-Pushbutton" Number="40.13" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="Rotary control" Number="40.50" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="AC Load Relay" Number="41.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+		<DeviceClass Category="Wiring Devices" Name="Controlled Receptacle" Number="42.00" Profile="" FBlockReference="" Obsolete="FALSE" SubCategory="1"/>
+	</DeviceClasses>
+	<DeviceSubClasses>
+		<DeviceSubClass Name="Commercial" Number="3"/>
+		<DeviceSubClass Name="Connectivity" Number="1"/>
+		<DeviceSubClass Name="General" Number="10"/>
+		<DeviceSubClass Name="Industrial" Number="2"/>
+		<DeviceSubClass Name="Industrial/Commercial" Number="4"/>
+		<DeviceSubClass Name="Medical" Number="9"/>
+		<DeviceSubClass Name="Network Management" Number="0"/>
+		<DeviceSubClass Name="Programmable" Number="63"/>
+		<DeviceSubClass Name="Residential" Number="5"/>
+		<DeviceSubClass Name="Residential/Commercial" Number="6"/>
+		<DeviceSubClass Name="Telecommunications" Number="8"/>
+		<DeviceSubClass Name="Transportation" Number="7"/>
+		<DeviceSubClass Name="Utility" Number="11"/>
+	</DeviceSubClasses>
+	<ChannelTypes>
+		<ChannelType Name="FO-20L" Number="152" Approved="TRUE" Reference="ANSI/CEA-709.4"/>
+		<ChannelType Name="FO-20S" Number="24" Approved="TRUE" Reference="ANSI/CEA-709.4"/>
+		<ChannelType Name="IP-852" Number="154" Approved="TRUE" Reference="ISO/IEC 14908-4"/>
+		<ChannelType Name="PL-10" Number="9" Approved="TRUE" Reference="LonMark Interoperability Guidelines"/>
+		<ChannelType Name="PL-20A" Number="15" Approved="TRUE" Reference="LonMark Interoperability Guidelines"/>
+		<ChannelType Name="PL-20C" Number="16" Approved="TRUE" Reference="ISO/IEC 14908-3"/>
+		<ChannelType Name="PL-20N" Number="17" Approved="TRUE" Reference="ISO/IEC 14908-3"/>
+		<ChannelType Name="PL-30" Number="18" Approved="TRUE" Reference="LonMark Interoperability Guidelines"/>
+		<ChannelType Name="TP/FT-10" Number="4" Approved="TRUE" Reference="ISO/IEC 14908-2"/>
+		<ChannelType Name="TP/RS485-39" Number="5" Approved="TRUE" Reference="ANSI/TIA/EIA-485-A"/>
+		<ChannelType Name="TP/XF-1250" Number="3" Approved="TRUE" Reference="LonMark Interoperability Guidelines"/>
+		<ChannelType Name="TP/XF-78" Number="1" Approved="TRUE" Reference="LonMark Interoperability Guidelines"/>
+		<ChannelType Name="Backplane" Number="255" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="Custom" Number="30" Approved="FALSE" Reference=""/>
+		<ChannelType Name="DC-1250" Number="29" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="DC-1250/SECD" Number="145" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="DC-2500/SECD" Number="146" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="DC-625" Number="28" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="DC-78" Number="27" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="IP-10L" Number="25" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="IP-10W" Number="26" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="IP-852.1" Number="0" Approved="FALSE" Reference="ANSI/CEA-852.1"/>
+		<ChannelType Name="IR-10" Number="23" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="IR-20" Number="22" Approved="FALSE" Reference=""/>
+		<ChannelType Name="Pyxos-FT" Number="254" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="RF-10" Number="7" Approved="FALSE" Reference="Echelon Corporation"/>
+		<ChannelType Name="RF-20" Number="21" Approved="FALSE" Reference=""/>
+		<ChannelType Name="TP/FT (reserved)" Number="6" Approved="FALSE" Reference=""/>
+		<ChannelType Name="TP/RS485-1250" Number="11" Approved="FALSE" Reference="ANSI/TIA/EIA-485-A"/>
+		<ChannelType Name="TP/RS-485-625" Number="10" Approved="FALSE" Reference="ANSI/TIA/EIA-485-A"/>
+		<ChannelType Name="TP/RS485-78" Number="12" Approved="FALSE" Reference="ANSI/TIA/EIA-485-A"/>
+	</ChannelTypes>
+</SPIDData>

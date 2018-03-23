@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NeuronTyp>
+   <Contents MajorVersion="1" MinorVersion="60" CreationDate="1240583100" Format="1" Content="62">
+      <FileDescription>Neuron Chip and Smart Transceiver type file</FileDescription>
+     <History Content="62">Added back the entry for CY7C53150L [53781]</History>
+     <History Content="61">Fixed clock specs and transceiver lists for PL* 
+          smart transceivers [52774]</History>
+      <History Content="60">Added sector sizes for flash parts supported by 5000 chips</History>
+      <History Content="59">Added FlashDriverID element for NVMemoryTypes [51792]</History>
+      <History Content="58">Fixed transceiver lists [52571]</History>
+      <History Content="57">Added CapacityModel records for commissioning cost estimation.</History>
+      <History Content="56">Fixed manufacturer Id for FT 5000 and Neuron 5000 [52165]</History>
+      <History Content="55">Fixed transceiver list for Neuron 5000</History>
+      <History Content="54">Fixed image name for Neuron 5000 chip and adjusted some cosmetic 
+         details for better consistency [50843] </History>
+      <History Content="53">
+         Minimum clock for FT 3120-E4 V16 is 5MHz (was unlimited), 
+         Added firmware 18 (CY7C53150 512, CY7C53150 2K, PL 3150 512, FT 3150 2K, PL 3150 2K) 
+         Removed 6.5536MHz from scheme 6, added scheme 7
+         Fixed minimum clock Id for PL 3170 [50563]
+      </History>
+      <History Content="52">Renamed system image for PL 3170 from b3120E4X to b3170E4X [50475]</History>
+      <History Content="51">Fixed clocking data for schemes 1-3, 1.25MHz operation [50435]</History>
+      <History Content="50">Removed obsolete CY7C53150L and CY7C53120L8 parts - never in production</History>
+      <History Content="49">Added FT 5000 and Neuron 5000 Added clocking 
+          schemes</History>
+   </Contents>
+   <NeuronModels>
+      <NeuronModel Name="Legacy Neuron 3120" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120</ImageName>
+         <Key>0</Key>
+         <ModelNum>8</ModelNum>
+         <minFWrelease>3</minFWrelease>
+         <maxFWrelease>4</maxFWrelease>
+         <FirmwareVersionList>3;4</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID> 
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>-1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3150" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3150</ImageName>
+         <Key>1</Key>
+         <ModelNum>0</ModelNum>
+         <minFWrelease>3</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>3;4;6;7;13;14;15;16;17;18;19;121;122</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID> 
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>-1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3120E1" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E1</ImageName>
+         <Key>2</Key>
+         <ModelNum>9</ModelNum>
+         <minFWrelease>6</minFWrelease>
+         <maxFWrelease>6</maxFWrelease>
+         <FirmwareVersionList>6</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF3FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID> 
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>-1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3120E2" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E2</ImageName>
+         <Key>3</Key>
+         <ModelNum>10</ModelNum>
+         <minFWrelease>6</minFWrelease>
+         <maxFWrelease>6</maxFWrelease>
+         <FirmwareVersionList>6</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>-1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3120E3" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E3</ImageName>
+         <Key>4</Key>
+         <ModelNum>11</ModelNum>
+         <minFWrelease>9</minFWrelease>
+         <maxFWrelease>10</maxFWrelease>
+         <FirmwareVersionList>9;10</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3120A20" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120A20</ImageName>
+         <Key>5</Key>
+         <ModelNum>12</ModelNum>
+         <minFWrelease>9</minFWrelease>
+         <maxFWrelease>10</maxFWrelease>
+         <FirmwareVersionList>9;10</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF3FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron 3120E5" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E5</ImageName>
+         <Key>6</Key>
+         <ModelNum>13</ModelNum>
+         <minFWrelease>9</minFWrelease>
+         <maxFWrelease>10</maxFWrelease>
+         <FirmwareVersionList>9;10</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE000</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron CY7C53120E4" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="TRUE" SharedClock="FALSE">
+         <ImageName>3120E4</ImageName>
+         <Key>7</Key>
+         <ModelNum>14</ModelNum>
+         <minFWrelease>13</minFWrelease>
+         <maxFWrelease>13</maxFWrelease>
+         <FirmwareVersionList>13</FirmwareVersionList>
+         <ROMend>0x2FFF</ROMend>
+         <ROMendMinimum>0x2FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x4C00</ExtendedEEstart>
+         <ExtendedEEend>0x4FFF</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>7</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>12</BigBufferResetFwMin>
+         <ManufacturerID>2</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>3</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="FT 3120-E4 V13" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="TRUE" SharedClock="FALSE">
+         <ImageName>3120E4</ImageName>
+         <Key>8</Key>
+         <ModelNum>14</ModelNum>
+         <minFWrelease>13</minFWrelease>
+         <maxFWrelease>13</maxFWrelease>
+         <FirmwareVersionList>13</FirmwareVersionList>
+         <ROMend>0x2FFF</ROMend>
+         <ROMendMinimum>0x2FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x4C00</ExtendedEEstart>
+         <ExtendedEEend>0x4FFF</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4</MinClockID>
+         <MaxClockID>7</MaxClockID>
+         <TransceiverList>7</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>12</BigBufferResetFwMin>
+         <ManufacturerID>4</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>5</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron CY7C53150 512" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3150</ImageName>
+         <Key>9</Key>
+         <ModelNum>0</ModelNum>
+         <minFWrelease>7</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>7;13;14;15;16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>2</ManufacturerID>
+         <UninitEEStart>0xF200</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="FT 3150 512" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3150</ImageName>
+         <Key>10</Key>
+         <ModelNum>0</ModelNum>
+         <minFWrelease>13</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>13;14;15;16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList>7</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>4</ManufacturerID>
+         <UninitEEStart>0xF200</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>4</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron CY7C53120E2" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="TRUE" SharedClock="FALSE">
+         <ImageName>3120E2</ImageName>
+         <Key>11</Key>
+         <ModelNum>10</ModelNum>
+         <minFWrelease>6</minFWrelease>
+         <maxFWrelease>6</maxFWrelease>
+         <FirmwareVersionList>6</FirmwareVersionList>
+         <ROMend>0x2FFF</ROMend>
+         <ROMendMinimum>0x2FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>2</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120AM" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120</ImageName>
+         <Key>12</Key>
+         <ModelNum>8</ModelNum>
+         <minFWrelease>3</minFWrelease>
+         <maxFWrelease>3</maxFWrelease>
+         <FirmwareVersionList>3</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120B1M" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120</ImageName>
+         <Key>13</Key>
+         <ModelNum>8</ModelNum>
+         <minFWrelease>4</minFWrelease>
+         <maxFWrelease>4</maxFWrelease>
+         <FirmwareVersionList>4</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120B1AM" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120</ImageName>
+         <Key>14</Key>
+         <ModelNum>8</ModelNum>
+         <minFWrelease>4</minFWrelease>
+         <maxFWrelease>4</maxFWrelease>
+         <FirmwareVersionList>4</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120E1M" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E1</ImageName>
+         <Key>15</Key>
+         <ModelNum>9</ModelNum>
+         <minFWrelease>6</minFWrelease>
+         <maxFWrelease>6</maxFWrelease>
+         <FirmwareVersionList>6</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF3FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120FE1M" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E1</ImageName>
+         <Key>16</Key>
+         <ModelNum>9</ModelNum>
+         <minFWrelease>7</minFWrelease>
+         <maxFWrelease>7</maxFWrelease>
+         <FirmwareVersionList>7</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF3FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120FE3M" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E3</ImageName>
+         <Key>17</Key>
+         <ModelNum>11</ModelNum>
+         <minFWrelease>9</minFWrelease>
+         <maxFWrelease>9</maxFWrelease>
+         <FirmwareVersionList>9</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120A20M/U" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120A20</ImageName>
+         <Key>18</Key>
+         <ModelNum>12</ModelNum>
+         <minFWrelease>9</minFWrelease>
+         <maxFWrelease>10</maxFWrelease>
+         <FirmwareVersionList>9;10</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF3FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron TMPN3120FE5M" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E5</ImageName>
+         <Key>19</Key>
+         <ModelNum>13</ModelNum>
+         <minFWrelease>10</minFWrelease>
+         <maxFWrelease>10</maxFWrelease>
+         <FirmwareVersionList>10</FirmwareVersionList>
+         <ROMend>0x3FFF</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE000</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>0</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron MC143120B1" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120</ImageName>
+         <Key>20</Key>
+         <ModelNum>8</ModelNum>
+         <minFWrelease>4</minFWrelease>
+         <maxFWrelease>4</maxFWrelease>
+         <FirmwareVersionList>4</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xEC00</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron MC143120E2" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3120E2</ImageName>
+         <Key>21</Key>
+         <ModelNum>10</ModelNum>
+         <minFWrelease>6</minFWrelease>
+         <maxFWrelease>6</maxFWrelease>
+         <FirmwareVersionList>6</FirmwareVersionList>
+         <ROMend>0x27FF</ROMend>
+         <ROMendMinimum>0x27FF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>0</BigBufferResetFwMin>
+         <ManufacturerID>1</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>1</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="PL 3120-E4" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="FALSE" SharedClock="TRUE">
+         <ImageName>3120E4X</ImageName>
+         <Key>22</Key>
+         <ModelNum>15</ModelNum>
+         <minFWrelease>14</minFWrelease>
+         <maxFWrelease>14</maxFWrelease>
+         <FirmwareVersionList>14</FirmwareVersionList>
+         <ROMend>0x5FFF</ROMend>
+         <ROMendMinimum>0x5FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x8000</ExtendedEEstart>
+         <ExtendedEEend>0x83FF</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4.13107200</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList>8;9;18;19;20;21</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>12</BigBufferResetFwMin>
+         <ManufacturerID>5</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>7</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>1</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="PL 3150 512" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="TRUE">
+         <ImageName>3150A</ImageName>
+         <Key>23</Key>
+         <ModelNum>1</ModelNum>
+         <minFWrelease>14</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>14;16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF1FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4.13107200</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList>8;9;18;19;20;21</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>5</ManufacturerID>
+         <UninitEEStart>0xF200</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>7</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+            <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>1</CapacityModel>
+      </NeuronModel>
+     <NeuronModel Name="Neuron CY7C53150L 768" ExternalMemory="TRUE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+       <ImageName>3150b</ImageName>
+       <Key>26</Key>
+       <ModelNum>2</ModelNum>
+       <minFWrelease>15</minFWrelease>
+       <maxFWrelease>127</maxFWrelease>
+       <FirmwareVersionList>15;16;17</FirmwareVersionList>
+       <ROMend>0x0000</ROMend>
+       <ROMendMinimum>0x3FFF</ROMendMinimum>
+       <EEstart>0xF000</EEstart>
+       <EEend>0xF2FF</EEend>
+       <ExtendedEEstart>0x0000</ExtendedEEstart>
+       <ExtendedEEend>0x0000</ExtendedEEend>
+       <RAMstart>0xE000</RAMstart>
+       <RAMend>0xEFFF</RAMend>
+       <MinClockID>0</MinClockID>
+       <MaxClockID>5</MaxClockID>
+       <TransceiverList/>
+       <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+       <BigBufferResetFwMin>6</BigBufferResetFwMin>
+       <ManufacturerID>2</ManufacturerID>
+       <UninitEEStart>0xF300</UninitEEStart>
+       <UninitEEEnd>0xFAFF</UninitEEEnd>
+       <InstructionSet>1</InstructionSet>
+       <ClockingScheme>1</ClockingScheme>
+       <NVMemoryTypes>
+         <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+           <Name>EEPROM</Name>
+           <Description></Description>
+           <Symbol></Symbol>
+           <FlashDriverID></FlashDriverID>
+           <FlashSectorSizes />
+         </NVMemoryType>
+         <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+           <Name>FLASH</Name>
+           <Description></Description>
+           <Symbol></Symbol>
+           <FlashDriverID></FlashDriverID>
+           <FlashSectorSizes>64;128</FlashSectorSizes>
+         </NVMemoryType>
+         <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+           <Name>NVRAM</Name>
+           <Description></Description>
+           <Symbol></Symbol>
+           <FlashDriverID></FlashDriverID>
+           <FlashSectorSizes />
+         </NVMemoryType>
+       </NVMemoryTypes>
+       <Family>3100</Family>
+       <CapacityModel>0</CapacityModel>
+     </NeuronModel>
+     <NeuronModel Name="FT 3150 2K" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3150C</ImageName>
+         <Key>27</Key>
+         <ModelNum>0</ModelNum>
+         <minFWrelease>16</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList>7</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>4</ManufacturerID>
+         <UninitEEStart>0xF800</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>4</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="PL 3150 2K" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="TRUE">
+         <ImageName>3150D</ImageName>
+         <Key>28</Key>
+         <ModelNum>1</ModelNum>
+         <minFWrelease>16</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4.13107200</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList>8;9;18;19;20;21</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>5</ManufacturerID>
+         <UninitEEStart>0xF800</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>7</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>1</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="FT 3120-E4 V16" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="TRUE" SharedClock="FALSE">
+         <ImageName>3120E4A</ImageName>
+         <Key>30</Key>
+         <ModelNum>14</ModelNum>
+         <minFWrelease>16</minFWrelease>
+         <maxFWrelease>16</maxFWrelease>
+         <FirmwareVersionList>16</FirmwareVersionList>
+         <ROMend>0x2FFF</ROMend>
+         <ROMendMinimum>0x2FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x4C00</ExtendedEEstart>
+         <ExtendedEEend>0x4FFF</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>4</MinClockID>
+         <MaxClockID>7</MaxClockID>
+         <TransceiverList>7</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>12</BigBufferResetFwMin>
+         <ManufacturerID>4</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>5</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+      </NeuronModel>
+      <NeuronModel Name="Neuron CY7C53150 2K" ExternalMemory="TRUE" TriacClkedgeBipolar="FALSE" PTMSupported="FALSE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+         <ImageName>3150C</ImageName>
+         <Key>31</Key>
+         <ModelNum>0</ModelNum>
+         <minFWrelease>16</minFWrelease>
+         <maxFWrelease>127</maxFWrelease>
+         <FirmwareVersionList>16;17;18;19</FirmwareVersionList>
+         <ROMend>0x0000</ROMend>
+         <ROMendMinimum>0x3FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xF7FF</EEend>
+         <ExtendedEEstart>0x0000</ExtendedEEstart>
+         <ExtendedEEend>0x0000</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>0</MinClockID>
+         <MaxClockID>6</MaxClockID>
+         <TransceiverList />
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>6</BigBufferResetFwMin>
+         <ManufacturerID>2</ManufacturerID>
+         <UninitEEStart>0xF800</UninitEEStart>
+         <UninitEEEnd>0xFAFF</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>2</ClockingScheme>
+         <NVMemoryTypes>
+            <NVMemoryType Key="0" EEWriteTimeRequired="TRUE">
+               <Name>EEPROM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+            <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+               <Name>FLASH</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes>64;128</FlashSectorSizes>
+            </NVMemoryType>
+            <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+               <Name>NVRAM</Name>
+               <Description></Description>
+               <Symbol></Symbol>
+              <FlashDriverID></FlashDriverID>
+              <FlashSectorSizes />
+            </NVMemoryType>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>0</CapacityModel>
+     </NeuronModel>
+     <NeuronModel Name="PL 3170" ExternalMemory="FALSE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="TRUE" SharedClock="TRUE">
+         <ImageName>3170E4X</ImageName>
+         <Key>32</Key>
+         <ModelNum>17</ModelNum>
+         <minFWrelease>17</minFWrelease>
+         <maxFWrelease>17</maxFWrelease>
+         <FirmwareVersionList>17</FirmwareVersionList>
+         <ROMend>0x5FFF</ROMend>
+         <ROMendMinimum>0x5FFF</ROMendMinimum>
+         <EEstart>0xF000</EEstart>
+         <EEend>0xFBFF</EEend>
+         <ExtendedEEstart>0x8000</ExtendedEEstart>
+         <ExtendedEEend>0x83FF</ExtendedEEend>
+         <RAMstart>0xE800</RAMstart>
+         <RAMend>0xEFFF</RAMend>
+         <MinClockID>5</MinClockID>
+         <MaxClockID>5</MaxClockID>
+         <TransceiverList>8;9;18;19</TransceiverList>
+         <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+         <BigBufferResetFwMin>12</BigBufferResetFwMin>
+         <ManufacturerID>5</ManufacturerID>
+         <UninitEEStart>0x0000</UninitEEStart>
+         <UninitEEEnd>0x0000</UninitEEEnd>
+         <InstructionSet>1</InstructionSet>
+         <ClockingScheme>6</ClockingScheme>
+         <NVMemoryTypes>
+         </NVMemoryTypes>
+         <Family>3100</Family>
+         <CapacityModel>1</CapacityModel>
+     </NeuronModel>
+     <NeuronModel Name="FT 5000" ExternalMemory="TRUE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+        <ImageName>FT5000</ImageName>
+        <Key>104</Key>
+        <ModelNum>32</ModelNum>
+        <minFWrelease>18</minFWrelease>
+        <maxFWrelease>119</maxFWrelease>
+        <FirmwareVersionList>18;19</FirmwareVersionList>
+        <ROMend>0x3FFF</ROMend>
+        <ROMendMinimum>0x3FFF</ROMendMinimum>
+        <EEstart>0xF000</EEstart>
+        <EEend>0xF7FF</EEend>
+        <ExtendedEEstart>0x0000</ExtendedEEstart>
+        <ExtendedEEend>0x0000</ExtendedEEend>
+        <RAMstart>0xE800</RAMstart>
+        <RAMend>0xEFFF</RAMend>
+        <MaxClockID>5</MaxClockID>
+        <MinClockID>5</MinClockID>
+        <TransceiverList>7</TransceiverList>
+        <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+        <BigBufferResetFwMin>12</BigBufferResetFwMin>
+        <ManufacturerID>7</ManufacturerID>
+        <UninitEEStart>0x0000</UninitEEStart>
+        <UninitEEEnd>0x0000</UninitEEEnd>
+        <InstructionSet>2</InstructionSet>
+        <ClockingScheme>20</ClockingScheme>
+        <NVMemoryTypes>
+           <NVMemoryType Key="0" EEWriteTimeRequired="FALSE">
+              <Name>EEPROM</Name>
+              <Description></Description>
+              <Symbol></Symbol>
+             <FlashDriverID></FlashDriverID>
+             <FlashSectorSizes />
+           </NVMemoryType>
+           <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+              <Name>AT25F512 (Flash)</Name>
+              <Description>Atmel Flash part.</Description>
+              <Symbol>FAPI_AT25F512</Symbol>
+             <FlashDriverID>1</FlashDriverID>
+             <FlashSectorSizes>32768</FlashSectorSizes>
+           </NVMemoryType>
+           <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+              <Name>STM25P05 (Flash)</Name>
+              <Description>Flash type.</Description>
+              <Symbol>FAPI_STM25P05</Symbol>
+             <FlashDriverID>2</FlashDriverID>
+             <FlashSectorSizes>32768</FlashSectorSizes>
+          </NVMemoryType>
+          <NVMemoryType Key="3" EEWriteTimeRequired="FALSE">
+             <Name>SST25VF512 (Flash)</Name>
+             <Description>Flash type.</Description>
+             <Symbol>FAPI_SST25VF512</Symbol>
+            <FlashDriverID>3</FlashDriverID>
+            <FlashSectorSizes>4096</FlashSectorSizes>
+          </NVMemoryType>
+      </NVMemoryTypes>
+      <Family>5000</Family>
+      <CapacityModel>1</CapacityModel>
+   </NeuronModel> 
+   <NeuronModel Name="Neuron 5000" ExternalMemory="TRUE" TriacClkedgeBipolar="TRUE" PTMSupported="TRUE" OnchipProgrammableSystemImage="FALSE" SharedClock="FALSE">
+      <ImageName>FT5000</ImageName>
+      <Key>105</Key>
+      <ModelNum>33</ModelNum>
+      <minFWrelease>18</minFWrelease>
+      <maxFWrelease>119</maxFWrelease>
+      <FirmwareVersionList>18;19</FirmwareVersionList>
+      <ROMend>0x3FFF</ROMend>
+      <ROMendMinimum>0x3FFF</ROMendMinimum>
+      <EEstart>0xF000</EEstart>
+      <EEend>0xF7FF</EEend>
+      <ExtendedEEstart>0x0000</ExtendedEEstart>
+      <ExtendedEEend>0x0000</ExtendedEEend>
+      <RAMstart>0xE800</RAMstart>
+      <RAMend>0xEFFF</RAMend>
+      <MaxClockID>5</MaxClockID>
+      <MinClockID>5</MinClockID>
+      <TransceiverList>1;2;3;4;7;11;12;13;24;152</TransceiverList>
+      <ExtendedRAMSize>0x0000</ExtendedRAMSize>
+      <BigBufferResetFwMin>12</BigBufferResetFwMin>
+      <ManufacturerID>7</ManufacturerID>
+      <UninitEEStart>0x0000</UninitEEStart>
+      <UninitEEEnd>0x0000</UninitEEEnd>
+      <InstructionSet>2</InstructionSet>
+      <ClockingScheme>20</ClockingScheme>
+      <NVMemoryTypes>
+         <NVMemoryType Key="0" EEWriteTimeRequired="FALSE">
+            <Name>EEPROM</Name>
+            <Description></Description>
+            <Symbol></Symbol>
+           <FlashDriverID></FlashDriverID>
+           <FlashSectorSizes />
+         </NVMemoryType>
+         <NVMemoryType Key="1" EEWriteTimeRequired="FALSE">
+            <Name>AT25F512 (Flash)</Name>
+            <Description>Atmel Flash part.</Description>
+            <Symbol>FAPI_AT25F512</Symbol>
+           <FlashDriverID>1</FlashDriverID>
+           <FlashSectorSizes>32768</FlashSectorSizes>
+         </NVMemoryType>
+         <NVMemoryType Key="2" EEWriteTimeRequired="FALSE">
+            <Name>STM25P05 (Flash)</Name>
+            <Description>Flash type.</Description>
+            <Symbol>FAPI_STM25P05</Symbol>
+           <FlashDriverID>2</FlashDriverID>
+           <FlashSectorSizes>32768</FlashSectorSizes>
+         </NVMemoryType>
+         <NVMemoryType Key="3" EEWriteTimeRequired="FALSE">
+            <Name>SST25VF512 (Flash)</Name>
+            <Description>Flash type.</Description>
+            <Symbol>FAPI_SST25VF512</Symbol>
+           <FlashDriverID>3</FlashDriverID>
+           <FlashSectorSizes>4096</FlashSectorSizes>
+         </NVMemoryType>
+      </NVMemoryTypes>
+      <Family>5000</Family>
+      <CapacityModel>1</CapacityModel>
+      </NeuronModel> 
+   </NeuronModels>
+
+   <LinkCompatibleModels>
+      <LinkCompatibleModel Name="0">
+	 <LinkCompatibleList>1;2</LinkCompatibleList>
+      </LinkCompatibleModel>
+   </LinkCompatibleModels>
+
+   <ClockingSchemes>
+      <ClockingScheme Id="1">
+          <Description>This is the clocking scheme used by 3100-family chips up
+             to 10 MHz.</Description>
+          <Algorithm>1</Algorithm>
+          <Clocks Default="10000000">
+              <Clock Value="625000">
+                  <Display>625kHz</Display>
+                  <CycleDivider>1</CycleDivider>
+                  <Encoding>1</Encoding>
+                 <Uart>TRUE</Uart>
+                  <Multipliers Default="0.5">
+                      <Multiplier Value="0.5">
+                           <Display>1/2</Display>
+                           <Encoding>0.5</Encoding>
+                           <Cpu>1</Cpu>
+                           <Mac>1</Mac>
+                      </Multiplier>
+                  </Multipliers>
+              </Clock>
+              <Clock Value="1250000">
+                  <Display>1.25MHz</Display>
+                  <CycleDivider>1</CycleDivider>
+                  <Encoding>2</Encoding>
+                  <Uart>TRUE</Uart>
+                  <Multipliers Default="0.5">
+                      <Multiplier Value="0.5">
+                           <Display>1/2</Display>
+                           <Encoding>0.5</Encoding>
+                           <Cpu>2</Cpu>
+                           <Mac>2</Mac>
+                      </Multiplier>
+                  </Multipliers>
+              </Clock>
+              <Clock Value="2500000">
+                  <Display>2.5MHz</Display>
+                  <CycleDivider>1</CycleDivider>
+                  <Encoding>3</Encoding>
+                  <Uart>TRUE</Uart>
+                  <Multipliers Default="0.5">
+                      <Multiplier Value="0.5">
+                           <Display>1/2</Display>
+                           <Encoding>0.5</Encoding>
+                           <Cpu>3</Cpu>
+                           <Mac>3</Mac>
+                      </Multiplier>
+                  </Multipliers>
+              </Clock>
+              <Clock Value="5000000">
+                  <Display>5MHz</Display>
+                  <CycleDivider>1</CycleDivider>
+                  <Encoding>4</Encoding>
+                  <Uart>TRUE</Uart>
+                  <Multipliers Default="0.5">
+                      <Multiplier Value="0.5">
+                           <Display>1/2</Display>
+                           <Encoding>0.5</Encoding>
+                           <Cpu>4</Cpu>
+                           <Mac>4</Mac>
+                      </Multiplier>
+                  </Multipliers>
+              </Clock>
+              <Clock Value="10000000">
+                  <Display>10MHz</Display>
+                  <CycleDivider>1</CycleDivider>
+                  <Encoding>5</Encoding>
+                  <Uart>TRUE</Uart>
+                  <Multipliers Default="0.5">
+                      <Multiplier Value="0.5">
+                           <Display>1/2</Display>
+                           <Encoding>0.5</Encoding>
+                           <Cpu>5</Cpu>
+                           <Mac>5</Mac>
+                      </Multiplier>
+                  </Multipliers>
+              </Clock>
+          </Clocks>
+      </ClockingScheme>
+       <ClockingScheme Id="2">
+           <Description>This is the clocking scheme used by 3100-family chips
+              with up to 20MHz.</Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="625000">
+                   <Display>625kHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>1</Encoding>
+                  <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>1</Cpu>
+                            <Mac>1</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="1250000">
+                   <Display>1.25MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>2</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>2</Cpu>
+                            <Mac>2</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="2500000">
+                   <Display>2.5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>3</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>3</Cpu>
+                            <Mac>3</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="5000000">
+                   <Display>5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>4</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>4</Cpu>
+                            <Mac>4</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="20000000">
+                   <Display>20MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>6</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>6</Cpu>
+                            <Mac>6</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="3">
+           <Description>This is the clocking scheme used by 3100-family chips
+              with up to 40MHz.</Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="625000">
+                   <Display>625kHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>1</Encoding>
+                  <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>1</Cpu>
+                            <Mac>1</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="1250000">
+                   <Display>1.25MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>2</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>2</Cpu>
+                            <Mac>2</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="2500000">
+                   <Display>2.5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>3</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>3</Cpu>
+                            <Mac>3</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="5000000">
+                   <Display>5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>4</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>4</Cpu>
+                            <Mac>4</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="20000000">
+                   <Display>20MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>6</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>6</Cpu>
+                            <Mac>6</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="40000000">
+                   <Display>40MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>7</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>7</Cpu>
+                            <Mac>7</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="4">
+           <Description>This is the clocking scheme used by 3100-family chips
+              between 5 and 20 MHz.</Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="5000000">
+                   <Display>5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>4</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>4</Cpu>
+                            <Mac>4</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="20000000">
+                   <Display>20MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>6</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>6</Cpu>
+                            <Mac>6</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="5">
+           <Description>This is the clocking scheme used by 3100-family chips
+              between 5 and 40 MHz.</Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="5000000">
+                   <Display>5MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>4</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>4</Cpu>
+                            <Mac>4</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="20000000">
+                   <Display>20MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>6</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>6</Cpu>
+                            <Mac>6</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="40000000">
+                   <Display>40MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>7</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>7</Cpu>
+                            <Mac>7</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="6">
+           <Description>
+              This is the clocking scheme used by PL 3120, 3170 and PL 3150
+              Smart Transceivers for use with C-band transceivers. 
+           </Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="7">
+           <Description>
+              This is the clocking scheme used by PL 3120, 3170 and PL 3150
+              Smart Transceivers for use with A-band transceivers.
+           </Description>
+           <Algorithm>1</Algorithm>
+           <Clocks Default="10000000">
+               <Clock Value="6553600">
+                   <Display>6.5536MHz</Display>
+                   <CycleDivider>1.31072</CycleDivider>
+                   <Encoding>4.13107200</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>4</Cpu>
+                            <Mac>4</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+               <Clock Value="10000000">
+                   <Display>10MHz</Display>
+                   <CycleDivider>1</CycleDivider>
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                            <Display>1/2</Display>
+                            <Encoding>0.5</Encoding>
+                            <Cpu>5</Cpu>
+                            <Mac>5</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+       <ClockingScheme Id="20">                      
+           <Description>This scheme is used by first-generation 5000-family 
+               chips</Description>
+           <Algorithm>2</Algorithm>
+           <Clocks Default="10000000">                 
+               <Clock Value="10000000">                
+                   <Display>10 MHz</Display>        
+                   <CycleDivider>1</CycleDivider>   
+                   <Encoding>5</Encoding>
+                   <Uart>TRUE</Uart>
+                   <Multipliers Default="0.5">
+                       <Multiplier Value="0.5">
+                           <Display>1/2</Display>   
+                           <Encoding>0.5</Encoding>
+                           <Cpu>5</Cpu>             
+                           <Mac>5</Mac>             
+                       </Multiplier>
+                       <Multiplier Value="1">
+                           <Display>1</Display>
+                           <Encoding>1</Encoding>
+                           <Cpu>6</Cpu>
+                           <Mac>6</Mac>
+                       </Multiplier>
+                       <Multiplier Value="2">
+                           <Display>2</Display>
+                           <Encoding>2</Encoding>
+                           <Cpu>7</Cpu>
+                           <Mac>6</Mac>
+                       </Multiplier>
+                       <Multiplier Value="4">
+                           <Display>4</Display>
+                           <Encoding>4</Encoding>
+                           <Cpu>0</Cpu>
+                           <Mac>6</Mac>
+                       </Multiplier>
+                       <Multiplier Value="8">
+                           <Display>8</Display>
+                           <Encoding>8</Encoding>
+                           <Cpu>1</Cpu>
+                           <Mac>6</Mac>
+                       </Multiplier>
+                   </Multipliers>
+               </Clock>
+           </Clocks>
+       </ClockingScheme>
+   </ClockingSchemes>
+</NeuronTyp>
+
+

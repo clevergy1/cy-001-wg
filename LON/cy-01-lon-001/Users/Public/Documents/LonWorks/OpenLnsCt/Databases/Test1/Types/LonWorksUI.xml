@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LonWorksUI>
+	<Contents MajorVersion="0" MinorVersion="0" CreationDate="1016140805" Format="1" Content="2">
+		<FileDescription>LonWorks user interface information file.  Used By NodeBuilder</FileDescription>
+	</Contents>
+	<UIInfo>
+		<ClockSpeeds>0.625 MHz,1;1.25 MHz,2;2.5 MHz,3;5 MHz,4;6.5536 MHz,4.13107200;10 MHz,5;20 MHz,6;40 MHz,7</ClockSpeeds>
+	</UIInfo>
+</LonWorksUI>

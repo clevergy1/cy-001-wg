@@ -1,0 +1,388 @@
+SNVT_abs_humid:   text("%f");
+SNVT_address:	  text("%x");
+SNVT_alarm:	  text("%x %x %x %x %x %x %d %m %m %d <%x %x %x %x>  %d/%d/%d/%d:%d:%d:%d <%x %x %x %x>",
+		       location[0], location[1], location[2], location[3],
+		       location[4], location[5], object_id, alarm_type,
+		       priority_level, index_to_SNVT, value[0], value[1],
+		       value[2], value[3], year, month, day, hour, minute,
+		       second, millisecond, alarm_limit[0], alarm_limit[1],
+		       alarm_limit[2], alarm_limit[3]);
+SNVT_alarm_2:	  text("%m %m %x %x %x %x %d %d %s",
+		       alarm_type, priority_level,
+		       alarm_time[0], alarm_time[1], alarm_time[2], alarm_time[3],
+		       milliseconds, sequence_number, description);
+SNVT_amp:	  text("%f");
+SNVT_amp_ac:	  text("%f");
+SNVT_amp_f:	  text("%f");
+SNVT_amp_mil:	  text("%f");
+SNVT_angle:	  text("%f");
+SNVT_angle_deg:   text("%f");
+SNVT_angle_f:	  text("%f");
+SNVT_angle_vel:   text("%f");
+SNVT_angle_vel_f: text("%f");
+SNVT_area:	  text("%f");
+SNVT_btu_f:	  text("%f");
+SNVT_btu_kilo:	  text("%d");
+SNVT_btu_mega:	  text("%d");
+SNVT_char_ascii:  text("%c");
+SNVT_chlr_status: text("%m,%m,%d,%d,%d,%d,%d,%d",
+		       chlr_run_mode, chlr_op_mode,
+		       chlr_state.in_alarm, chlr_state.run_enabled,
+		       chlr_state.local, chlr_state.limited,
+		       chlr_state.chw_flow, chlr_state.condw_flow);
+SNVT_color:	  text("%f,%f,%f", L_star, a_star, b_star);
+SNVT_config_src:  text("%m");
+SNVT_count:	  text("%d");
+SNVT_count_f:	  text("%f");
+SNVT_count_inc:   text("%d");
+SNVT_count_inc_f: text("%f");
+SNVT_ctrl_req:	  text("%d %d %d", receiver_id, sender_id, sender_prio);
+SNVT_ctrl_resp:   text("%m %d %d %d %d", status, sender.id, sender.range.upper, sender.range.lower, controller_id);
+SNVT_currency:	  text("%m %d E%d", currency, value, power_of_10);
+SNVT_date_cal:	  text("%d/%d/%d", year, month, day);
+SNVT_date_day:	  text("%m");
+SNVT_date_event:	text("%d %d %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c",
+			     days_to_active, days_to_inactive,
+			     name[0],  name[1],  name[2],  name[3],  name[4],
+			     name[5],  name[6],  name[7],  name[8],  name[9],
+			     name[10], name[11], name[12], name[13], name[14],
+			     name[15], name[16], name[17], name[18], name[19],
+			     name[20], name[21] );
+SNVT_date_time:   text("%d:%d:%d", hour, minute, second);
+SNVT_defr_mode:   text("%m");
+SNVT_defr_state:  text("%m");
+SNVT_defr_term:   text("%m");
+SNVT_density:	  text("%f");
+SNVT_density_f:   text("%f");
+SNVT_dev_c_mode:  text("%m");
+SNVT_dev_fault:		text(( (device_select == 0) ?
+					("DS = %m  SF = %d %d %d %d %d %d %d %d  DF = %d %d %d %d %d %d %d %d",
+					device_select,
+					dev_type.pump_ctrl.sf_voltage_low,
+					dev_type.pump_ctrl.sf_voltage_high,
+					dev_type.pump_ctrl.sf_phase,
+					dev_type.pump_ctrl.sf_no_fluid,
+					dev_type.pump_ctrl.sf_press_low,
+					dev_type.pump_ctrl.sf_press_high,
+					dev_type.pump_ctrl.sf_reserved1_6,
+					dev_type.pump_ctrl.sf_reserved1_7,
+					dev_type.pump_ctrl.df_motor_temp,
+					dev_type.pump_ctrl.df_motor_failure,
+					dev_type.pump_ctrl.df_pump_blocked,
+					dev_type.pump_ctrl.df_elect_temp,
+					dev_type.pump_ctrl.df_elect_failure_nf,
+					dev_type.pump_ctrl.df_elect_failure,
+					dev_type.pump_ctrl.df_sensor_failure,
+					dev_type.pump_ctrl.df_reserved2_7,
+					dev_type.pump_ctrl.reserved3_0_7) :
+				( (device_select == 1) ?
+					("DS = %m  %d %d %d",
+					device_select,
+					dev_type.valve_pos.reserved1_0_7,
+					dev_type.valve_pos.reserved2_0_7,
+					dev_type.valve_pos.reserved3_0_7) :
+				  ("UNKNOWN") ) ));
+SNVT_dev_maint:		text(( (device_select == 0) ?
+					("DS = %m  %d %d %d %d %d %d",
+					device_select,
+					dev_type.pump_ctrl.service_required,
+					dev_type.pump_ctrl.bearings_change,
+					dev_type.pump_ctrl.bearings_lubricate,
+					dev_type.pump_ctrl.shaftseal_change,
+					dev_type.pump_ctrl.reserved1_4_7,
+					dev_type.pump_ctrl.reserved2_0_7,
+					dev_type.pump_ctrl.reserved3_0_7) :
+				( (device_select == 1) ?
+					("DS = %m  %d %d %d",
+					device_select,
+					dev_type.valve_pos.reserved1_0_7,
+					dev_type.valve_pos.reserved2_0_7,
+					dev_type.valve_pos.reserved3_0_7) :
+				  ("UNKNOWN") ) ));
+SNVT_dev_status:	text(( (device_select == 0) ?
+					("DS = %m  %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d",
+					device_select,
+					dev_type.pump_ctrl.device_fault,
+					dev_type.pump_ctrl.supply_fault,
+					dev_type.pump_ctrl.reserved1_2,
+					dev_type.pump_ctrl.speed_low,
+					dev_type.pump_ctrl.speed_high,
+					dev_type.pump_ctrl.reserved1_5,
+					dev_type.pump_ctrl.setpt_out_of_range,
+					dev_type.pump_ctrl.reserved1_7,
+					dev_type.pump_ctrl.local_control,
+					dev_type.pump_ctrl.reserved2_1,
+					dev_type.pump_ctrl.running,
+					dev_type.pump_ctrl.reserved2_3,
+					dev_type.pump_ctrl.remote_press,
+					dev_type.pump_ctrl.remote_flow,
+					dev_type.pump_ctrl.remote_temp,
+					dev_type.pump_ctrl.reserved2_7,
+					dev_type.pump_ctrl.reserved3_0_7) :
+				( (device_select == 1) ?
+					("DS = %m  %d %d %d",
+					device_select,
+					dev_type.valve_pos.reserved1_0_7,
+					dev_type.valve_pos.reserved2_0_7,
+					dev_type.valve_pos.reserved3_0_7) :
+				  ("UNKNOWN") ) ));
+SNVT_earth_pos:   text("%d %d %d %d %d %d %f",
+		       latitude_direction, latitude_deg, latitude_min,
+		       longitude_direction, longitude_deg, longitude_min,
+		       height_above_sea);
+SNVT_elapsed_tm:  text("%d %d:%d:%d:%d",
+		       day, hour, minute, second, millisecond);
+SNVT_elec_kwh:	  text("%d");
+SNVT_elec_kwh_l:  text("%f");
+SNVT_elec_whr:	  text("%f");
+SNVT_elec_whr_f:  text("%f");
+SNVT_enthalpy:	  text("%f");
+SNVT_ent_opmode:  text("%m");
+SNVT_ent_state:   text("%m");
+SNVT_ent_status:  text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%m",
+		       unlocked, locked, security_locked, closed, open,
+		       in_alarm, in_error_cond, open_pre_alarm, open_alarm,
+		       service_alarm, tamper, entry_req, exit_req, key_req,
+		       safety_ext_req, emergency_req, unable_unlock, stuck,
+		       forced_open, forced_close, opening, closing, moving, stopped,
+		       safety_alarm, unknown_state, cmd_fb);
+SNVT_evap_state:  text("%m");
+SNVT_ex_control:  text("%m %d <%x %x %x %x %x %x> %d %d", control_status,
+		       control_device_addr.domain_length, control_device_addr.domain_id[0],
+		       control_device_addr.domain_id[1], control_device_addr.domain_id[2],
+		       control_device_addr.domain_id[3], control_device_addr.domain_id[4],
+		       control_device_addr.domain_id[5], control_device_addr.subnet,
+		       control_device_addr.node);
+SNVT_file_pos:	  text("%d %d", rw_ptr, rw_length);
+SNVT_file_req:	  text( ("%m %d %d %d %d %d %d %d %d ",
+		       request, index, receive_timeout, dest_address.sn.domain,
+		       dest_address.sn.retry, dest_address.sn.tx_timer,
+		       auth_on, prio_on, dest_address.sn.type ),
+		       ( (dest_address.gp.type == 1) ?
+			  ("GP %d", dest_address.gp.group) :
+			  (dest_address.sn.type == 1) ?
+			    ("S/N %d/%d",
+			     dest_address.sn.subnet, dest_address.sn.node) :
+			    ("BCAST or ADDRT or UNBOUND") ));
+SNVT_file_status: text( ("%m %d %d ",
+		       status, number_of_files, selected_file ),
+		       ( (status == 1) ? ("%d %d %s",
+		       adr.descriptor.size, adr.descriptor.type,
+		       adr.descriptor.file_info ) :
+		       ("%d <%x %x %x %x %x %x> %d %d", adr.address.domain_length,
+		       adr.address.domain_id[0], adr.address.domain_id[1],
+		       adr.address.domain_id[2], adr.address.domain_id[3],
+		       adr.address.domain_id[4], adr.address.domain_id[5],
+		       adr.address.subnet, adr.address.node) ) );
+SNVT_fire_indcte: text("%m");
+SNVT_fire_init:   text("%m");
+SNVT_fire_test:   text("%m");
+SNVT_flow:	  text("%d");
+SNVT_flow_dir:	  text("%m");
+SNVT_flow_f:	  text("%f");
+SNVT_flow_mil:	  text("%d");
+SNVT_flow_p:	  text("%f");
+SNVT_freq_f:	  text("%f");
+SNVT_freq_hz:	  text("%f");
+SNVT_freq_kilohz: text("%f");
+SNVT_freq_milhz:  text("%f");
+SNVT_gfci_status: text("%m");
+SNVT_grammage:	  text("%f");
+SNVT_grammage_f:  text("%f");
+SNVT_hvac_emerg:  text("%m");
+SNVT_hvac_mode:   text("%m");
+SNVT_hvac_overid: text("%m,%f,%f", state, percent, flow);
+SNVT_hvac_satsts: text("%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       pri_heat, sec_heat, pri_cool, sec_cool,
+		       pri_duct_starved, sec_duct_starved,
+		       reserved, reserved1, manufacturer_defined);
+SNVT_hvac_status: text("%m,%f,%f,%f,%f,%f,%d", mode, heat_output_primary,
+		       heat_output_secondary, cool_output, econ_output,
+		       fan_output, in_alarm);
+SNVT_hvac_type:   text("%m");
+SNVT_ISO_7811:	  text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       digit1, digit2, digit3, digit4, digit5, digit6, digit7,
+		       digit8, digit9, digit10, digit11, digit12, digit13,
+		       digit14, digit15, digit16, digit17, digit18, digit19,
+		       digit20, digit21, digit22, digit23, digit24, digit25,
+		       digit26, digit27, digit28, digit29, digit30, digit31,
+		       digit32, digit33, digit34, digit35, digit36, digit37,
+		       digit38);
+SNVT_length:	  text("%f");
+SNVT_length_f:	  text("%f");
+SNVT_length_kilo: text("%f");
+SNVT_length_micr: text("%f");
+SNVT_length_mil:  text("%f");
+SNVT_lev_cont:	  text("%f");
+SNVT_lev_cont_f:  text("%f");
+SNVT_lev_disc:	  text("%m");
+SNVT_lev_percent: text("%f");
+SNVT_lux:	  text("%d");
+SNVT_magcard:	  text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       digit1, digit2, digit3, digit4, digit5, digit6, digit7,
+		       digit8, digit9, digit10, digit11, digit12, digit13,
+		       digit14, digit15, digit16, digit17, digit18, digit19,
+		       digit20, digit21, digit22, digit23, digit24, digit25,
+		       digit26, digit27, digit28, digit29, digit30, digit31,
+		       digit32, digit33, digit34, digit35, digit36, digit37,
+		       digit38, digit39, digit40);
+SNVT_mass:	  text("%f");
+SNVT_mass_f:	  text("%f");
+SNVT_mass_kilo:   text("%f");
+SNVT_mass_mega:   text("%f");
+SNVT_mass_mil:	  text("%f");
+SNVT_motor_state: text("%m");
+SNVT_muldiv:	  text("%d/%d", multiplier, divisor);
+SNVT_multiplier:  text("%f");
+SNVT_nv_type:	  text("PID %x%x:%x%x:%x%x:%x%x, Scope %d, Index %d, %m, %d bytes, A=%d, B=%d, C=%d",
+		       type_program_ID[0], type_program_ID[1],
+		       type_program_ID[2], type_program_ID[3],
+		       type_program_ID[4], type_program_ID[5],
+		       type_program_ID[6], type_program_ID[7],
+		       type_scope, type_index,
+		       type_category, type_length,
+		       scaling_factor_a, scaling_factor_b, scaling_factor_c);
+SNVT_obj_request: text("%d %m", object_id, object_request);
+SNVT_obj_status:  text("%d %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       object_id, invalid_id, invalid_request, disabled,
+		       out_of_limits, open_circuit, out_of_service,
+		       mechanical_fault, feedback_failure, over_range,
+		       under_range, electrical_fault, unable_to_measure,
+		       comm_failure, fail_self_test, self_test_in_progress,
+		       locked_out, manual_control, in_alarm, in_override,
+		       report_mask, programming_mode, programming_fail,
+		       alarm_notify_disabled, reset_complete);
+SNVT_occupancy:   text("%m");
+SNVT_override:	  text("%m");
+SNVT_ph:	  text("%f");
+SNVT_ph_f:	  text("%f");
+SNVT_pos_ctrl:	  text("%d %d %d %m %m %d %f %f %f", receiver_id, controller_id, controller_prio, function, action,
+		       value.number, value.abspos.pan, value.abspos.tilt, value.abspos.zoom);
+SNVT_power:	  text("%f");
+SNVT_power_f:	  text("%f");
+SNVT_power_kilo:  text("%f");
+SNVT_ppm:	  text("%d");
+SNVT_ppm_f:	  text("%f");
+SNVT_preset:	  text("%m %d <%x %x %x %x> %d %d:%d:%d:%d",
+		       learn, selector, value[0], value[1], value[2], value[3],
+		       day, hour, minute, second, millisecond);
+SNVT_press:	  text("%f");
+SNVT_press_f:	  text("%f");
+SNVT_press_p:	  text("%f");
+SNVT_privacyzone: text("%m %d %d", action, number, camera_id);
+SNVT_ptz:	  text("%m %f %m %f %m %f", pan_dir, pan_speed, tilt_dir, tilt_speed, zoom, zoom_speed);
+SNVT_pump_sensor: text("%f %f %f %f %m %m %m %f %f %m %m %m %m",
+		       rotational_speed, body_temperature, motor_external_temperature,
+		       motor_internal_temperature, motor_overloaded, oil_level_low,
+		       phase_imbalance_detected, current_usage, power_usage, temperature_control,
+		       electromagnetic_brake_active, friction_brake_active, gas_brake_active);
+SNVT_pumpset_mn:  text("%m %m %m %m %m %m %m %m", main_pump, booster_pump, priority_level,
+		       process_ready, emergency_stop_activated, main_pump_drive_enabled,
+		       booster_pump_drive_enabled, maintenance_required);
+SNVT_pumpset_sn:  text("%d %f %f %f %f %f %d %m %m %m %m %m %m %m",
+		       total_dilution_flow, exhaust_temperature,
+		       exhaust_pressure, shaft_seal_purge_pressure, inlet_vacuum,
+		       supply_voltage, coolant_flow, coolant_flow_low, dilution_active,
+		       ballast_dilution_active, inlet_purge_dilution_active,
+		       exhaust_dilution_active, dilution_flow_out_of_range, power_supply_on);
+SNVT_pwr_fact:	  text("%f");
+SNVT_pwr_fact_f:  text("%f");
+SNVT_reg_val:	  text("%d %m %d", raw, unit, nr_decimals);
+SNVT_reg_val_ts:  text("%d %m %d %d %d %d/%d/%d %d:%d:%d",
+		       raw, unit, nr_decimals, status, reg_state,
+		       year, month, day, hour, minute, second);
+SNVT_res:	  text("%f");
+SNVT_res_f:	  text("%f");
+SNVT_res_kilo:	  text("%f");
+SNVT_rpm:	  text("%f");
+SNVT_scene:	  text("%m %d", function, scene_number);
+SNVT_scene_cfg:   text("%m %d %f %f %f %f %d",
+		       function, scene_number, setting, rotation,
+		       fade_time, delay_time, scene_priority);
+SNVT_sched_val:   text("%d");
+SNVT_setting:	  text("%m %f %f", function, setting, rotation);
+SNVT_smo_obscur:  text("%f");
+SNVT_sound_db:	  text("%f");
+SNVT_sound_db_f:  text("%f");
+SNVT_speed:	  text("%f");
+SNVT_speed_f:	  text("%f");
+SNVT_speed_mil:   text("%f");
+SNVT_state:	  text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,
+		       bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SNVT_state_64:	  text("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d",
+		       bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,
+		       bit9, bit10, bit11, bit12, bit13, bit14, bit15,
+		       bit16, bit17, bit18, bit19, bit20, bit21, bit22, bit23, bit24,
+		       bit25, bit26, bit27, bit28, bit29, bit30, bit31,
+		       bit32, bit33, bit34, bit35, bit36, bit37, bit38, bit39, bit40,
+		       bit41, bit42, bit43, bit44, bit45, bit46, bit47,
+		       bit48, bit49, bit50, bit51, bit52, bit53, bit54, bit55, bit56,
+		       bit57, bit58, bit59, bit60, bit61, bit62, bit63);
+SNVT_str_asc:	  text("%s", ascii);
+SNVT_str_int:	  text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",
+		       char_set, wide_char[0], wide_char[1], wide_char[2],
+		       wide_char[3], wide_char[4], wide_char[5], wide_char[6],
+		       wide_char[7], wide_char[8], wide_char[9], wide_char[10],
+		       wide_char[11],wide_char[12], wide_char[13], wide_char[14]);
+SNVT_switch:	  text("%f %d", value, state);
+SNVT_telcom:	  text("%m");
+SNVT_temp:	  text("%f");
+SNVT_temp_diff_p: text("%f");
+SNVT_temp_f:	  text("%f");
+SNVT_temp_p:	  text("%f");
+SNVT_temp_ror:	  text("%f");
+SNVT_temp_setpt:  text("%f,%f,%f,%f,%f,%f",
+		       occupied_cool, standby_cool, unoccupied_cool,
+		       occupied_heat, standby_heat, unoccupied_heat);
+SNVT_therm_mode:  text("%m");
+SNVT_time_f:	  text("%f");
+SNVT_time_hour:   text("%f");
+SNVT_time_min:	  text("%f");
+SNVT_time_passed: text("%d:%d:%d:%d",
+		       hours, minutes, seconds, milliseconds);
+SNVT_time_sec:	  text("%f");
+SNVT_time_stamp:  text("%d/%d/%d %d:%d:%d",
+		       year, month, day, hour, minute, second);
+SNVT_time_zone:   text( ("%d %m %d:%d:%d ",
+		       second_time_offset, type_of_description,
+		       hour_of_start_DST, minute_of_start_DST,
+		       second_of_start_DST),
+		       ( (type_of_description != 2) ?
+			 ("%d %d:%d:%d %d",
+			  start_DST.G_day_of_start_DST,
+			  hour_of_end_DST,
+			  minute_of_end_DST,
+			  second_of_end_DST,
+			  end_DST.G_day_of_end_DST) :
+			 ("%d %d %m %d:%d:%d %d %d %m",
+			  start_DST.M_start_DST.month_of_start_DST,
+			  start_DST.M_start_DST.week_of_start_DST,
+			  start_DST.M_start_DST.dateday_of_start_DST,
+			  hour_of_end_DST,
+			  minute_of_end_DST,
+			  second_of_end_DST,
+			  end_DST.M_end_DST.month_of_end_DST,
+			  end_DST.M_end_DST.week_of_end_DST,
+			  end_DST.M_end_DST.dateday_of_end_DST) ) );
+SNVT_tod_event:   text("%m,%m,%f",
+		       current_state, next_state, time_to_next_state);
+SNVT_trans_table: text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d",
+		       point[0], point[1], point[2], point[3], point[4],
+		       point[5], point[6], interp_pts_0_to_1,
+		       interp_pts_1_to_2, interp_pts_2_to_3, interp_pts_3_to_4,
+		       interp_pts_4_to_5, interp_pts_5_to_6, interp_pts_6_to_0);
+SNVT_turbidity:   text("%f");
+SNVT_turbidity_f: text("%f");
+SNVT_valve_mode:  text("%m");
+SNVT_vol:	  text("%f");
+SNVT_vol_f:	  text("%f");
+SNVT_vol_kilo:	  text("%f");
+SNVT_vol_mil:	  text("%f");
+SNVT_volt:	  text("%f");
+SNVT_volt_ac:	  text("%f");
+SNVT_volt_dbmv:   text("%f");
+SNVT_volt_kilo:   text("%f");
+SNVT_volt_mil:	  text("%f");
+SNVT_volt_f:	  text("%f");
+SNVT_zerospan:	  text("%f,%f", zero, span);

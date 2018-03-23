@@ -1,0 +1,15 @@
+; VniConfig registry file version 1.0000 for 'Software\LonWorks\NSS\Configuration\LONBiblioteca 2\VNIs\_Default'
+; Created Fri Mar 02 15:06:25 2018
+
+'Device Name', REG_SZ, 'LON1'
+'Program Id', REG_BINARY, 9000010103800003
+'Max Domains', REG_DWORD, 2
+'Max Addresses', REG_DWORD, 32768
+'Max Static NVs', REG_DWORD, 0
+'Max Dynamic NVs', REG_DWORD, 4096
+'Max Aliases', REG_DWORD, 1024
+'Node Self-Doc', REG_SZ, 'DEFAULT_LNS_HOST_L2_MIP_V3'
+'Max Monitor NVs', REG_DWORD, 61439
+'Max MonitorPoints', REG_DWORD, 65535
+'Max MonitorSets', REG_DWORD, 8000
+'Num Message Tags', REG_DWORD, 0

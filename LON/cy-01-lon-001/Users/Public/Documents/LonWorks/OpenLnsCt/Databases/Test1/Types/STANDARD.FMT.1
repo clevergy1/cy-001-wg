@@ -1,0 +1,749 @@
+! C:\LonWorks\types\STANDARD.fmt created by Resource Editor 3.13.15
+! All Rights Reserved. Run on Thu Jan 12 17:11:01 2006
+! Standard Format File - Data Version 12.11, 11 Jul 2005
+! Copyright (c) 2001-2005 Echelon Corporation
+! All Rights Reserved
+
+! Where multiple formats exist for a given type, the default
+! is selected by going through the following checklist in
+! order:
+!
+!   1) A format name preceded by a '*' character.  There
+!      should be one and only one default specified in this
+!	   way.
+!
+!	2) A format that has the same name as the base type.
+!
+!   3) The Windows Regional Settings lists the "Measurement
+!	   system" under the "Number" tab of the Regional Settings
+!      Property Sheet.	If the measurement system is "Metric",
+!      a format with a name extension beginning with "#SI" (for
+!      Systeme Internationale) will be preferred.  In order of
+!      preference:
+!	 i)  A "#SI" format name preceded by a '+' character.
+!			 There should be one and only one measurement
+!	     system default specified in this way.
+!	 ii) The first "#SI" format in alphabetical order.
+!
+!   4) If the measurement system is "U.S.", a format with a
+!      name extension beginning with "#US" will be preferred.
+!      In order of preference:
+!	 i)  A "#US" format name preceded by a '+' character.
+!			 There should be one and only one measurement
+!	     system default specified in this way.
+!	 ii) The first "#US" format in alphabetical order.
+!
+!   5) The first format name in alphabetical order
+!
+!
+! Optional unit conversion factors appear after the format string.
+! The default conversion is *1+0. A string resource indicator
+! may appear after the conversion factors (e.g. (0:855)).
+
+! The U.S. unit conversions in this file have been
+! optimized for the HVAC industry.
+
+set program_id 00:00:00:00:00:00:00:00;
+set selector STANDARD;
+
+SCPTactFbDly: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTactFbDly#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTactuatorCharacteristic: 	text("%m");
+SCPTactuatorType: 	text("%s", ascii);
+SCPTahamApplianceModel: 	text("%m");
+SCPTairTemp1Alrm: 	text("%f");
+SCPTairTemp1Day: 	text("%f");
+SCPTairTemp1Night: 	text("%f");
+SCPTalrmClrT1: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTalrmClrT1#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTalrmClrT2: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTalrmClrT2#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTalrmIhbT: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTalrmIhbT#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTalrmSetT1: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTalrmSetT1#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTalrmSetT2: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTalrmSetT2#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTareaDuctHeat#SI: 	text("%f");
+SCPTareaDuctHeat#US: 	text("%f", *10.7639+0(0:884)); 	! sq ft
+SCPTaudOutput: 	text("%f");
+SCPTaudibleLevel: 	text("%f %d", value, state);
+SCPTautoAnswer: 	text("%m");
+SCPTbaseValue: 	text("%d %m %d", raw, unit, nr_decimals);
+SCPTblockProtectionTime: 	text("%d");
+SCPTbrightness: 	text("%f %d", value, state);
+SCPTbuildingStaticPressureSetpoint#SI: 	text("%f");
+SCPTbuildingStaticPressureSetpoint#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTbuildingStaticPressureSetpoint#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTbypassTime: 	text("%f");
+SCPTclOffDelay: 	text("%f");
+SCPTclOnDelay: 	text("%f");
+SCPTclockCalibration: 	text("%d");
+SCPTcombFlowCharacteristic: 	text("%m");
+SCPTcontrolPriority: 	text("%d");
+SCPTcontrolSignal: 	text("%f %f %f %f", x1Value, y1Value, x2Value, y2Value);
+SCPTcontrolTemperatureWeighting: 	text("%f");
+SCPTcoolLowerSP#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTcoolLowerSP#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTcoolSetpt#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTcoolSetpt#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTcoolUpperSP#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTcoolUpperSP#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTcoolingLockout#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTcoolingLockout#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTcoolingResetEnable: 	text("%m");
+SCPTcutOutValue#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTcutOutValue#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTdayDateIndex: 	text("%d/%d,%d/%d,%d",day_1, month_1, day_2, month_2, event_mode_index);
+SCPTdayNightCntrl: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SCPTdayNightCntrl#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SCPTdebounce: 	text("%f");
+SCPTdefOutput: 	text("%d");
+SCPTdefScale: 	text("%f");
+SCPTdefWeekMask: 	text("%d,%d,%d,%d,%d,%d,%d",time_event_index[0], time_event_index[1],time_event_index[2], time_event_index[3],time_event_index[4], time_event_index[5],time_event_index[6]);
+SCPTdefWeekMask#LO: 	text("%d|%d|%d|%d|%d|%d|%d",time_event_index[0], time_event_index[1],time_event_index[2], time_event_index[3],time_event_index[4], time_event_index[5],time_event_index[6]);
+SCPTdefaultAutoPanSpeed: 	text("%f");
+SCPTdefaultPanTiltZoomSpeeds: 	text("%m %f %m %f %m %f", pan_dir, pan_speed,tilt_dir, tilt_speed, zoom, zoom_speed);
+SCPTdefaultSetting: 	text("%m %d %d", function,setting,rotation);
+SCPTdefaultState: 	text("%m %d", state,identity);
+SCPTdefltBehave: 	text("%f %d", value, state);
+SCPTdefrostCycles: 	text("%d");
+SCPTdefrostDetect#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdefrostDetect#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SCPTdefrostFanDelay: 	text("%d");
+SCPTdefrostHold: 	text("%m");
+SCPTdefrostInternalSchedule: 	text("%m");
+SCPTdefrostMode: 	text("%m");
+SCPTdefrostRecoveryTime: 	text("%d");
+SCPTdefrostStart: 	text("%d:%d", hour, minute);
+SCPTdefrostStart#LO: 	text(time(hour, minute));
+SCPTdelayTime: 	text("%f");
+SCPTdeltaNight#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdeltaNight#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential)
+SCPTdevMajVer: 	text("%d");
+SCPTdevMinVer: 	text("%d");
+SCPTdeviceControlMode: 	text("%m");
+SCPTdeviceGroupID: 	text("%d");
+SCPTdialString: 	text("%s", ascii);
+SCPTdiffNight#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdiffNight#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential)
+SCPTdiffTempSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdiffTempSetpoint#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SCPTdiffValue#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdiffValue#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential)
+SCPTdirection: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SCPTdirection#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SCPTdischargeAirCoolingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdischargeAirCoolingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTdischargeAirDewpointSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdischargeAirDewpointSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTdischargeAirHeatingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTdischargeAirHeatingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTdrainDelay: 	text("%f");
+SCPTdriveT: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTdriveT#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTdriveTime: 	text("%f");
+SCPTductArea: 	text("%f");
+SCPTductStaticPressureLimit#SI: 	text("%f");
+SCPTductStaticPressureLimit#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTductStaticPressureLimit#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTductStaticPressureSetpoint#SI: 	text("%f");
+SCPTductStaticPressureSetpoint#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTductStaticPressureSetpoint#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTeffectivePeriod: 	text("%d %d %d %d %d %d",start.year, start.month, start.day,end.year, end.month, end.day);
+SCPTemergCnfg: 	text("%d");
+SCPTemergencyPosition: 	text("%f");
+SCPTenergyCntInit: 	text("%d");
+SCPTexhaustEnablePosition: 	text("%f");
+SCPTfadeTime: 	text("%f");
+SCPTfanDifferentialSetpoint: 	text("%f");
+SCPTfanOperation: 	text("%m");
+SCPTfieldCalib: 	text("%d");
+SCPTfireIndicate: 	text("%m");
+SCPTfireInitType: 	text("%m");
+SCPTfireTxt1: 	text("%s", ascii);
+SCPTfireTxt2: 	text("%s", ascii);
+SCPTfireTxt3: 	text("%s", ascii);
+SCPTflashFreq: 	text("%f");
+SCPTfreeCoolPosition: 	text("%f");
+SCPTgain: 	text("%d/%d", multiplier, divisor);
+SCPTgainVAV: 	text("%f");
+SCPTgainVAVHeat: 	text("%f");
+SCPTheatLowerSP#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTheatLowerSP#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTheatSetpt#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTheatSetpt#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTheatUpperSP#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTheatUpperSP#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTheatingLockout#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTheatingLockout#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTheatingResetEnable: 	text("%m");
+SCPThighLimDefrDly: 	text("%f");
+SCPThighLimDly: 	text("%f");
+SCPThighLimTemp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPThighLimTemp#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPThighLimit1: 	text("%d");
+SCPThighLimit1Enable: 	text("%m");
+SCPThighLimit2: 	text("%d");
+SCPThighLimit2Enable: 	text("%m");
+SCPTholdTime: 	text("%f");
+SCPThumSetpt: 	text("%f");
+SCPThvacMode: 	text("%m");
+SCPThvacType: 	text("%m");
+SCPThystHigh1: 	text("%d");
+SCPThystHigh2: 	text("%d");
+SCPThystLow1: 	text("%d");
+SCPThystLow2: 	text("%d");
+SCPTidentity: 	text("%d");
+SCPTinFbDly: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTinFbDly#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTinjDelay: 	text("%f");
+SCPTinstallDate: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SCPTinstallDate#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SCPTinstalledLevel: 	text("%d");
+SCPTinvrtOut: 	text("%m");
+SCPTlimitCO2: 	text("%d");
+SCPTlimitChlrCap: 	text("%f");
+SCPTlocation: 	text("%s", ascii);
+SCPTlowLimDly: 	text("%f");
+SCPTlowLimTemp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTlowLimTemp#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTlowLimit1: 	text("%d");
+SCPTlowLimit1Enable: 	text("%m");
+SCPTlowLimit2: 	text("%d");
+SCPTlowLimit2Enable: 	text("%m");
+SCPTluxSetpoint: 	text("%d");
+SCPTmaintDate: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SCPTmaintDate#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SCPTmanOvrTime: 	text("%f");
+SCPTmanfDate: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SCPTmanfDate#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SCPTmanualAllowed: 	text("%d");
+SCPTmasterSlave: 	text("%d");
+SCPTmaxCameraPrepositions: 	text("%d");
+SCPTmaxDefrostTime: 	text("%d");
+SCPTmaxDefrstTemp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmaxDefrstTemp#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmaxDefrstTime: 	text("%f");
+SCPTmaxDischargeAirCoolingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmaxDischargeAirCoolingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmaxDischargeAirHeatingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmaxDischargeAirHeatingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmaxDuctStaticPressureSetpoint#SI: 	text("%f");
+SCPTmaxDuctStaticPressureSetpoint#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTmaxDuctStaticPressureSetpoint#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTmaxFlow#SI: 	text("%d");
+SCPTmaxFlow#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTmaxFlow#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTmaxFlowHeat#SI: 	text("%d");
+SCPTmaxFlowHeat#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTmaxFlowHeat#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTmaxFlowSetpoint#SI: 	text("%f", *1+0(0:1408)); 	! in (cu. m / hr)
+SCPTmaxFlowSetpoint#US: 	text("%f", *0.588578+0(0:1405)); 	! CFM
+SCPTmaxFlowUnit#SI: 	text("%d");
+SCPTmaxFlowUnit#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTmaxFlowUnit#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cu ft/min
+SCPTmaxNVLength: 	text("%d");
+SCPTmaxOut: 	text("%f");
+SCPTmaxPressureSetpoint#SI: 	text("%f");
+SCPTmaxPressureSetpoint#US: 	text("%f", *0.2953+0(0:1402)); 	! in. of Hg
+SCPTmaxPrivacyZones: 	text("%d");
+SCPTmaxRcvT: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTmaxRcvT#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTmaxRcvTime: 	text("%f");
+SCPTmaxRemoteFlowSetpoint#SI: 	text("%f", *1+0(0:1408)); 	! in cu m/hr
+SCPTmaxRemoteFlowSetpoint#US: 	text("%f", *0.588578+0(0:1405)); 	! in CFM
+SCPTmaxRemotePressureSetpoint#SI: 	text("%f");
+SCPTmaxRemotePressureSetpoint#US: 	text("%f", *0.2953+0(0:1402)); 	! in. of Hg
+SCPTmaxRemoteTempSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmaxRemoteTempSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmaxReturnExhaustFanCapacity: 	text("%f");
+SCPTmaxRnge: 	text("%d");
+SCPTmaxSendTime: 	text("%f");
+SCPTmaxSetpoint: 	text("%f");
+SCPTmaxSndT: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTmaxSndT#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTmaxStroke#SI: 	text("%f");
+SCPTmaxStroke#US: 	text("%f", *0.03937+0(0:844)); 	! inches
+SCPTmaxSupplyFanCapacity: 	text("%f");
+SCPTminDefrostTime: 	text("%d");
+SCPTminDeltaAngl: 	text("%f");
+SCPTminDeltaCO2: 	text("%d");
+SCPTminDeltaFlow#SI: 	text("%d");
+SCPTminDeltaFlow#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminDeltaFlow#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminDeltaLevel: 	text("%f");
+SCPTminDeltaRH: 	text("%f");
+SCPTminDeltaTemp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTminDeltaTemp#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential)
+SCPTminDischargeAirCoolingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTminDischargeAirCoolingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTminDischargeAirHeatingSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTminDischargeAirHeatingSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTminDuctStaticPressureSetpoint#SI: 	text("%f");
+SCPTminDuctStaticPressureSetpoint#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTminDuctStaticPressureSetpoint#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTminFlow#SI: 	text("%d");
+SCPTminFlow#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlow#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowHeat#SI: 	text("%d");
+SCPTminFlowHeat#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowHeat#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowHeatStby#SI: 	text("%d");
+SCPTminFlowHeatStby#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowHeatStby#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowSetpoint#SI: 	text("%f", *1+0(0:1408)); 	! in (cu. m / hr)
+SCPTminFlowSetpoint#US: 	text("%f", *0.588578+0(0:1405)); 	! CFM
+SCPTminFlowStby#SI: 	text("%d");
+SCPTminFlowStby#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowStby#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowUnit#SI: 	text("%d");
+SCPTminFlowUnit#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowUnit#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowUnitHeat#SI: 	text("%d");
+SCPTminFlowUnitHeat#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowUnitHeat#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminFlowUnitStby#SI: 	text("%d");
+SCPTminFlowUnitStby#US: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SCPTminFlowUnitStby#US_cfm: 	text("%d", *2.1189+0(0:966)); 	! cubic feet/minute
+SCPTminOutdoorAirFlowSetpoint#SI: 	text("%d");
+SCPTminOutdoorAirFlowSetpoint#US: 	text("%d", *2.1189+0(0:966)); 	! cu ft/min
+SCPTminPressureSetpoint#SI: 	text("%f");
+SCPTminPressureSetpoint#US: 	text("%f", *0.2953+0(0:1402)); 	! in. of Hg
+SCPTminRemoteFlowSetpoint#SI: 	text("%f", *1+0(0:1408)); 	! in cu m/hr
+SCPTminRemoteFlowSetpoint#US: 	text("%f", *0.588578+0(0:1405)); 	! in CFM
+SCPTminRemotePressureSetpoint#SI: 	text("%f");
+SCPTminRemotePressureSetpoint#US: 	text("%f", *0.2953+0(0:1402)); 	! in. of Hg
+SCPTminRemoteTempSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTminRemoteTempSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTminReturnExhaustFanCapacity: 	text("%f");
+SCPTminRnge: 	text("%d");
+SCPTminSendTime: 	text("%f");
+SCPTminSetpoint: 	text("%f");
+SCPTminSndT: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTminSndT#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTminStroke#SI: 	text("%f");
+SCPTminStroke#US: 	text("%f", *0.03937+0(0:844)); 	! inches
+SCPTminSupplyFanCapacity: 	text("%f");
+SCPTmixedAirLowLimitSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmixedAirLowLimitSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmixedAirTempSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTmixedAirTempSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTmodeHrtBt: 	text("%f");
+SCPTneuronId: 	text("%x-%x-%x-%x-%x-%x", id[0],id[1],id[2],id[3],id[4],id[5]);
+SCPTnightPurgePosition: 	text("%f");
+SCPTnomAirFlow#SI: 	text("%d");
+SCPTnomAirFlow#US: 	text("%d", *2.1189+0(0:966)); 	! cu ft/min
+SCPTnomAirFlowHeat#SI: 	text("%d");
+SCPTnomAirFlowHeat#US: 	text("%d", *2.1189+0(0:966)); 	! cu ft/min
+SCPTnomAngle: 	text("%f");
+SCPTnomFreq: 	text("%f");
+SCPTnomRPM: 	text("%f");
+SCPTnormalRotationalSpeed: 	text("%f");
+SCPTnumDampers: 	text("%d");
+SCPTnumDigits: 	text("%d");
+SCPTnumValves: 	text("%d");
+SCPTnvDynamicAssignment: 	text("NV %d = FBlock %d, Member %d PID %x:%x:%x:%x:%x:%x:%x:%x, Scope %d, Index %d, %m, %d bytes, A=%d, B=%d, C=%d",nv_index, fblock_index, member_number,nv_type.type_program_ID[0], nv_type.type_program_ID[1],nv_type.type_program_ID[2], nv_type.type_program_ID[3],nv_type.type_program_ID[4], nv_type.type_program_ID[5],nv_type.type_program_ID[6], nv_type.type_program_ID[7],nv_type.type_scope, nv_type.type_index,nv_type.type_category, nv_type.type_length,nv_type.scaling_factor_a, nv_type.scaling_factor_b, nv_type.scaling_factor_c);
+SCPTnvPriority: 	text("%d %d", user_flag,nv);
+SCPTnvType: 	text("PID %x:%x:%x:%x:%x:%x:%x:%x, Scope %d, Index %d, %m, %d bytes, A=%d, B=%d, C=%d",type_program_ID[0], type_program_ID[1],type_program_ID[2], type_program_ID[3],type_program_ID[4], type_program_ID[5],type_program_ID[6], type_program_ID[7],type_scope, type_index,type_category, type_length,scaling_factor_a, scaling_factor_b, scaling_factor_c);
+SCPTnwrkCnfg: 	text("%m");
+SCPTobjMajVer: 	text("%d");
+SCPTobjMinVer: 	text("%d");
+SCPToemType: 	text("%s", ascii);
+SCPToffDely: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPToffDely#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPToffset: 	text("%d");
+SCPToffsetCO2: 	text("%d");
+SCPToffsetFlow#SI: 	text("%f");
+SCPToffsetFlow#US: 	text("%f", *2.1189+0(0:966)); 	! cu ft/min
+SCPToffsetFlow#US_cfm: 	text("%f", *2.1189+0(0:966)); 	! cu ft/min
+SCPToffsetFlow#US_liq: 	text("%f", *0.26418+0(0:837)); 	! gal/sec
+SCPToffsetRH: 	text("%f");
+SCPToffsetTemp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPToffsetTemp#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential)
+SCPTonOffHysteresis: 	text("%f");
+SCPTorientation: 	text("%f");
+SCPToutdoorAirEnthalpySetpoint#SI: 	text("%f"); 	! values in kJ/kg (kilojoules/kilogram)
+SCPToutdoorAirEnthalpySetpoint#US: 	text("%f", *0.429923+0(0:1400)); 	! values in btu/lb
+SCPToutdoorAirTempSetpoint#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPToutdoorAirTempSetpoint#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTovrBehave: 	text("%m");
+SCPTovrValue: 	text("%d");
+SCPTpartNumber: 	text("%s",ascii);
+SCPTpowerupState: 	text("%m %f %f", function, setting, rotation);
+SCPTprimeVal: 	text("%f %d", value, state);
+SCPTpulseValue: 	text("%d %d", multiplier,divisor);
+SCPTpumpCharacteristic#SI: 	text("%d %f %f", speedMax, pressMax, flowMax*1+0(0:1408)); 	! cu m/hr
+SCPTpumpCharacteristic#US: 	text("%d %f %f", speedMax, pressMax*0.2953+0(0:1402),   flowMax*0.588578+0(0:1405)); 	! CFM
+SCPTpumpDownDelay: 	text("%f");
+SCPTpwmPeriod: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTpwmPeriod#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTpwrUpDelay: 	text("%f");
+SCPTpwrUpState: 	text("%f %d", value, state);
+SCPTrampDownTm: 	text("%f");
+SCPTrampUpTm: 	text("%f");
+SCPTreflection: 	text("%f");
+SCPTrefrigGlide#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTrefrigGlide#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTrefrigType: 	text("%s %f,%f,%f", refrigerant, A, B, C);
+SCPTrefrigType#LO: 	text("%s %f|%f|%f", refrigerant, A, B, C);
+SCPTregName: 	text("%s", ascii);
+SCPTreturnFanStaticPressureSetpoint#SI: 	text("%f");
+SCPTreturnFanStaticPressureSetpoint#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SCPTreturnFanStaticPressureSetpoint#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SCPTrunHrAlarm: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTrunHrAlarm#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTrunHrInit: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SCPTrunHrInit#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SCPTrunTimeAlarm: 	text("%d %d %d %d %d", day,hour,minute,second,millisecond);
+SCPTsafExtCnfg: 	text("%d");
+SCPTsaturationDelay: 	text("%d");
+SCPTsceneNmbr: 	text("%d");
+SCPTsceneOffset: 	text("%d");
+SCPTschedule: 	text("%d %d %d",temporary, schedule_priority, time_value_index);
+SCPTscheduleDates: 	text("%d %d %m %d %d %d %m %m %m %d",start.year, start.month, start.day,end.year, end.temporary, end.month, end.day,qualifier.months, qualifier.days, schedule_index);
+SCPTscheduleInternal: 	text("%m");
+SCPTscheduleName: 	text("%c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c",name[0],  name[1],  name[2],  name[3],  name[4],name[5],  name[6],  name[7],  name[8],  name[9],name[10], name[11], name[12], name[13], name[14],name[15], name[16], name[17], name[18], name[19],name[20], name[21]);
+SCPTscheduleTimeValue: 	text("%d %d %d %d %d",invalid, terminator, hour, minute, value);
+SCPTscrollSpeed: 	text("%f %d", value, state);
+SCPTsecondVal: 	text("%f %d", value, state);
+SCPTsensConstTmp: 	text("%f");
+SCPTsensConstVAV: 	text("%f");
+SCPTserialNumber: 	text("%s", ascii);
+SCPTsetPnts#SI: 	text("%f,%f,%f,%f,%f,%f",occupied_cool, standby_cool, unoccupied_cool,occupied_heat, standby_heat, unoccupied_heat);
+SCPTsetPnts#SI_LO: 	text("%f|%f|%f|%f|%f|%f",occupied_cool, standby_cool, unoccupied_cool,occupied_heat, standby_heat, unoccupied_heat);
+SCPTsetPnts#US: 	text("%f,%f,%f,%f,%f,%f",  occupied_cool*1.8+32(0:855), standby_cool*1.8+32(0:855), unoccupied_cool*1.8+32(0:855),occupied_heat*1.8+32(0:855), standby_heat*1.8+32(0:855), unoccupied_heat*1.8+32(0:855));
+SCPTsetPnts#US_LO: 	text("%f|%f|%f|%f|%f|%f",  occupied_cool*1.8+32(0:855), standby_cool*1.8+32(0:855), unoccupied_cool*1.8+32(0:855),occupied_heat*1.8+32(0:855), standby_heat*1.8+32(0:855), unoccupied_heat*1.8+32(0:855));
+SCPTsetpoint: 	text("%d");
+SCPTsluiceCnfg: 	text("%m");
+SCPTsmokeDayAlrmLim: 	text("%f");
+SCPTsmokeDayPreAlrmLim: 	text("%f");
+SCPTsmokeNightAlrmLim: 	text("%f");
+SCPTsmokeNightPreAlrmLim: 	text("%f");
+SCPTsmokeNomSens: 	text("%f");
+SCPTsndDelta: 	text("%d");
+SCPTspaceHumSetpoint: 	text("%f");
+SCPTstandbyRotationalSpeed: 	text("%f");
+SCPTstep: 	text("%f");
+SCPTstepValue: 	text("%f");
+SCPTstrtupDelay: 	text("%f");
+SCPTstrtupOpen: 	text("%f");
+SCPTsummerTime: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SCPTsummerTime#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SCPTsuperHtRefInit#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTsuperHtRefInit#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTsuperHtRefMax#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTsuperHtRefMax#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTsuperHtRefMin#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTsuperHtRefMin#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTtempOffset#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTtempOffset#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SCPTtemperatureHysteresis#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTtemperatureHysteresis#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SCPTtermTimeTemp: 	text("%m");
+SCPTthermAlrmROR#SI: 	text("%f", *1+0(0:1012)); 	! degrees C / minute
+SCPTthermAlrmROR#US: 	text("%f", *1.8+0(0:1011)); 	! degrees F / minute
+SCPTthermMode: 	text("%m");
+SCPTthermThreshold#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SCPTthermThreshold#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SCPTtimeEvent: 	text("%m,%d:%d,%d", record_type, hour, minute, event_mode);
+SCPTtimeEvent#LO: 	text(("%m|", record_type), time(hour, minute), ("|%d", event_mode));
+SCPTtimePeriod: 	text("%m %d", units,value.minutes_interval);
+SCPTtimeZone: 	text( ("%d %m %d:%d:%d ",second_time_offset, type_of_description,hour_of_start_DST, minute_of_start_DST,second_of_start_DST),( (type_of_description != 2) ?("%d %d:%d:%d %d",start_DST.G_day_of_start_DST,hour_of_end_DST,minute_of_end_DST,second_of_end_DST,end_DST.G_day_of_end_DST) :("%d %d %m %d:%d:%d %d %d %m",start_DST.M_start_DST.month_of_start_DST,start_DST.M_start_DST.week_of_start_DST,start_DST.M_start_DST.dateday_of_start_DST,hour_of_end_DST,minute_of_end_DST,second_of_end_DST,end_DST.M_end_DST.month_of_end_DST,end_DST.M_end_DST.week_of_end_DST,end_DST.M_end_DST.dateday_of_end_DST) ) );
+SCPTtimeZone#LO: 	text( ("%d %m ", second_time_offset, type_of_description),time(hour_of_start_DST, minute_of_start_DST, second_of_start_DST),( (type_of_description != 2) ?((" %d ", start_DST.G_day_of_start_DST),time(hour_of_end_DST, minute_of_end_DST, second_of_end_DST),(" %d", end_DST.G_day_of_end_DST)) :((" %d %d %m ",start_DST.M_start_DST.month_of_start_DST,start_DST.M_start_DST.week_of_start_DST,start_DST.M_start_DST.dateday_of_start_DST),time(hour_of_end_DST, minute_of_end_DST, second_of_end_DST),(" %d %d %m", end_DST.M_end_DST.month_of_end_DST,end_DST.M_end_DST.week_of_end_DST,end_DST.M_end_DST.dateday_of_end_DST)) ) );
+SCPTtimeout: 	text("%f");
+SCPTtrnsTblX: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d",point[0], point[1], point[2], point[3], point[4],point[5], point[6], interp_pts_0_to_1,interp_pts_1_to_2, interp_pts_2_to_3, interp_pts_3_to_4,interp_pts_4_to_5, interp_pts_5_to_6, interp_pts_6_to_0);
+SCPTtrnsTblX2: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d", point[0],point[1],point[2],point[3],point[4],point[5],point[6],interp_pts_0_to_1,interp_pts_1_to_2,interp_pts_2_to_3,interp_pts_3_to_4,interp_pts_4_to_5,interp_pts_5_to_6,interp_pts_6_to_0);
+SCPTtrnsTblX3: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d", point[0],point[1],point[2],point[3],point[4],point[5],point[6],interp_pts_0_to_1,interp_pts_1_to_2,interp_pts_2_to_3,interp_pts_3_to_4,interp_pts_4_to_5,interp_pts_5_to_6,interp_pts_6_to_0);
+SCPTtrnsTblY: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d",point[0], point[1], point[2], point[3], point[4],point[5], point[6], interp_pts_0_to_1,interp_pts_1_to_2, interp_pts_2_to_3, interp_pts_3_to_4,interp_pts_4_to_5, interp_pts_5_to_6, interp_pts_6_to_0);
+SCPTtrnsTblY2: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d", point[0],point[1],point[2],point[3],point[4],point[5],point[6],interp_pts_0_to_1,interp_pts_1_to_2,interp_pts_2_to_3,interp_pts_3_to_4,interp_pts_4_to_5,interp_pts_5_to_6,interp_pts_6_to_0);
+SCPTtrnsTblY3: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d", point[0],point[1],point[2],point[3],point[4],point[5],point[6],interp_pts_0_to_1,interp_pts_1_to_2,interp_pts_2_to_3,interp_pts_3_to_4,interp_pts_4_to_5,interp_pts_5_to_6,interp_pts_6_to_0);
+SCPTupdateRate: 	text("%f");
+SCPTvalueDefinition: 	text("%d");
+SCPTvalueName: 	text("%c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c %c",name[0],  name[1],  name[2],  name[3],  name[4],name[5],  name[6],  name[7],  name[8],  name[9],name[10], name[11], name[12], name[13], name[14],name[15], name[16], name[17], name[18], name[19],name[20], name[21]);
+SCPTvalveFlowCharacteristic: 	text("%m");
+SCPTvalveKvs: 	text("%d");
+SCPTvalveNominalSize: 	text("%d");
+SCPTvalveOperatingMode: 	text("%m");
+SCPTvalveStroke: 	text("%d");
+SCPTvalveType: 	text("%m");
+SCPTvisOutput: 	text("%f");
+SCPTweeklySchedule: 	text("%d %d %d %d %d %d %d",schedule_index[0], schedule_index[1],schedule_index[2], schedule_index[3],schedule_index[4], schedule_index[5],schedule_index[6]);
+SCPTwinterTime: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SCPTwinterTime#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SCPTzoneNum: 	text("%d");
+SNVT_ISO_7811: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",digit1, digit2, digit3, digit4, digit5, digit6, digit7,digit8, digit9, digit10,digit11,digit12,digit13,digit14,digit15,digit16,digit17,digit18,digit19,digit20,digit21,digit22,digit23,digit24,digit25,digit26,digit27,digit28,digit29,digit30,digit31,digit32,digit33,digit34,digit35,digit36,digit37,digit38);
+SNVT_ISO_7811#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",digit1, digit2, digit3, digit4, digit5, digit6, digit7,digit8, digit9, digit10,digit11,digit12,digit13,digit14,digit15,digit16,digit17,digit18,digit19,digit20,digit21,digit22,digit23,digit24,digit25,digit26,digit27,digit28,digit29,digit30,digit31,digit32,digit33,digit34,digit35,digit36,digit37,digit38);
+SNVT_abs_humid#SI: 	text("%f"); 	! in g/kg
+SNVT_abs_humid#US: 	text("%f", *6.99983+0(0:1461)); 	! in grains/lb
+SNVT_address: 	text("%x");
+SNVT_alarm: 	text("%x %x %x %x %x %x %d %m %m %d <%x %x %x %x>  %d/%d/%d/%d:%d:%d:%d <%x %x %x %x>",location[0], location[1], location[2], location[3],location[4], location[5], object_id, alarm_type,priority_level, index_to_SNVT, value[0], value[1],value[2], value[3], year, month, day, hour, minute,second, millisecond, alarm_limit[0], alarm_limit[1],alarm_limit[2], alarm_limit[3]);
+SNVT_alarm#LO: 	text(("%x %x %x %x %x %x %d %m %m %d <%x %x %x %x>  ",location[0], location[1], location[2], location[3],location[4], location[5], object_id, alarm_type,priority_level, index_to_SNVT, value[0], value[1],value[2], value[3]),date(year, month, day),(" "),time(hour, minute, second, millisecond),(" <%x %x %x %x>", alarm_limit[0], alarm_limit[1],alarm_limit[2], alarm_limit[3]));
+SNVT_alarm_2: 	text("%m %m %d %d %d %s",alarm_type, priority_level, alarm_time,milliseconds, sequence_number, description);
+SNVT_amp: 	text("%f");
+SNVT_amp_ac: 	text("%f");
+SNVT_amp_f: 	text("%f");
+SNVT_amp_mil: 	text("%f");
+SNVT_angle: 	text("%f");
+SNVT_angle_deg: 	text("%f");
+SNVT_angle_f: 	text("%f");
+SNVT_angle_vel#SI: 	text("%f");
+SNVT_angle_vel#US: 	text("%f", *9.5493+0(0:970)); 	! RPM
+SNVT_angle_vel_f#SI: 	text("%f");
+SNVT_angle_vel_f#US: 	text("%f", *9.5493+0(0:970)); 	! RPM
+SNVT_area#SI: 	text("%f");
+SNVT_area#US: 	text("%f", *10.7639+0(0:884)); 	! sq ft
+SNVT_btu_f: 	text("%f");
+SNVT_btu_kilo: 	text("%d");
+SNVT_btu_mega: 	text("%d");
+SNVT_char_ascii: 	text("%c");
+SNVT_chlr_status: 	text("%m,%m,%d,%d,%d,%d,%d,%d",chlr_run_mode, chlr_op_mode,chlr_state.in_alarm, chlr_state.run_enabled,chlr_state.local, chlr_state.limited,chlr_state.chw_flow, chlr_state.condw_flow);
+SNVT_chlr_status#LO: 	text("%m|%m|%d|%d|%d|%d|%d|%d",chlr_run_mode, chlr_op_mode,chlr_state.in_alarm, chlr_state.run_enabled,chlr_state.local, chlr_state.limited,chlr_state.chw_flow, chlr_state.condw_flow);
+SNVT_clothes_w_a: 	text("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", alarm.alarm_reset,alarm.war_water_supply,alarm.war_drain_slow,alarm.war_door_open,alarm.war_load_unbalanced,alarm.war_filter_cleaning,alarm.war_hoses_reversed,alarm.war_voltage_low,alarm.war_power_failure,alarm.war_drain_open,alarm.war_execute_fail,alarm.war_door_locked,alarm.war_service,alarm.rsrvd5,alarm.rsrvd6,alarm.rsrvd7,alarm.err_motor_stall,alarm.err_water_temp,alarm.err_pressure,alarm.err_overflow,alarm.err_water_heat,alarm.err_water_leak,alarm.err_motor_speed,alarm.err_wash_thermistor,alarm.err_dry_thermistor,alarm.err_dry_overheat,alarm.err_dry_heating,alarm.err_dry_fan,alarm.err_rsrvd4,alarm.err_rsrvd5,alarm.err_rsrvd6,alarm.err_rsrvd7,alarm.err_rsrvd0_7,alarm.manuf_code);
+SNVT_clothes_w_c: 	text("%m %m %d %d %d %d %m %m %d %d %m %d %d %m %d %d %m %d %d %m %d", cycle,subcycle,rervd,action.power_on,action.run_mode,action.rsrvd2_7,function.program,function.wash.load_level,function.wash.temp,function.wash.time,function.wash.prewash,function.rinse.temp,function.rinse.repeat,function.rinse.option,function.spin.speed,function.spin.time,function.spin.hold,function.dry.temp,function.dry.duration.time,function.dry.duration.dryness,time_remaining);
+SNVT_clothes_w_m: 	text("%d %d %d", door_ajar,drain_on,reserved);
+SNVT_clothes_w_s: 	text("%m %m %m %m %d %d %d %d %m %m %d %d %m %d %d %m %d %d %m %d %d %m %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", cycle,subcycle,washer_command_data.cycle,washer_command_data.subcycle,washer_command_data.rervd,washer_command_data.action.power_on,washer_command_data.action.run_mode,washer_command_data.action.rsrvd2_7,washer_command_data.function.program,washer_command_data.function.wash.load_level,washer_command_data.function.wash.temp,washer_command_data.function.wash.time,washer_command_data.function.wash.prewash,washer_command_data.function.rinse.temp,washer_command_data.function.rinse.repeat,washer_command_data.function.rinse.option,washer_command_data.function.spin.speed,washer_command_data.function.spin.time,washer_command_data.function.spin.hold,washer_command_data.function.dry.temp,washer_command_data.function.dry.duration.time,washer_command_data.function.dry.duration.dryness,washer_command_data.time_remaining,time_remaining,alarm.alarm_reset,alarm.war_water_supply,alarm.war_drain_slow,alarm.war_door_open,alarm.war_load_unbalanced,alarm.war_filter_cleaning,alarm.war_hoses_reversed,alarm.war_voltage_low,alarm.war_power_failure,alarm.war_drain_open,alarm.war_execute_fail,alarm.war_door_locked,alarm.war_service,alarm.war_rsrvd5,alarm.war_rsrvd6,alarm.war_rsrvd7,alarm.err_motor_stall,alarm.err_water_temp,alarm.err_pressure,alarm.err_overflow,alarm.err_water_heat,alarm.err_water_leak,alarm.err_motor_speed,alarm.err_wash_thermistor,alarm.err_dry_thermistor,alarm.err_dry_overheat,alarm.err_dry_heating,alarm.err_dry_fan,alarm.err_rsrvd4,alarm.err_rsrvd5,alarm.err_rsrvd6,alarm.err_rsrvd7,alarm.err_rsrvd0_7,alarm.manuf_code);
+SNVT_color: 	text("%f,%f,%f", L_star, a_star, b_star);
+SNVT_color#LO: 	text("%f|%f|%f", L_star, a_star, b_star);
+SNVT_config_src: 	text("%m");
+SNVT_count: 	text("%d");
+SNVT_count_32: 	text("%d");
+SNVT_count_f: 	text("%f");
+SNVT_count_inc: 	text("%d");
+SNVT_count_inc_f: 	text("%f");
+SNVT_ctrl_req: 	text("%d %d %d", receiver_id, sender_id, sender_prio);
+SNVT_ctrl_resp: 	text("%m %d %d %d %d", status, sender.id, sender.range.upper, sender.range.lower, controller_id);
+SNVT_currency: 	text("%m,%d,E%d", currency, value, power_of_10);
+SNVT_currency#LO: 	text("%m|%d|E%d", currency, value, power_of_10);
+SNVT_date_cal: 	text("%d/%d/%d", year, month, day);
+SNVT_date_cal#LO: 	text(date(year, month, day));
+SNVT_date_day: 	text("%m");
+SNVT_date_event: 	text("%d %d %s", days_to_active, days_to_inactive, name);
+SNVT_date_time: 	text("%d:%d:%d", hour, minute, second);
+SNVT_date_time#LO: 	text(time(hour, minute, second));
+SNVT_defr_mode: 	text("%m");
+SNVT_defr_state: 	text("%m");
+SNVT_defr_term: 	text("%m");
+SNVT_density#SI: 	text("%f", *1+0(0:880)); 	! kg/cu meter
+SNVT_density#US: 	text("%f", *0.0624+0(0:865)); 	! lbs/cu ft
+SNVT_density_f#SI: 	text("%f", *1+0(0:880)); 	! kg/cu meter
+SNVT_density_f#US: 	text("%f", *0.0624+0(0:865)); 	! lbs/cu ft
+SNVT_dev_c_mode: 	text("%m");
+SNVT_dev_fault: 	text(("DS=%m ",device_select),((device_select == 0) ?("SF: [VL=%d VH=%d PH=%d NF=%d PL=%d PH=%d {%d %d}] DF: [MT=%d MF=%d PB=%d ET=%d EF=%d EX=%d SF=%d {%d %d}]", 
+
+dev_type.pump_ctrl.sf_voltage_low,dev_type.pump_ctrl.sf_voltage_high,dev_type.pump_ctrl.sf_phase,dev_type.pump_ctrl.sf_no_fluid,dev_type.pump_ctrl.sf_press_low,dev_type.pump_ctrl.sf_press_high,dev_type.pump_ctrl.sf_reserved1_6,dev_type.pump_ctrl.sf_reserved1_7,dev_type.pump_ctrl.df_motor_temp,dev_type.pump_ctrl.df_motor_failure,dev_type.pump_ctrl.df_pump_blocked,dev_type.pump_ctrl.df_elect_temp,dev_type.pump_ctrl.df_elect_failure_nf,dev_type.pump_ctrl.df_elect_failure,dev_type.pump_ctrl.df_sensor_failure,dev_type.pump_ctrl.df_reserved2_7,dev_type.pump_ctrl.reserved3_0_7) :( (device_select == 1) ?("DF: [VB=%d DO=%d DC=%d PE=%d SOR=%d I=%d VC=%d ED=%d {%d}] EE: [O=%d VL=%d VS=%d {%d %d}] SF: [VOR=%d ET=$d FR=%d {$d}] GF=%d", 
+
+dev_type.valve_pos.df_valve_blocked,dev_type.valve_pos.df_blocked_direction_open,dev_type.valve_pos.df_blocked_direction_close,dev_type.valve_pos.df_position_error,dev_type.valve_pos.df_stroke_out_of_range,dev_type.valve_pos.df_initialization,dev_type.valve_pos.df_vibration_cavitation,dev_type.valve_pos.df_ed_too_high,dev_type.valve_pos.reserved1_0_2,dev_type.valve_pos.ee_oscillating,dev_type.valve_pos.ee_valve_too_large,dev_type.valve_pos.ee_valve_too_small,dev_type.valve_pos.reserved2_6_7,dev_type.valve_pos.reserved3_0_7,dev_type.valve_pos.sf_voltage_out_of_range,dev_type.valve_pos.sf_electronic_high_temp,dev_type.valve_pos.sf_frictional_resistance,dev_type.valve_pos.reserved4_4_6,dev_type.valve_pos.general_fault) :("UNKNOWN"))));
+SNVT_dev_maint: 	text(("DS=%m ",device_select),((device_select == 0) ?("RQ=%d BC=%d BL=%d SC=%d {%d %d %d}",dev_type.pump_ctrl.service_required,dev_type.pump_ctrl.bearings_change,dev_type.pump_ctrl.bearings_lubricate,dev_type.pump_ctrl.shaftseal_change,dev_type.pump_ctrl.reserved1_4_7,dev_type.pump_ctrl.reserved2_0_7,dev_type.pump_ctrl.reserved3_0_7) :((device_select == 1) ?("MM=%d PC=%d EC=%d PC=%d LC=%d RC=%d BC=%d {%d %d %d} GM=%d",dev_type.valve_pos.motor_maint,dev_type.valve_pos.packing_change,dev_type.valve_pos.electronics_check,dev_type.valve_pos.positioning_check,dev_type.valve_pos.lubrication_check,dev_type.valve_pos.return_check,dev_type.valve_pos.battery_check,dev_type.valve_pos.reserved1_7,dev_type.valve_pos.reserved2_0_7,dev_type.valve_pos.reserved3_0_6,dev_type.valve_pos.general_maint) : ("UNKNOWN") )));
+SNVT_dev_status: 	text(("DS=%m ",device_select),((device_select == 0) ?("DF=%d SF=%d {%d} SL=%d SH=%d {%d} SOR=%d {%d} LC=%d {%d} R=%d {%d} RP=%d RF=%d RT=%d {%d %d}", dev_type.pump_ctrl.device_fault,dev_type.pump_ctrl.supply_fault,dev_type.pump_ctrl.reserved1_2,dev_type.pump_ctrl.speed_low,dev_type.pump_ctrl.speed_high,dev_type.pump_ctrl.reserved1_5,dev_type.pump_ctrl.setpt_out_of_range,dev_type.pump_ctrl.reserved1_7,dev_type.pump_ctrl.local_control,dev_type.pump_ctrl.reserved2_1,dev_type.pump_ctrl.running,dev_type.pump_ctrl.reserved2_3,dev_type.pump_ctrl.remote_press,dev_type.pump_ctrl.remote_flow,dev_type.pump_ctrl.remote_temp,dev_type.pump_ctrl.reserved2_7,dev_type.pump_ctrl.reserved3_0_7) :((device_select == 1) ?("R=%d A=%d I=%d LC=%d SOR=%d RCS=%d {%d} HW=%d SW=%d {%d %d}", dev_type.valve_pos.running,dev_type.valve_pos.adapting,dev_type.valve_pos.initializing,dev_type.valve_pos.local_control,dev_type.valve_pos.setpt_out_of_range,dev_type.valve_pos.remote_ctrl_signal,dev_type.valve_pos.reserved1_6_7,dev_type.valve_pos.hw_emergency,dev_type.valve_pos.sw_emergency,dev_type.valve_pos.reserved2_2_7,dev_type.valve_pos.reserved3_0_7) :("UNKNOWN"))));
+SNVT_earth_pos#SI: 	text( ("%d %d ", latitude_direction, longitude_direction),( (latitude_direction == 0) ? ("S") : ("N") ),(" %d %d ", latitude_deg, latitude_min),( (longitude_direction == 0) ? ("E") : ("W") ),(" %d %d %f", longitude_deg, longitude_min,height_above_sea) ); 	! metres above sea level
+SNVT_earth_pos#US: 	text( ("%d %d ", latitude_direction, longitude_direction),( (latitude_direction == 0) ? ("S") : ("N") ),(" %d %d ", latitude_deg, latitude_min),( (longitude_direction == 0) ? ("E") : ("W") ),(" %d %d %f", longitude_deg, longitude_min,height_above_sea*3.28084+0(0:840)) ); 	! feet above sea level
+SNVT_elapsed_tm: 	text("%d %d:%d:%d:%d", day, hour, minute, second, millisecond);
+SNVT_elapsed_tm#LO: 	text(("%d ", day), time(hour, minute, second, millisecond));
+SNVT_elec_kwh: 	text("%d");
+SNVT_elec_kwh_l: 	text("%f");
+SNVT_elec_whr: 	text("%f");
+SNVT_elec_whr_f: 	text("%f");
+SNVT_ent_opmode: 	text("%m");
+SNVT_ent_state: 	text("%m");
+SNVT_ent_status: 	text("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %m",unlocked, locked, security_locked, closed, open,in_alarm, in_error_cond, open_pre_alarm, open_alarm, service_alarm, tamper,entry_req, exit_req, key_req, safety_ext_req, emergency_req,unable_lock, unable_unlock, stuck, forced_open, forced_close,opening, closing, moving, stopped, safety_alarm, unknown_state, cmd_fb);
+SNVT_enthalpy#SI: 	text("%f", *1+0(0:1409)); 	! values in kJ/kg (kilojoules/kilogram)
+SNVT_enthalpy#US: 	text("%f", *0.429923+0(0:1400)); 	! values in btu/lb
+SNVT_evap_state: 	text("%m");
+SNVT_ex_control: 	text("%m %d <%x %x %x %x %x %x> %d %d",control_status, control_device_addr.domain_length,control_device_addr.domain_id[0], control_device_addr.domain_id[1],control_device_addr.domain_id[2], control_device_addr.domain_id[3],control_device_addr.domain_id[4], control_device_addr.domain_id[5],control_device_addr.subnet, control_device_addr.node);
+SNVT_file_pos: 	text("%d %d",rw_ptr, rw_length);
+SNVT_file_req: 	text( ("%m,%d %d %d %d %d %d %d %d ",request, index, receive_timeout, dest_address.sn.domain,dest_address.sn.retry, dest_address.sn.tx_timer,auth_on, prio_on, dest_address.gp.type ),( (dest_address.gp.type == 1) ?("GP %d", dest_address.gp.group) :( (dest_address.sn.type == 1) ?("S/N %d/%d",dest_address.sn.subnet, dest_address.sn.node) :("BCAST or ADDRT or UNBOUND") )));
+SNVT_file_req#LO: 	text( ("%m|%d %d %d %d %d %d %d %d ",request, index, receive_timeout, dest_address.sn.domain,dest_address.sn.retry, dest_address.sn.tx_timer,auth_on, prio_on, dest_address.gp.type ),( (dest_address.gp.type == 1) ?("GP %d", dest_address.gp.group) :( (dest_address.sn.type == 1) ?("S/N %d/%d",dest_address.sn.subnet, dest_address.sn.node) :("BCAST or ADDRT or UNBOUND") )));
+SNVT_file_status: 	text( ("%m,%d %d ",status, number_of_files, selected_file ),( (status == 1) ?("%d %d %s",adr.descriptor.size, adr.descriptor.type,adr.descriptor.file_info ) :("%d <%x %x %x %x %x %x> %d %d",adr.address.domain_length,adr.address.domain_id[0], adr.address.domain_id[1],adr.address.domain_id[2], adr.address.domain_id[3],adr.address.domain_id[4], adr.address.domain_id[5],adr.address.subnet, adr.address.node) ) );
+SNVT_file_status#LO: 	text( ("%m|%d %d ",status, number_of_files, selected_file ),( (status == 1) ?("%d %d %s",adr.descriptor.size, adr.descriptor.type,adr.descriptor.file_info ) :("%d <%x %x %x %x %x %x> %d %d",adr.address.domain_length,adr.address.domain_id[0], adr.address.domain_id[1],adr.address.domain_id[2], adr.address.domain_id[3],adr.address.domain_id[4], adr.address.domain_id[5],adr.address.subnet, adr.address.node) ) );
+SNVT_fire_indcte: 	text("%m");
+SNVT_fire_init: 	text("%m");
+SNVT_fire_test: 	text("%m");
+SNVT_flow#SI: 	text("%d");
+SNVT_flow#US: 	text("%d", *2.1189+0(0:966)); 	! cu ft/min
+SNVT_flow#US_liq: 	text("%d", *0.26418+0(0:837)); 	! gal/sec
+SNVT_flow_dir: 	text("%m");
+SNVT_flow_f#SI: 	text("%f");
+SNVT_flow_f#US: 	text("%f", *2.1189+0(0:966)); 	! cu ft/min
+SNVT_flow_f#US_liq: 	text("%f", *0.26418+0(0:837)); 	! gal/sec
+SNVT_flow_mil#SI: 	text("%d", *1+0(0:838)); 	! ml/sec
+SNVT_flow_mil#US: 	text("%d", *0.0338+0(0:839)); 	! oz/sec
+SNVT_flow_p#SI: 	text("%f", *1+0(0:1408)); 	! in (cu. m / hr)
+SNVT_flow_p#US: 	text("%f", *0.588578+0(0:1405)); 	! in (cu ft/min)
+SNVT_freq_f: 	text("%f");
+SNVT_freq_hz: 	text("%f");
+SNVT_freq_kilohz: 	text("%f");
+SNVT_freq_milhz: 	text("%f");
+SNVT_gfci_status: 	text("%m");
+SNVT_grammage: 	text("%f");
+SNVT_grammage_f: 	text("%f");
+SNVT_hvac_emerg: 	text("%m");
+SNVT_hvac_mode: 	text("%m");
+SNVT_hvac_overid#SI: 	text("%m,%f,%f", state, percent, flow);
+SNVT_hvac_overid#SI_LO: 	text("%m|%f|%f", state, percent, flow);
+SNVT_hvac_overid#US: 	text("%m,%f,%f", state, percent, flow*2.1189+0(0:966)); 	! flow in cu ft/min
+SNVT_hvac_overid#US_LO: 	text("%m|%f|%f", state, percent, flow*2.1189+0(0:966)); 	! flow in cu ft/min
+SNVT_hvac_satsts: 	text("%d %d %d %d %d %d %d",pri_heat, sec_heat, pri_cool, sec_cool, pri_duct_starved, sec_duct_starved,manufacturer_defined);
+SNVT_hvac_status: 	text("%m,%f,%f,%f,%f,%f,%d",mode, heat_output_primary, heat_output_secondary,cool_output, econ_output, fan_output, in_alarm);
+SNVT_hvac_status#LO: 	text("%m|%f|%f|%f|%f|%f|%d",mode, heat_output_primary, heat_output_secondary,cool_output, econ_output, fan_output, in_alarm);
+SNVT_hvac_type: 	text("%m");
+SNVT_length#SI: 	text("%f");
+SNVT_length#US: 	text("%f", *3.28084+0(0:840)); 	! feet
+SNVT_length_f#SI: 	text("%f");
+SNVT_length_f#US: 	text("%f", *3.28084+0(0:840)); 	! feet
+SNVT_length_kilo#SI: 	text("%f");
+SNVT_length_kilo#US: 	text("%f", *0.62137+0(0:841)); 	! miles
+SNVT_length_micr: 	text("%f", *1+0(0:843)); 	! microns
+SNVT_length_mil#SI: 	text("%f");
+SNVT_length_mil#US: 	text("%f", *0.03937+0(0:844)); 	! inches
+SNVT_lev_cont: 	text("%f");
+SNVT_lev_cont_f: 	text("%f");
+SNVT_lev_disc: 	text("%m");
+SNVT_lev_percent: 	text("%f");
+SNVT_lux: 	text("%d");
+SNVT_magcard: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",digit1, digit2, digit3, digit4, digit5, digit6, digit7,digit8, digit9, digit10,digit11,digit12,digit13,digit14,digit15,digit16,digit17,digit18,digit19,digit20,digit21,digit22,digit23,digit24,digit25,digit26,digit27,digit28,digit29,digit30,digit31,digit32,digit33,digit34,digit35,digit36,digit37,digit38,digit39,digit40);
+SNVT_magcard#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",digit1, digit2, digit3, digit4, digit5, digit6, digit7,digit8, digit9, digit10,digit11,digit12,digit13,digit14,digit15,digit16,digit17,digit18,digit19,digit20,digit21,digit22,digit23,digit24,digit25,digit26,digit27,digit28,digit29,digit30,digit31,digit32,digit33,digit34,digit35,digit36,digit37,digit38,digit39,digit40);
+SNVT_mass#SI: 	text("%f");
+SNVT_mass#US: 	text("%f", *0.03527+0(0:845)); 	! oz
+SNVT_mass_f#SI: 	text("%f");
+SNVT_mass_f#US: 	text("%f", *0.002205+0(0:846)); 	! lbs
+SNVT_mass_f#US_oz: 	text("%f", *0.03527+0(0:845)); 	! oz
+SNVT_mass_kilo#SI: 	text("%f");
+SNVT_mass_kilo#US: 	text("%f", *2.20462+0(0:846)); 	! lbs
+SNVT_mass_mega#SI: 	text("%f");
+SNVT_mass_mega#US: 	text("%f", *1.1023+0(0:849)); 	! tons
+SNVT_mass_mil#SI: 	text("%f");
+SNVT_mass_mil#US: 	text("%f", *3.527e-5+0(0:845)); 	! oz
+SNVT_motor_state: 	text("%m");
+SNVT_muldiv: 	text("%d/%d", multiplier, divisor);
+SNVT_multiplier: 	text("%f");
+SNVT_nv_type: 	text("PID %x:%x:%x:%x:%x:%x:%x:%x, Scope %d, Index %d, %m, %d bytes, A=%d, B=%d, C=%d",type_program_ID[0], type_program_ID[1],type_program_ID[2], type_program_ID[3],type_program_ID[4], type_program_ID[5],type_program_ID[6], type_program_ID[7],type_scope, type_index,type_category, type_length,scaling_factor_a, scaling_factor_b, scaling_factor_c);
+SNVT_obj_request: 	text("%d,%m", object_id, object_request);
+SNVT_obj_request#LO: 	text("%d|%m", object_id, object_request);
+SNVT_obj_status: 	text("%d %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",object_id, invalid_id, invalid_request, disabled,out_of_limits, open_circuit, out_of_service,mechanical_fault, feedback_failure, over_range,under_range, electrical_fault, unable_to_measure,comm_failure, fail_self_test, self_test_in_progress,locked_out, manual_control, in_alarm, in_override,report_mask, programming_mode, programming_fail,alarm_notify_disabled, reset_complete);
+SNVT_obj_status#LO: 	text("%d %d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",object_id, invalid_id, invalid_request, disabled,out_of_limits, open_circuit, out_of_service,mechanical_fault, feedback_failure, over_range,under_range, electrical_fault, unable_to_measure,comm_failure, fail_self_test, self_test_in_progress,locked_out, manual_control, in_alarm, in_override,report_mask, programming_mode, programming_fail,alarm_notify_disabled, reset_complete);
+SNVT_occupancy: 	text("%m");
+SNVT_override: 	text("%m");
+SNVT_ph: 	text("%f");
+SNVT_ph_f: 	text("%f");
+SNVT_pos_ctrl: 	text("%d %d %d %m %m %d %f %f %f", receiver_id, controller_id, controller_prio, function, action,value.number, value.abspos.pan, value.abspos.tilt, value.abspos.zoom);
+SNVT_power#SI: 	text("%f");
+SNVT_power#US: 	text("%f", *3.4144+0(0:968)); 	! Btu/hr
+SNVT_power_f#SI: 	text("%f");
+SNVT_power_f#US: 	text("%f", *3.4144+0(0:968)); 	! Btu/hr
+SNVT_power_f#US_hp: 	text("%f", *0.001341+0(0:969)); 	! hp
+SNVT_power_f#US_refr: 	text("%f", *2.8435e-4+0(0:967)); 	! tons refrig.
+SNVT_power_kilo: 	text("%f");
+SNVT_ppm: 	text("%d");
+SNVT_ppm_f: 	text("%f");
+SNVT_preset: 	text("%m %d <%x %x %x %x> %d %d:%d:%d:%d",learn, selector, value[0], value[1], value[2], value[3],day, hour, minute, second, millisecond);
+SNVT_preset#LO: 	text(("%m %d <%x %x %x %x> %d ",learn, selector, value[0], value[1], value[2], value[3],day), time(hour, minute, second, millisecond));
+SNVT_press#SI: 	text("%f");
+SNVT_press#US: 	text("%f", *4.0217+0(0:954)); 	! in. of H2O
+SNVT_press#US_psi: 	text("%f", *0.1450+0(0:875)); 	! p.s.i.
+SNVT_press_f#SI: 	text("%f");
+SNVT_press_f#SI_kPa: 	text("%f", *0.001+0(0:973)); 	! kPa
+SNVT_press_f#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SNVT_press_f#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SNVT_press_p#SI: 	text("%f");
+SNVT_press_p#US: 	text("%f", *0.0040217+0(0:954)); 	! in. of H2O
+SNVT_press_p#US_psi: 	text("%f", *1.4504e-4+0(0:875)); 	! p.s.i.
+SNVT_privacyzone: 	text("%m %d %d", action, number, camera_id);
+SNVT_ptz: 	text("%m %f %m %f %m %f", pan_dir, pan_speed, tilt_dir, tilt_speed, zoom, zoom_speed);
+SNVT_pump_sensor#SI: 	text("%f %f %f %f %m %m %m %f %f %m %m %m %m",rotational_speed,body_temperature*1+0(0:854),			motor_external_temperature*1+0(0:854),	motor_internal_temperature*1+0(0:854),	motor_overloaded,oil_level_low,phase_imbalance_detected,current_usage,power_usage,temperature_control,electromagnetic_brake_active,friction_brake_active,gas_brake_active);
+SNVT_pump_sensor#US: 	text("%f %f %f %f %m %m %m %f %f %m %m %m %m",rotational_speed,body_temperature*1.8+32(0:855),			  motor_external_temperature*1.8+32(0:855), motor_internal_temperature*1.8+32(0:855), motor_overloaded,oil_level_low,phase_imbalance_detected,current_usage,power_usage,temperature_control,electromagnetic_brake_active,friction_brake_active,gas_brake_active);
+SNVT_pumpset_mn: 	text("%m %m %m %m %m %m %m %m", main_pump, booster_pump, priority_level,process_ready, emergency_stop_activated, main_pump_drive_enabled,booster_pump_drive_enabled, maintenance_required);
+SNVT_pumpset_sn#SI: 	text("%d %f %f %f %f %f %d %m %m %m %m %m %m %m",total_dilution_flow*1+0(0:838),	exhaust_temperature*1+0(0:854),	exhaust_pressure,					shaft_seal_purge_pressure,		inlet_vacuum,						supply_voltage,coolant_flow*1+0(0:838),			coolant_flow_low,dilution_active,ballast_dilution_active,inlet_purge_dilution_active,exhaust_dilution_active,dilution_flow_out_of_range,power_supply_on);
+SNVT_pumpset_sn#US: 	text("%d %f %f %f %f %f %d %m %m %m %m %m %m %m",total_dilution_flow*0.06102+0(0:1460),	exhaust_temperature*1.8+32(0:855),		exhaust_pressure*0.2953+0(0:1402),			shaft_seal_purge_pressure*0.2953+0(0:1402),inlet_vacuum*0.2953+0(0:1402),			supply_voltage,coolant_flow*0.0338+0(0:839),		coolant_flow_low,dilution_active,ballast_dilution_active,inlet_purge_dilution_active,exhaust_dilution_active,dilution_flow_out_of_range,power_supply_on);
+SNVT_pwr_fact: 	text("%f");
+SNVT_pwr_fact_f: 	text("%f");
+SNVT_rac_ctrl: 	text("AL: %d, FD: %d, Dp2p: %d, (rsvd: %d), AT: %m, Init: %d {%d} %d (%d) AS: %m + Talk: %d {%d} %d (%d) AS: %m + P2P: [%d {%d} %d (%d) AS: %m], P2M: [%x - %x%x%x%x {%x%x} MA: %x%x%x]", audio_line,duplex_full,dest_p2p,reserved,audio_type,addr_init.unit_id,addr_init.location,addr_init.car_id,addr_init.reserved,addr_init.audio_sensor_type,addr_talk.unit_id,addr_talk.location,addr_talk.car_id,addr_talk.reserved,addr_talk.audio_sensor_type,addr_dest.p2p.unit_id,addr_dest.p2p.location,addr_dest.p2p.car_id,addr_dest.p2p.reserved,addr_dest.p2p.audio_sensor_type,addr_dest.p2m.mask_unit,addr_dest.p2m.mask_car[0],addr_dest.p2m.mask_car[1],addr_dest.p2m.mask_car[2],addr_dest.p2m.mask_car[3],addr_dest.p2m.mask_location[0],addr_dest.p2m.mask_location[1],addr_dest.p2m.mask_audio[0],addr_dest.p2m.mask_audio[1],addr_dest.p2m.mask_audio[2]);
+SNVT_rac_req: 	text("DD: %d, Dp2p: %d, (rsvd: %d), AT: %m, Init: %d {%d} %d (%d) AS: %m + P2P: [%d {%d} %d (%d) AS: %m], P2M: [%x - %x%x%x%x {%x%x} MA: %x%x%x]", dest_def,dest_p2p,reserved,audio_type,addr_init.unit_id,addr_init.location,addr_init.car_id,addr_init.reserved,addr_init.audio_sensor_type,addr_dest.p2p.unit_id,addr_dest.p2p.location,addr_dest.p2p.car_id,addr_dest.p2p.reserved,addr_dest.p2p.audio_sensor_type,addr_dest.p2m.mask_unit,addr_dest.p2m.mask_car[0],addr_dest.p2m.mask_car[1],addr_dest.p2m.mask_car[2],addr_dest.p2m.mask_car[3],addr_dest.p2m.mask_location[0],addr_dest.p2m.mask_location[1],addr_dest.p2m.mask_audio[0],addr_dest.p2m.mask_audio[1],addr_dest.p2m.mask_audio[2]);
+SNVT_reg_val: 	text("%d %m %d", raw, unit, nr_decimals);
+SNVT_reg_val_ts: 	text("%d %m %d %d %d %d/%d/%d %d:%d:%d",raw, unit, nr_decimals, status, reg_state,year, month, day, hour, minute, second);
+SNVT_reg_val_ts#LO: 	text(("%d %m %d %d %d ",raw, unit, nr_decimals, status, reg_state),date(year, month, day), (" "), time(hour, minute, second));
+SNVT_res: 	text("%f");
+SNVT_res_f: 	text("%f");
+SNVT_res_kilo: 	text("%f");
+SNVT_rpm: 	text("%f");
+SNVT_sblnd_state: 	text("%m %d %d %m %m", pos.function,pos.setting,pos.rotation,cmd_source,error_code);
+SNVT_scene: 	text("%m %d",function, scene_number);
+SNVT_scene_cfg: 	text("%m %d %d %d %d %d %d", function,scene_number,setting,rotation,fade_time,delay_time,scene_priority);
+SNVT_sched_val: 	text("%d");
+SNVT_sec_state: 	text("%m %d", state,identity);
+SNVT_sec_status: 	text("%m %d", status,identity);
+SNVT_setting: 	text("%m %f %f", function, setting, rotation);
+SNVT_smo_obscur: 	text("%f");
+SNVT_sound_db: 	text("%f");
+SNVT_sound_db_f: 	text("%f");
+SNVT_speed#SI: 	text("%f");
+SNVT_speed#US: 	text("%f", *196.85+0(0:972)); 	! ft/min
+SNVT_speed#US_sec: 	text("%f", *3.2808+0(0:852)); 	! ft/sec
+SNVT_speed_f#SI: 	text("%f");
+SNVT_speed_f#US: 	text("%f", *196.85+0(0:972)); 	! ft/min
+SNVT_speed_f#US_sec: 	text("%f", *3.2808+0(0:852)); 	! ft/sec
+SNVT_speed_mil#SI: 	text("%f");
+SNVT_speed_mil#US: 	text("%f", *3.2808+0(0:852)); 	! ft/sec
+SNVT_state: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SNVT_state#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15);
+SNVT_state_64: 	text("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d",bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7, bit8,bit9, bit10, bit11, bit12, bit13, bit14, bit15,bit16, bit17, bit18, bit19, bit20, bit21, bit22, bit23, bit24,bit25, bit26, bit27, bit28, bit29, bit30, bit31,bit32, bit33, bit34, bit35, bit36, bit37, bit38, bit39, bit40,bit41, bit42, bit43, bit44, bit45, bit46, bit47,bit48, bit49, bit50, bit51, bit52, bit53, bit54, bit55, bit56,bit57, bit58, bit59, bit60, bit61, bit62, bit63);
+SNVT_str_asc: 	text("%s",ascii);
+SNVT_str_int: 	text("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d",char_set, wide_char[0], wide_char[1], wide_char[2],wide_char[3], wide_char[4], wide_char[5], wide_char[6],wide_char[7], wide_char[8], wide_char[9], wide_char[10],wide_char[11],wide_char[12], wide_char[13], wide_char[14]);
+SNVT_str_int#LO: 	text("%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d",char_set, wide_char[0], wide_char[1], wide_char[2],wide_char[3], wide_char[4], wide_char[5], wide_char[6],wide_char[7], wide_char[8], wide_char[9], wide_char[10],wide_char[11],wide_char[12], wide_char[13], wide_char[14]);
+SNVT_switch: 	text("%f %d", value, state);
+SNVT_telcom: 	text("%m");
+SNVT_temp#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SNVT_temp#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SNVT_temp#US_diff: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SNVT_temp_diff_p#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SNVT_temp_diff_p#US: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SNVT_temp_f#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SNVT_temp_f#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SNVT_temp_f#US_diff: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SNVT_temp_p#SI: 	text("%f", *1+0(0:854)); 	! degrees C
+SNVT_temp_p#US: 	text("%f", *1.8+32(0:855)); 	! degrees F
+SNVT_temp_p#US_diff: 	text("%f", *1.8+0(0:855)); 	! degrees F (differential, no offset)
+SNVT_temp_ror#SI: 	text("%f", *1+0(0:1012)); 	! degrees C / minute
+SNVT_temp_ror#US: 	text("%f", *1.8+0(0:1011)); 	! degrees F / minute
+SNVT_temp_setpt#SI: 	text("%f,%f,%f,%f,%f,%f",occupied_cool, standby_cool, unoccupied_cool,occupied_heat, standby_heat, unoccupied_heat);
+SNVT_temp_setpt#SI_LO: 	text("%f|%f|%f|%f|%f|%f",occupied_cool, standby_cool, unoccupied_cool,occupied_heat, standby_heat, unoccupied_heat);
+SNVT_temp_setpt#US: 	text("%f,%f,%f,%f,%f,%f",	occupied_cool*1.8+32(0:855), standby_cool*1.8+32(0:855), unoccupied_cool*1.8+32(0:855),occupied_heat*1.8+32(0:855), standby_heat*1.8+32(0:855), unoccupied_heat*1.8+32(0:855));
+SNVT_temp_setpt#US_LO: 	text("%f|%f|%f|%f|%f|%f",	occupied_cool*1.8+32(0:855), standby_cool*1.8+32(0:855), unoccupied_cool*1.8+32(0:855),occupied_heat*1.8+32(0:855), standby_heat*1.8+32(0:855), unoccupied_heat*1.8+32(0:855));
+SNVT_temp_setpt#US_LO_diff: 	text("%f|%f|%f|%f|%f|%f",occupied_cool*1.8+0(0:855),  standby_cool*1.8+0(0:855),  unoccupied_cool*1.8+0(0:855),occupied_heat*1.8+0(0:855),  standby_heat*1.8+0(0:855),  unoccupied_heat*1.8+0(0:855));
+SNVT_temp_setpt#US_diff: 	text("%f,%f,%f,%f,%f,%f",occupied_cool*1.8+0(0:855),  standby_cool*1.8+0(0:855),  unoccupied_cool*1.8+0(0:855),occupied_heat*1.8+0(0:855),  standby_heat*1.8+0(0:855),  unoccupied_heat*1.8+0(0:855));
+SNVT_therm_mode: 	text("%m");
+SNVT_time_f: 	text("%f");
+SNVT_time_hour: 	text("%d");
+SNVT_time_min: 	text("%d");
+SNVT_time_passed: 	text("%d:%d:%d:%d", hours, minutes, seconds, milliseconds);
+SNVT_time_passed#LO: 	text(time(hours, minutes, seconds, milliseconds));
+SNVT_time_sec: 	text("%f");
+SNVT_time_stamp: 	text("%d/%d/%d %d:%d:%d", year, month, day, hour, minute, second);
+SNVT_time_stamp#LO: 	text(date(year, month, day), (" "), time(hour, minute, second));
+SNVT_time_zone: 	text( ("%d %m %d:%d:%d ",second_time_offset, type_of_description,hour_of_start_DST, minute_of_start_DST,second_of_start_DST),( (type_of_description != 2) ?("%d %d:%d:%d %d",start_DST.G_day_of_start_DST,hour_of_end_DST,minute_of_end_DST,second_of_end_DST,end_DST.G_day_of_end_DST) :("%d %d %m %d:%d:%d %d %d %m",start_DST.M_start_DST.month_of_start_DST,start_DST.M_start_DST.week_of_start_DST,start_DST.M_start_DST.dateday_of_start_DST,hour_of_end_DST,minute_of_end_DST,second_of_end_DST,end_DST.M_end_DST.month_of_end_DST,end_DST.M_end_DST.week_of_end_DST,end_DST.M_end_DST.dateday_of_end_DST) ) );
+SNVT_time_zone#LO: 	text( ("%d %m ", second_time_offset, type_of_description),time(hour_of_start_DST, minute_of_start_DST, second_of_start_DST),( (type_of_description != 2) ?((" %d ", start_DST.G_day_of_start_DST),time(hour_of_end_DST, minute_of_end_DST, second_of_end_DST),(" %d", end_DST.G_day_of_end_DST)) :((" %d %d %m ",start_DST.M_start_DST.month_of_start_DST,start_DST.M_start_DST.week_of_start_DST,start_DST.M_start_DST.dateday_of_start_DST),time(hour_of_end_DST, minute_of_end_DST, second_of_end_DST),(" %d %d %m", end_DST.M_end_DST.month_of_end_DST,end_DST.M_end_DST.week_of_end_DST,end_DST.M_end_DST.dateday_of_end_DST)) ) );
+SNVT_tod_event: 	text("%m,%m,%f",current_state, next_state, time_to_next_state);
+SNVT_tod_event#LO: 	text("%m|%m|%f",current_state, next_state, time_to_next_state);
+SNVT_trans_table: 	text("%f %f %f %f %f %f %f %d %d %d %d %d %d %d",point[0], point[1], point[2], point[3], point[4],point[5], point[6], interp_pts_0_to_1,interp_pts_1_to_2, interp_pts_2_to_3, interp_pts_3_to_4,interp_pts_4_to_5, interp_pts_5_to_6, interp_pts_6_to_0);
+SNVT_turbidity: 	text("%f");
+SNVT_turbidity_f: 	text("%f");
+SNVT_valve_mode: 	text("%m");
+SNVT_vol#SI: 	text("%f");
+SNVT_vol#US: 	text("%f", *0.035315+0(0:877)); 	! cubic feet
+SNVT_vol#US_gal: 	text("%f", *0.26418+0(0:858)); 	! gals
+SNVT_vol_f#SI: 	text("%f");
+SNVT_vol_f#US: 	text("%f", *0.035315+0(0:877)); 	! cubic feet
+SNVT_vol_f#US_gal: 	text("%f", *0.26418+0(0:858)); 	! gals
+SNVT_vol_kilo#SI: 	text("%f");
+SNVT_vol_kilo#US: 	text("%f", *35.315+0(0:877)); 	! cubic feet
+SNVT_vol_kilo#US_gal: 	text("%f", *264.179+0(0:858)); 	! gals
+SNVT_vol_mil#SI: 	text("%f");
+SNVT_vol_mil#US: 	text("%f", *0.0338+0(0:861)); 	! fl oz
+SNVT_volt: 	text("%f");
+SNVT_volt_ac: 	text("%f");
+SNVT_volt_dbmv: 	text("%f");
+SNVT_volt_f: 	text("%f");
+SNVT_volt_kilo: 	text("%f");
+SNVT_volt_mil: 	text("%f");
+SNVT_zerospan: 	text("%f,%f", zero, span);
+SNVT_zerospan#LO: 	text("%f|%f", zero, span);

@@ -1,0 +1,6 @@
+; NssConfig registry file version 1.0000 for 'SOFTWARE\LonWorks\NSS\Configuration\LONBiblioteca 2'
+; Created Fri Mar 02 15:06:25 2018
+
+'NSS Type', REG_BINARY, 01000000
+'Device Name', REG_SZ, 'LON1'
+'PackageManagerHandle', REG_BINARY, 11000000

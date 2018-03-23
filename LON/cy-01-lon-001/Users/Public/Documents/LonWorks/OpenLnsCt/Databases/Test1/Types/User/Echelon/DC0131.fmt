@@ -1,0 +1,10 @@
+! C:\Lonworks\TYPES\DC0131.fmt created by Resource Editor 3.13.15
+! All Rights Reserved. Run on Thu Aug 11 17:15:33 2005
+set program_id 80:00:01:01:1F:00:00:00;
+set selector MANUFACTURER and DEVICE_CLASS;
+
+UCPTfactoryDefaultsEnable: 	text("%d");
+UCPTinterval: 	text("%d %d %d %d %d", day,hour,minute,second,millisecond);
+UCPTpacketBytesAverage: 	text("%d");
+UCPTpacketsPerSecondMax: 	text("%d");
+UCPTrepeaterModeEnable: 	text("%d");

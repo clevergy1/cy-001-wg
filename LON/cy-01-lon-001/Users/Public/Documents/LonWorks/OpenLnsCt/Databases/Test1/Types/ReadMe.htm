@@ -1,0 +1,299 @@
+﻿	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+	<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<!-- Version 14.00 revision 00 of the ReadMe File -->
+	<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>LonMark Resource Files ReadMe</title> 
+	<style type="text/css"> 
+	<!-- 
+	body {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif} 
+	.style2 {font-family: Verdana, Arial, Helvetica, sans-serif} 
+	.style3 {font-family:"Courier New", Courier, monospace} 
+	.style4 {color: #0000FF} 
+	.style5 {font-size: smaller} 
+	.style6 {font-size: small} 
+	--> 
+	</style> 
+	</head> 
+	
+	<body> 
+	<a name="top" id="top"></a><h2 align="center" class="style2">L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span><sup>®</sup> Resource Files ReadMe File</h2> 
+	<h3 align="center" class="style2"> Version 14.00, December 2012<br /> 
+	<span class="style4">Self-Installer</span></h3> 
+	<h4 align="center"><br /> 
+	<span class="style6">Copyright © 1991–2012 Echelon Corporation &amp; L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> International <br /> 
+	All Rights Reserved</span></h4> 
+	<h2><a name="Introduction" id=" Introduction"></a>&nbsp;<br /> Introduction</h2> 
+	<p>Welcome to Version 14.00 L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Resource Files for L<span style="font-size:smaller">ON</span>W<span style="font-size:smaller">ORKS</span>® software products and other software and devices compliant to the ISO/IEC&nbsp;14908-1 controls-networking protocol.&nbsp; These files contain all previously released standard network-variable types (SNVTs), standard configuration-property types (SCPTs), standard functional-profile templates (SFPTs), and enumeration definitions, plus new SNVTs, SCPTs, enumerations, and profile templates, that were added since the version 13.00 release.&nbsp; It also contains all of the header files needed to use the new types.&nbsp; The last beta release was 13.20.  </p> 
+	<p><strong>NOTE</strong>: The version 14.00 files require version 2.41 or newer of the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> resource file API to read the new type and functional profile files.&nbsp; The version 2.41 API is installed by this Resource Files Installation Program for Windows® OS platforms as part of the installation procedure (see <a href="#Installation" title="Jump to Installation Section..." target="_self">Installation</a> for details).</p> 
+	<h2><a name="Contents" id="Contents"></a>&nbsp;<br /> 
+	Contents</h2> 
+	<ol> 
+	<li><a href="#Introduction" target="_self">Introduction</a></li> 
+
+	<li><a href="#Contents" target="_self">Contents</a></li> 
+
+	<li><a href="#NewFeatures" target="_self">New Features</a></li> 
+
+	<li><a href="#Documentation" target="_self">Documentation</a></li> 
+
+	<li><a href="#Installation" target="_self">Installation</a></li> 
+
+	<li><a href="#PackagingInstaller" target="_self">Packaging the Installer</a></li> 
+
+	<li><a href="#TrademarkAttributions" target="_self">Trademark Attributions</a> </li> 
+
+	</ol> 
+	<h2><a name="NewFeatures" id="NewFeatures"></a>&nbsp;<br /> 
+	New Features</h2> 
+	<p>Version 14.00 includes the following SFPTs (Profiles) that were not included in the v13.00 release:</p> 
+	<ul type="disc"> 
+	<li>SFPTisiLampActuator</li> 
+	<li>SFPTisiKeypad</li> 
+	<li>SFPTisiMonitorPoint</li> 
+	<li>SFPTchannelMonitor</li> 
+	<li>SFPTchannelContinuityMonitor</li> 
+	<li>SFPTdeviceMonitor</li> 
+	<li>SFPTisiSunblindActuator</li> 
+	<li>SFPTisiOccupancySensor</li> 
+	<li>SFPTdataLogger</li> 
+	<li>SFPToutdoorLuminairController</li> 
+	<li>SFPTstaticProgrammable</li> 
+	<li>SFPTglobalSolarRadiation</li> 
+	<li>SFPTschedulerSimple</li> 
+	</ul> 
+	<p>Version 14.00 includes the following SCPTs that were not included in the v13.00 release:</p> 
+	<ul type="disc"> 
+	<li>SCPTdefInput</li> 
+	<li>SCPTname1</li> 
+	<li>SCPTscene</li> 
+	<li>SCPTsceneTiming</li> 
+	<li>SCPTname2</li> 
+	<li>SCPTname3</li> 
+	<li>SCPTbuttonPressAction</li> 
+	<li>SCPTbuttonColor</li> 
+	<li>SCPTbuttonRepeatInterval</li> 
+	<li>SCPTbuttonHoldAction</li> 
+	<li>SCPTpwrSendOnDelta</li> 
+	<li>SCPTsceneName</li> 
+	<li>SCPTmaxPower</li> 
+	<li>SCPTifaceDesc</li> 
+	<li>SCPTmonInterval</li> 
+	<li>SCPTlinkPowerDetectEnable</li> 
+	<li>SCPTscanTime</li> 
+	<li>SCPTdevListDesc</li> 
+	<li>SCPTdevListEntry</li> 
+	<li>SCPTlogCapacity</li> 
+	<li>SCPTlogNotificationThreshold</li> 
+	<li>SCPTlogSize</li> 
+	<li>SCPTlogType</li> 
+	<li>SCPTfanInEnable</li> 
+	<li>SCPTlogTimestampEnable</li> 
+	<li>SCPTlogHighLimit</li> 
+	<li>SCPTlogLowLimit</li> 
+	<li>SCPTmaxFanIn</li> 
+	<li>SCPTlogMinDeltaTime</li> 
+	<li>SCPTlogMinDeltaValue</li> 
+	<li>SCPTpollRate</li> 
+	<li>SCPTsourceAddress</li> 
+	<li>SCPTlogRecord</li> 
+	<li>SCPTlogFileHeader</li> 
+	<li>SCPTlogAlarmThreshold</li> 
+	<li>SCPTlogRequest</li> 
+	<li>SCPTlogResponse</li> 
+	<li>SCPTlightingGroupEnable</li> 
+	<li>SCPTsceneColor</li> 
+	<li>SCPTbkupSchedule</li> 
+	<li>SCPTdeviceOutSelection</li> 
+	<li>SCPTenableStatusMsg</li> 
+	<li>SCPTgeoLocation</li> 
+	<li>SCPTlampPower</li> 
+	<li>SCPTmaxLevelVolt</li> 
+	<li>SCPTOLCLimits</li> 
+	<li>SCPTlampPower </li> 
+	<li>SCPTdeviceOutSelection </li> 
+	<li>SCPTenableStatusMsg </li> 
+	<li>SCPTmaxLevelVolt </li> 
+	<li>SCPTgeoLocation </li> 
+	<li>SCPTprogName </li> 
+	<li>SCPTprogRevision </li> 
+	<li>SCPTprogSelect </li> 
+	<li>SCPTprogSourceLocation </li> 
+	<li>SCPTprogFileIndexes </li> 
+	<li>SCPTprogCmdHistory </li> 
+	<li>SCPTprogStateHistory </li> 
+	<li>SCPTnsdsFbIndex </li> 
+	<li>SCPTcurrentSenseEnable </li> 
+	<li>SCPTmeasurementInterval </li> 
+	<li>SCPTlightingGroupMembership </li> 
+	<li>SCPTloadControlOffset </li> 
+	<li>SCPTprogErrorHistory </li> 
+	<li>SCPTnvUsage </li> 
+	<li>SCPTscheduleSunday</li> 
+	<li>SCPTscheduleMonday</li> 
+	<li>SCPTscheduleTuesday</li> 
+	<li>SCPTscheduleWednesday</li> 
+	<li>SCPTscheduleThursday</li> 
+	<li>SCPTscheduleFriday</li> 
+	<li>SCPTscheduleSaturday</li> 
+	<li>SCPToccupancyBehavior</li> 
+	<li>SCPTtimeSource</li> 
+	<li>SCPTscheduleException</li> 
+	<li>SCPTscheduleHoliday</li> 
+	<li>SCPTrandomizationInterval</li> 
+	<li>SCPTsunriseTime</li> 
+	<li>SCPTsunsetTime</li> 
+	<li>SCPTschedulerOptions</li> 
+	<li>SCPToccupancyThresholds</li>
+	</ul> 
+	<p>Version 14.00 includes the following SNVTs that were not included in the v13.00 release:</p> 
+	<ul type="disc"> 
+	<li>SNVT_multiplier_s </li> 
+	<li>SNVT_switch_2 </li> 
+	<li>SNVT_color_2 </li> 
+	<li>SNVT_log_status </li> 
+	<li>SNVT_time_stamp_p </li> 
+	<li>SNVT_log_fx_request </li> 
+	<li>SNVT_log_fx_status </li> 
+	<li>SNVT_log_request </li> 
+	<li>SNVT_enthalpy_d </li> 
+	<li>SNVT_amp_ac_mil </li> 
+	<li>SNVT_time_hour_p </li> 
+	<li>SNVT_lamp_status </li> 
+	<li>SNVT_environment </li> 
+	<li>SNVT_geo_loc </li> 
+	<li>SNVT_program_status </li> 
+	<li>SNVT_load_offsets </li> 
+	<li>SNVT_Wm2_p </li> 
+	<li>SNVT_safe_1</li> 
+	<li> SNVT_safe_2</li> 
+	<li> SNVT_safe_4</li> 
+	<li> SNVT_safe_8</li> 
+	<li> SNVT_time_val_2</li> 
+	<li> SNVT_time_offset</li> 
+	<li> SNVT_sched_exc</li> 
+	<li> SNVT_sched_status</li> 
+	<li> SNVT_mass_flow</li> 
+	<li> SNVT_mass_flow_f</li> 
+	</ul> 
+	<p>Version 14.00 includes the following Enumerations that were not included in the v13.00 release and  includes additions to previously existing Enumerations, not shown here (please see <a href="#Documentation" target="_self">Documentation</a>):</p> 
+	<ul type="disc"> 
+	<li>button_action_t</li> 
+	<li>char_encoding_t</li> 
+	<li>switch_state_t</li> 
+	<li>color_encoding_t</li> 
+	<li>log_status_t</li> 
+	<li>log_type_t</li> 
+	<li>timestamp_t</li> 
+	<li>log_record_t</li> 
+	<li>point_status_t</li> 
+	<li>message_code_t</li> 
+	<li>log_access_req_t</li> 
+	<li>log_response_code_t</li> 
+	<li>address_type_t</li> 
+	<li>olc_select_t</li> 
+	<li>program_state_t </li> 
+	<li>file_type_t </li> 
+	<li>program_status_error_t </li> 
+	<li>time_source_t</li> 
+	<li>scheduler_status_t</li> 
+	</ul> 
+	<p>There are two sets of resource files:&nbsp; The first set contains the <span class="style3">standard.typ</span>, <span class="style3">standard.fpt</span>, <span class="style3">standard.enu</span>, <span class="style3">standard.eng</span>, and <span class="style3">standard.fmt</span> files.&nbsp; This set is for use with tools that are compatible with L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> resource files including Echelon Corporation&rsquo;s OpenLNS&trade; or LNS® tools such as the LonMaker® Integration Tool and LNS DDE Server.&nbsp; These files include standard functional-profile templates (SFPTs), standard network-variable types (SNVTs), standard configuration-property types (SCPTs), and standard enumeration types (appended with &ldquo;<span class="style3">_t</span>&rdquo;).</p> 
+	<p>The <span class="style3">standard.fmt</span> format file conforms to the version 3 specification for format files.&nbsp; The version 3 specification added improved support for language localization.</p> 
+	<p>The second set contains the <span class="style3">snvt.typ</span>, <span class="style3">snvt.enm</span>, and <span class="style3">snvt.fmt</span> files.&nbsp; This set is for use with legacy tools based on Echelon Corporation&rsquo;s LonManager® API such as LonMaker for DOS.&nbsp; These files only define SNVTs—they do not define SCPTs or SFPTs.  Additionally, these files have not been updated since 2003-03 (except to be given common file dates for organizational purposes).</p> 
+	<p align="right"><a href="#top" target="_self">Back to top</a></p> 
+
+	<h2><a name="Documentation" id="Documentation"></a>&nbsp;<br /> 
+	Documentation</h2> 
+	<p>The version 14.00 files include several ISO&nbsp;32000-1 Portable Document Format (PDF) files that detail the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> standard types.&nbsp; These files will be placed into your L<span style="font-size:smaller">ON</span>W<span style="font-size:smaller">ORKS</span> Bin directory (<span class="style3">c:\LonWorks\bin</span> by default, or into one of the &ldquo;Program Files&rdquo; directories) by this Resource Files Installation Program for Windows OS platforms.&nbsp; The <span class="style3">snvt.pdf</span> file details the standard network-variable types.&nbsp; The <span class="style3">scpt.pdf</span> file details the standard configuration-property types.&nbsp; The <span class="style3">enum.pdf</span> file details the standard enumerated types.&nbsp; The <span class="style3">snvtscpt.pdf</span> file is a master document with common definitions and links to the first three documents.&nbsp; Online, XML-transformed documentation is available for Internet Explorer users at <a href="http://types.lonmark.org/">types.lonmark.org</a>.&nbsp; See the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Web site for functional profile documentation at <a href="http://www.lonmark.org/profiles/">www.lonmark.org/profiles</a>.&nbsp; </p> 
+
+	<p>An ISO 32000-1 -compliant reader/viewer is required to view the PDF files.&nbsp; Free-of-charge PDF readers/viewers are available from many different sources&mdash;and for many different platforms&mdash;and can be found through a search of the Internet.</p> 
+	<p align="right"><a href="#top" target="_self">Back to top</a></p> 
+
+	<h2><a name="Installation" id="Installation"></a>&nbsp;<br /> 
+	Installation</h2> 
+	<p><strong>NOTE</strong>: The version 14.00 files  require version 2.41 or newer of the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> resource file API to read the new type and functional profile files.&nbsp; <strong>The version 2.41 DRF API is installed by this Resource Files Installation Program as part of the normal installation procedure.</strong>  The API is also available as ANSI C source files (read-only access) for porting to platforms other than Microsoft Windows.</p> 
+	<p><strong>WARNING</strong>:&nbsp; If you install any products that include L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Resource files but do not use our installers, the installation of those products may overwrite your updated, 14.00 resource files.&nbsp; If this happens, reinstall the resource files (this would be a good time for you to check the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Web site at <a href="http://www.lonmark.org/lmrf">www.lonmark.org/LMRF</a> to see if you have the latest version of the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Resource Files).&nbsp; Only older (earlier) files are overwritten by the <span class="style3">LonMarkResourceFiles1400.exe</span> and later installer programs. </p> 
+	<p><strong>WARNING</strong>:&nbsp; It is possible that the format files in this release could cause some tools to report a “Symbol table full” error. &nbsp;You will not see this problem if you are using Echelon Corporation&rsquo;s LonMaker 3.1 Integration Tool (or newer).&nbsp; If you are using the LonMaker&nbsp;3 Integration Tool or other tool based on LNS&nbsp;3, you can fix this problem by installing the latest service pack.&nbsp; Otherwise, this problem can be addressed by removing the formatting of one or more unused SNVTs from these files to reduce the symbol table size.&nbsp; <em>E.g.</em>, two large SNVT formats that you may not be using are the formats for <span class="style3">SNVT_time_zone</span> and <span class="style3">SNVT_earth_pos</span>.&nbsp; These are complex and therefore use a lot of symbol table space.&nbsp; It is possible that you may need to remove several formats in order to work around this problem.&nbsp; If you have already modified your <span class="style3">FMT</span> files, the installer will give you the option of preserving these files so that you can use them in manually modifying the newly installed versions.</p> 
+	<p><strong>WARNING</strong>:&nbsp; The <span class="style3">standard.fmt</span> format file conforms to the version 3 specification for format files.&nbsp; The version&nbsp;3 specification added improved support for language localization.&nbsp; Some tools do not recognize the localized format extensions in version&nbsp;3 format files such as <span class="style3">standard.fmt</span>.&nbsp; If you are using Echelon Corporation&rsquo;s LonMaker&nbsp;3 (or later) Integration Tool or other tool based on Echelon&rsquo;s OpenLNS or LNS&nbsp;3 (or later), you should not have any problems using the version&nbsp;3 <span class="style3">standard.fmt</span> file.&nbsp; If you are using a tool that does not support the version&nbsp;3 specification for format files, you can convert version&nbsp;3 files to version&nbsp;2 using the <span class="style3">FMTconv.exe</span> Format-File Conversion Utility, available for free download from <a href="http://www.lonmark.org/lmrf">http://www.lonmark.org/LMRF</a>.&nbsp; Files converted down to version&nbsp;2 will not be up-convertible back to version&nbsp;3 files.</p> 
+	<p><strong>WARNING</strong>:&nbsp; No formal testing has been done with the installer nor with the files on Windows OSes prior to XP&trade;.&nbsp; Likewise no formal testing has been done on Windows&nbsp;8 OS at the time of this release.</p>
+	<p>&nbsp;<br /> 
+	<strong>Installation Procedure:</strong></p> 
+	<ol> 
+	<li>Read these steps completely, first; then run the <span class="style3">LonMarkResourceFiles1400.exe</span> installation program, choosing the options you prefer when prompted.&nbsp; If you have modified any pre-existing standard format (<span class="style3">.fmt</span>) files, allow the installation program to backup/save your <span class="style3">FMT</span> files for you.<br /> 
+	&nbsp;</li> 
+	<li>The installer will place the latest versions of <span class="style3">snvtscpt.pdf</span>, <span class="style3">svnt.pdf</span>, <span class="style3">scpt.pdf</span>, and <span class="style3">enum.pdf</span> documentation files into your L<span style="font-size:smaller">ON</span>W<span style="font-size:smaller">ORKS</span> Bin directory (<span class="style3">C:\LonWorks\Bin</span> or <span class="style3">C:\[<i>Program Files</i>]\LonWorks\Bin</span> by default, where some installations use one of the &ldquo;Program Files&rdquo; directories instead).&nbsp; These files document the standard network-variable and configuration-property types.&nbsp; It will also install the v2.41 API files: <span class="style3">lcadrf32.dll</span>, <span class="style3">ldrf32r.dll</span>, <span class="style3">lcadrf32.inf</span>, and <span class="style3">lmresapi.pdf</span>.&nbsp; For convenience, an Internet shortcut is also included in the <span class="style3">\bin</span> directory: to the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Resource Report.<br /> 
+	&nbsp;</li> 
+	<li>If a <strong>Complete</strong> installation is chosen, or if “LonMark Device Developer Files” are chosen in the <strong>Custom</strong> setup, then the installer will place the latest versions of Neuron&reg; C header files into your L<span style="font-size:smaller">ON</span>W<span style="font-size:smaller">ORKS</span> Neuron&nbsp;C Include folder (<span class="style3">C:\LonWorks\NeuronC\Include</span> by default, or into one of the &ldquo;Program Files&rdquo; directories).&nbsp; The complete set of Include (<span class="style3">.h</span>) files, even the ones that have not changed for the last few releases, are included to ensure that you have all the latest L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Include files in your system.&nbsp; All file times reflect the present version of resource files in 24-hour time: <span class="style3">14:00</span> (version 14.00).<br /> 
+	&nbsp;</li> 
+	<li>The installer will place <span class="style3">standard.eng</span>, <span class="style3">standard.enu</span>, <span class="style3">standard.fmt</span>, <span class="style3">standard.fpt</span>, <span class="style3">standard.typ</span>, <span class="style3">standard.ver</span>, <span class="style3">snvt.enm</span>, <span class="style3">snvt.fmt</span>, <span class="style3">snvt.tvb</span>, <span class="style3">snvt.typ</span>, <span class="style3">nb_snvt.fmt</span>, <span class="style3">snvtver.exe</span>, <span class="style3">mkcat.exe</span>, <span class="style3">readme.htm</span>, and <span class="style3">spiddata.xml</span>, into the L<span style="font-size:smaller">ON</span>W<span style="font-size:smaller">ORKS</span> Types folder (<span class="style3">C:\LonWorks\Types</span> by default, or into one of the &ldquo;Program Files&rdquo; directories).&nbsp; It will also use <span class="style3">mkcat.exe</span> to update the <span class="style3">ldrf.cat</span> file (or create <span class="style3">ldrf.cat</span>, if it does not exist).&nbsp; It will also add an “<span class="style3">include</span>” directory to “<span class="style3">types</span>” containing <span class="style3">lcadrf.h</span> and <span class="style3">lcadrfw.h</span> header files.&nbsp; For convenience, two Internet shortcuts are also included in the <span class="style3">\types</span> directory: to the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Standard Program Identifier (SPID) Master List and to the L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Certification Tool (LCT).<br /> 
+	&nbsp;</li> 
+	<li>If a <strong>Complete</strong> installation is chosen, or if “LonMark Start Menu Shortcuts” are chosen in the <strong>Custom</strong> setup, then the installer will place a “LonMark” program menu in the “All Programs” menu and populate it with links to the Internet shortcuts and PDF documentation.<br /> 
+	&nbsp;</li> 
+	<li>Registry changes include setting the “LonWorks Path” in “<span class="style5">HKEY_LOCAL_MACHINE</span>\<span class="style5">SOFTWARE</span>\<span class="style5">LonWorks</span>”; setting “Install Status” in “<span class="style5">HKEY_LOCAL_MACHINE</span>\<span class="style5">SOFTWARE</span>\<span class="style5">LonMark</span>\<span class="style5">LonMarkResourceFiles 14.00</span>”, and clearing any older installation of L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> Resource Files.<br /> 
+	&nbsp;</li> 
+	<li>Other installation actions ensure that there are no L<span style="font-size:smaller">ON</span>M<span style="font-size:smaller">ARK</span> files misplaced into the <span class="style3">System</span> or <span class="style3">System32</span> directories (a common issue with very old tools from a variety of vendors).<br /> 
+	&nbsp;</li> 
+	<li>Upon completion of the installation, if you have any modified <span class="style3">.fmt</span> format files that you saved at the beginning of the installation (saved with the installation tool or manually), you can now manually merge your changes into the newly installed <span class="style3">.fmt</span> files.&nbsp; The installation-tool-saved files will have a sequentially increasing numeric extension and are located in the “<span class="style3">types</span>” directory (<em>e.g.</em>, “<span class="style3">snvt.fmt.1</span>”).<br /> 
+	&nbsp;</li> 
+	<li>The installation can be uninstalled using <strong>Windows Control Panel</strong> “Add or Remove Programs” under a Windows&nbsp;XP OS installation, or “Programs &nbsp;|&nbsp; Programs and Features” under a Vista&trade; OS or Windows&nbsp;7 OS installation.&nbsp; Later versions of the Resource Files will install over earlier versions; however, to install an earlier version over a later version, the later version must be uninstalled using the “Add or Remove Programs” or “Programs &nbsp;|&nbsp; Programs and Features” control panel application.&nbsp; Additionally, any options above that were not selected at the time of installation can be installed from the “Add or Remove Programs” or “Programs &nbsp;|&nbsp; Programs and Features” control panel at a later time.</li> 
+	</ol> 
+	<p align="right"><a href="#top" target="_self">Back to top</a></p> 
+
+	<h2><a name="PackagingInstaller" id="PackagingInstaller"></a>&nbsp;<br /> 
+	Packaging the Installer</h2> 
+	<p>For those companies interested in providing this installer as part of their own installation package, a command-line interface is available to invoke the installer <em>invisibly</em> (not seen by the end user) or <em>with the user interface</em> (as seen when run normally).</p> 
+	<p>Invoke the <span class="style3">LonMarkResourceFiles1400.exe</span> with the following switches for the desired installation options.</p> 
+	<p><strong>NOTE</strong>:  The spaces before and after “<span class="style3">&nbsp;/s&nbsp;</span>”, “<span class="style3">&nbsp;/v&quot;&nbsp;</span>” and “<span class="style3">&nbsp;/qn&nbsp;</span>” <u>are significant and are required</u>.</p> 
+	<p>&nbsp;<br /> 
+	To install with the <strong>Developer’s Kit</strong> feature:</p> 
+	<ul> 
+	<li><em>invisibly:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /s /v&quot; /qn DEVELOPER=1&quot;</li> 
+	</ul> 
+	</li> 
+	<li><em>with the user interface:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /v&quot; DEVELOPER=1&quot;</li> 
+	</ul> 
+	</li> 
+	</ul> 
+	<p>&nbsp;<br /> 
+	To install with the <strong>Start Menu Shortcuts</strong> feature:</p> 
+	<ul> 
+	<li><em>invisibly:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /s /v&quot; /qn SHORTCUTS=1&quot;</li> 
+	</ul> 
+	</li> 
+	<li><em>with the user interface:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /v&quot; SHORTCUTS=1&quot;</li> 
+	</ul> 
+	</li> 
+	</ul> 
+	<p>&nbsp;<br /> 
+	To install both the <strong>Developer’s Kit</strong> and <strong>Start Menu Shortcuts</strong> features:</p> 
+	<ul> 
+	<li><em>invisibly:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /s /v&quot; /qn DEVELOPER=1 SHORTCUTS=1&quot;</li> 
+	</ul> 
+	</li> 
+	<li><em>with the user interface:</em> 
+	<ul> 
+	<li class="style3">LonMarkResourceFiles1400.exe /v&quot; DEVELOPER=1 SHORTCUTS=1&quot;</li> 
+	</ul> 
+	</li> 
+	</ul> 
+	<p align="right"><a href="#top" target="_self">Back to top</a></p> 
+
+	<span class="style6"><a name="TrademarkAttributions" id="TrademarkAttributions"></a></span> 
+	<hr /> 
+	<p class="style6">Echelon, LONWORKS, LonMaker, LonManager, LNS, LON, Neuron, &amp; OpenLNS are either registered trademarks or trademarks of Echelon Corporation in the United States and other countries.<br /> 
+	Microsoft, DOS, MS-DOS, Internet Explorer, Windows, XP, Vista, Windows&nbsp;7, &amp; Windows&nbsp;8 are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.<br /> 
+	LONMARK and the LONMARK Logo are registered trademarks of LONMARK INTERNATIONAL in the U.S. and other jurisdictions.&nbsp; All other trademarks are the property of their respective owners.</p> 
+	</body> 
+	</html> 
+	
